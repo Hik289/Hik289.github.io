@@ -26,29 +26,14 @@ redirect_from:
 
 <div class="selected-work">
   <article>
-    <div><span class="venue-tag">ACL Findings 2026</span></div>
-    <h3>P-QuASAR: A Unified Probabilistic Framework for Holistic Patent Quality Assessment and Refinement</h3>
-    <p><strong>Xinyuan Song</strong>, Ziyi Ni, Fred Yang, Bo Zhang, Yiming Yan, Yijin Wang, and Jane Zhang.</p>
+    <div><span class="venue-tag">NeurIPS 2025</span></div>
+    <h3><a href="https://www.arxiv.org/pdf/2502.05795">The Curse of Depth in Large Language Models</a></h3>
+    <p>Wenfang Sun, <strong>Xinyuan Song</strong>, Pengxiang Li, Lu Yin, Yefeng Zheng, and Shiwei Liu.</p>
   </article>
   <article>
-    <div><span class="venue-tag">ECCV 2026</span></div>
-    <h3><a href="https://openreview.net/forum?id=koFVTRAo2r">Geometric Regularization for Long-Tailed Semi-Supervised Learning via Gaussian Feature Bridges</a></h3>
-    <p>Hongyang He, <strong>Xinyuan Song</strong>, et al.</p>
-  </article>
-  <article>
-    <div><span class="venue-tag">ICML 2026</span></div>
-    <h3><a href="https://icml.cc/virtual/2026/poster/61592">Newton-Coupled Dual-Teacher Semi-Supervised Learning Framework</a></h3>
-    <p>Hongyang He, Yan Zhong, <strong>Xinyuan Song</strong>, Daizong Liu, Xuanyu Liu, and Victor Sanchez.</p>
-  </article>
-  <article>
-    <div><span class="venue-tag">CPAL 2026</span></div>
-    <h3><a href="https://arxiv.org/abs/2511.02122">Matrix Sensing with Kernel Optimal Loss: Robustness and Optimization Landscape</a></h3>
-    <p><strong>Xinyuan Song</strong> and Ziye Ma.</p>
-  </article>
-  <article>
-    <div><span class="venue-tag">CPAL 2026</span></div>
-    <h3><a href="https://arxiv.org/abs/2504.16016">Efficient Temporal Consistency in Diffusion-Based Video Editing with Adaptor Modules: A Theoretical Framework</a></h3>
-    <p><strong>Xinyuan Song</strong>, Yangfan He, Sida Li, Jianhui Wang, Hongyang He, et al.</p>
+    <div><span class="venue-tag">ACM Multimedia 2025</span></div>
+    <h3><a href="https://arxiv.org/abs/2411.01819">Free-Mask: A Novel Paradigm of Integration Between the Segmentation Diffusion Model and Image Editing to Improve Segmentation Ability</a></h3>
+    <p>Bo Gao, Jianhui Wang, <strong>Xinyuan Song</strong>, Yangfan He, Fangxu Xing, and Tianyu Shi.</p>
   </article>
   <article>
     <div><span class="venue-tag">ICASSP 2026</span></div>
@@ -56,14 +41,19 @@ redirect_from:
     <p><strong>Xinyuan Song</strong>, Keyu Wang, Pengxiang Li, Lu Yin, and Shiwei Liu.</p>
   </article>
   <article>
+    <div><span class="venue-tag">Heliyon 2024</span></div>
+    <h3><a href="https://www.sciencedirect.com/science/article/pii/S2405844024076357">Predicting Stock Price of Construction Companies Using Weighted Ensemble Learning</a></h3>
+    <p><strong>Xinyuan Song</strong>.</p>
+  </article>
+  <article>
+    <div><span class="venue-tag">CPAL 2026</span></div>
+    <h3><a href="https://arxiv.org/abs/2504.16016">Efficient Temporal Consistency in Diffusion-Based Video Editing with Adaptor Modules: A Theoretical Framework</a></h3>
+    <p><strong>Xinyuan Song</strong>, Yangfan He, Sida Li, Jianhui Wang, Hongyang He, Xinhang Yuan, Ruoyu Wang, Jiaqi Chen, Keqin Li, Kuan Lu, Menghao Huo, Binxu Li, and Pei Liu.</p>
+  </article>
+  <article>
     <div><span class="venue-tag">CPAL 2026</span></div>
     <h3><a href="https://wrap.warwick.ac.uk/id/eprint/196246/">Token-Aware Representation Augmentation for Fine-Grained Semi-Supervised Learning</a></h3>
     <p>Hongyang He, Yan Zhong, <strong>Xinyuan Song</strong>, Daizong Liu, and Victor Sanchez.</p>
-  </article>
-  <article>
-    <div><span class="venue-tag">NeurIPS 2025</span></div>
-    <h3><a href="https://www.arxiv.org/pdf/2502.05795">The Curse of Depth in Large Language Models</a></h3>
-    <p>Wenfang Sun, <strong>Xinyuan Song</strong>, Pengxiang Li, Lu Yin, Yefeng Zheng, and Shiwei Liu.</p>
   </article>
   <article>
     <div><span class="venue-tag">ICML 2026</span></div>
@@ -76,14 +66,24 @@ redirect_from:
     <p>Hongyang He, <strong>Xinyuan Song</strong>, Yangfan He, Zeyu Zhang, Yanshu Li, Haochen You, Lifan Sun, and Wenqiao Zhang.</p>
   </article>
   <article>
-    <div><span class="venue-tag">ACM Multimedia 2025</span></div>
-    <h3><a href="https://arxiv.org/abs/2411.01819">Free-Mask: A Novel Paradigm of Integration Between the Segmentation Diffusion Model and Image Editing to Improve Segmentation Ability</a></h3>
-    <p>Bo Gao, Jianhui Wang, <strong>Xinyuan Song</strong>, Yangfan He, Fangxu Xing, and Tianyu Shi.</p>
+    <div><span class="venue-tag">ACL Findings 2026</span></div>
+    <h3><a href="https://aclanthology.org/2026.findings-acl.579/">P-QuASAR: A Unified Probabilistic Framework for Holistic Patent Quality Assessment and Refinement</a></h3>
+    <p><strong>Xinyuan Song</strong>, Ziyi Ni, Fred Yang, Bo Zhang, Yijin Wang, and Jane Zhang.</p>
   </article>
   <article>
-    <div><span class="venue-tag">Heliyon 2023</span></div>
-    <h3><a href="https://www.sciencedirect.com/science/article/pii/S2405844024076357">Predicting Stock Price of Construction Companies Using Weighted Ensemble Learning</a></h3>
-    <p><strong>Xinyuan Song</strong>.</p>
+    <div><span class="venue-tag">ECCV 2026</span></div>
+    <h3><a href="https://openreview.net/forum?id=koFVTRAo2r">Geometric Regularization for Long-Tailed Semi-Supervised Learning via Gaussian Feature Bridges</a> <a class="paper-pdf" href="https://openreview.net/pdf?id=koFVTRAo2r">PDF</a></h3>
+    <p>Hongyang He, <strong>Xinyuan Song</strong>, Yan Zhong, Daizong Liu, Yanbin Li, Yangfan He, and Wenqiao Zhang.</p>
+  </article>
+  <article>
+    <div><span class="venue-tag">ICML 2026</span></div>
+    <h3><a href="https://icml.cc/virtual/2026/poster/61592">Newton-Coupled Dual-Teacher Semi-Supervised Learning Framework</a></h3>
+    <p>Hongyang He, Yan Zhong, <strong>Xinyuan Song</strong>, Daizong Liu, Xuanyu Liu, and Victor Sanchez.</p>
+  </article>
+  <article>
+    <div><span class="venue-tag">CPAL 2026</span></div>
+    <h3><a href="https://arxiv.org/abs/2511.02122">Matrix Sensing with Kernel Optimal Loss: Robustness and Optimization Landscape</a></h3>
+    <p><strong>Xinyuan Song</strong> and Ziye Ma.</p>
   </article>
 </div>
 
