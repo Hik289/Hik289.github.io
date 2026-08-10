@@ -5,58 +5,58 @@ permalink: /publications/
 author_profile: true
 ---
 
-The list below separates papers where I am a first author or an explicitly marked equal contributor from other collaborative work. An asterisk denotes equal contribution. For citation counts and the latest records, see [Google Scholar](https://scholar.google.com/citations?hl=en&user=Dr3wCh4AAAAJ) or [DBLP](https://dblp.org/pid/134/9104-2.html).
+Selected publications are grouped by lead-author work, collaborative work, and manuscripts. For citation counts and the latest records, see [Google Scholar](https://scholar.google.com/citations?hl=en&user=Dr3wCh4AAAAJ) or [DBLP](https://dblp.org/pid/134/9104-2.html).
 
-## First- and Co-first-author Publications
+## Lead-Author Publications
 
 <div class="publication-list">
   <article class="publication-item">
-    <div class="publication-meta"><span>ACL Findings</span><time>2026</time><b>First author</b></div>
+    <div class="publication-meta"><span>ACL Findings</span><time>2026</time></div>
     <h3>P-QuASAR: A Unified Probabilistic Framework for Holistic Patent Quality Assessment and Refinement</h3>
     <p><strong>Xinyuan Song</strong>, Ziyi Ni, Fred Yang, Bo Zhang, Yiming Yan, Yijin Wang, and Jane Zhang.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>CPAL</span><time>2026</time><b>Oral</b></div>
+    <div class="publication-meta"><span>CPAL</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2511.02122">Matrix Sensing with Kernel Optimal Loss: Robustness and Optimization Landscape</a></h3>
     <p><strong>Xinyuan Song</strong> and Ziye Ma.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>CPAL</span><time>2026</time><b>First author</b></div>
+    <div class="publication-meta"><span>CPAL</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2504.16016">Efficient Temporal Consistency in Diffusion-Based Video Editing with Adaptor Modules: A Theoretical Framework</a></h3>
     <p><strong>Xinyuan Song</strong>, Yangfan He, Sida Li, Jianhui Wang, Hongyang He, et al.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>ICASSP</span><time>2026</time><b>First author</b></div>
+    <div class="publication-meta"><span>ICASSP</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2510.02091">Demystifying the Roles of LLM Layers in Retrieval, Knowledge, and Reasoning</a></h3>
     <p><strong>Xinyuan Song</strong>, Keyu Wang, Pengxiang Li, Lu Yin, and Shiwei Liu.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>CPAL</span><time>2026</time><b>Equal contribution</b></div>
+    <div class="publication-meta"><span>CPAL</span><time>2026</time></div>
     <h3><a href="https://wrap.warwick.ac.uk/id/eprint/196246/">Token-Aware Representation Augmentation for Fine-Grained Semi-Supervised Learning</a></h3>
-    <p>Hongyang He*, Yan Zhong*, <strong>Xinyuan Song*</strong>, Daizong Liu, and Victor Sanchez.</p>
+    <p>Hongyang He, Yan Zhong, <strong>Xinyuan Song</strong>, Daizong Liu, and Victor Sanchez.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>ICLR DeLTa Workshop</span><time>2026</time><b>Equal contribution</b></div>
+    <div class="publication-meta"><span>ICML</span><time>2026</time></div>
     <h3><a href="https://openreview.net/forum?id=trYJ2pwR0G">When Does Sparsity Mitigate the Curse of Depth in LLMs</a></h3>
-    <p>Dilxat Muhtar*, <strong>Xinyuan Song*</strong>, Sebastian Pokutta, Max Zimmer, Nico Pelleriti, Thomas Hofmann, and Shiwei Liu.</p>
+    <p>Dilxat Muhtar, <strong>Xinyuan Song</strong>, Sebastian Pokutta, Max Zimmer, Nico Pelleriti, Thomas Hofmann, and Shiwei Liu.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>NeurIPS</span><time>2025</time><b>Equal contribution</b></div>
+    <div class="publication-meta"><span>NeurIPS</span><time>2025</time></div>
     <h3><a href="https://www.arxiv.org/pdf/2502.05795">The Curse of Depth in Large Language Models</a></h3>
-    <p>Wenfang Sun*, <strong>Xinyuan Song*</strong>, Pengxiang Li, Lu Yin, Yefeng Zheng, and Shiwei Liu.</p>
+    <p>Wenfang Sun, <strong>Xinyuan Song</strong>, Pengxiang Li, Lu Yin, Yefeng Zheng, and Shiwei Liu.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>NeurIPS</span><time>2025</time><b>Equal contribution</b></div>
+    <div class="publication-meta"><span>NeurIPS</span><time>2025</time></div>
     <h3><a href="https://arxiv.org/abs/2509.21526">TRiCo: Triadic Game-Theoretic Co-Training for Robust Semi-Supervised Learning</a></h3>
-    <p>Hongyang He*, <strong>Xinyuan Song*</strong>, Yangfan He, Zeyu Zhang, Yanshu Li, Haochen You, Lifan Sun, and Wenqiao Zhang.</p>
+    <p>Hongyang He, <strong>Xinyuan Song</strong>, Yangfan He, Zeyu Zhang, Yanshu Li, Haochen You, Lifan Sun, and Wenqiao Zhang.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>ACM Multimedia</span><time>2025</time><b>Equal contribution</b></div>
+    <div class="publication-meta"><span>ACM Multimedia</span><time>2025</time></div>
     <h3><a href="https://arxiv.org/abs/2411.01819">Free-Mask: A Novel Paradigm of Integration Between the Segmentation Diffusion Model and Image Editing to Improve Segmentation Ability</a></h3>
-    <p>Bo Gao*, Jianhui Wang*, <strong>Xinyuan Song*</strong>, Yangfan He, Fangxu Xing, and Tianyu Shi.</p>
+    <p>Bo Gao, Jianhui Wang, <strong>Xinyuan Song</strong>, Yangfan He, Fangxu Xing, and Tianyu Shi.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>Heliyon</span><time>2023</time><b>First author</b></div>
+    <div class="publication-meta"><span>Heliyon</span><time>2023</time></div>
     <h3><a href="https://www.sciencedirect.com/science/article/pii/S2405844024076357">Predicting Stock Price of Construction Companies Using Weighted Ensemble Learning</a></h3>
     <p><strong>Xinyuan Song</strong>.</p>
   </article>
@@ -196,17 +196,17 @@ The list below separates papers where I am a first author or an explicitly marke
 
 <div class="publication-list">
   <article class="publication-item">
-    <div class="publication-meta"><span>TechRxiv</span><time>2026</time><b>First author</b></div>
+    <div class="publication-meta"><span>TechRxiv</span><time>2026</time></div>
     <h3><a href="https://www.techrxiv.org/users/1023031/articles/1386150-complex-networks-of-ai-agentic-systems-topology-memory-and-update-dynamics">Complex Networks of AI Agentic Systems: Topology, Memory, and Update Dynamics</a></h3>
     <p><strong>Xinyuan Song</strong>, Qingsong Wen, Shirui Pan, and Liang Zhao.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2026</time><b>First author</b></div>
+    <div class="publication-meta"><span>arXiv</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2601.22209">Learning to Recommend Multi-Agent Subgraphs from Calling Trees</a></h3>
     <p><strong>Xinyuan Song</strong> and Liang Zhao.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2026</time><b>First author</b></div>
+    <div class="publication-meta"><span>arXiv</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2510.03246">StructPrune: Structured Global Pruning Asymptotics with Square-Root GPU Memory</a></h3>
     <p><strong>Xinyuan Song</strong>, Guangji Bai, and Liang Zhao.</p>
   </article>
@@ -216,27 +216,27 @@ The list below separates papers where I am a first author or an explicitly marke
     <p>Siyi Wu, Xinliang Chia, Ziqian Bi, et al., <strong>Xinyuan Song</strong>.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2025</time><b>Equal contribution</b></div>
+    <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
     <h3><a href="https://arxiv.org/abs/2510.00183">Lattica: A Decentralized Cross-NAT Communication Framework for Scalable AI Inference and Training</a></h3>
-    <p>Ween Yang*, Jason Liu*, Suli Wang*, <strong>Xinyuan Song*</strong>, Lynn Ai, Eric Yang, and Tianyu Shi.</p>
+    <p>Ween Yang, Jason Liu, Suli Wang, <strong>Xinyuan Song</strong>, Lynn Ai, Eric Yang, and Tianyu Shi.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>Manuscript</span><time>2025</time><b>Equal contribution</b></div>
+    <div class="publication-meta"><span>Manuscript</span><time>2025</time></div>
     <h3><a href="https://gavenma.github.io/files/papers/Matrix_Lasso_NeurIPS_2025.pdf">Recovery Guarantees of the Matrix Lasso Problem: On Equivalence of Convex and Non-Convex Formulations</a></h3>
-    <p>Jinji Yang*, <strong>Xinyuan Song*</strong>, and Ziye Ma.</p>
+    <p>Jinji Yang, <strong>Xinyuan Song</strong>, and Ziye Ma.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2025</time><b>First author</b></div>
+    <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
     <h3><a href="https://arxiv.org/abs/2507.06520">GradientSys: A Multi-Agent LLM Scheduler with ReAct Orchestration</a></h3>
     <p><strong>Xinyuan Song</strong>, Zeyu Wang, Siyi Wu, Tianyu Shi, and Lynn Ai.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2025</time><b>Equal contribution</b></div>
+    <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
     <h3><a href="https://arxiv.org/abs/2507.09497">GoalfyMax: A Protocol-Driven Multi-Agent System for Intelligent Experience Entities</a></h3>
-    <p>Siyi Wu*, Zeyu Wang*, <strong>Xinyuan Song*</strong>, Zhengpeng Zhou, Lifan Sun, and Tianyu Shi.</p>
+    <p>Siyi Wu, Zeyu Wang, <strong>Xinyuan Song</strong>, Zhengpeng Zhou, Lifan Sun, and Tianyu Shi.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>Manuscript</span><time>2025</time><b>Corresponding author</b></div>
+    <div class="publication-meta"><span>Manuscript</span><time>2025</time></div>
     <h3><a href="https://arxiv.org/abs/2503.14523">SDF-TopoNet: A Two-Stage Framework for Tubular Structure Segmentation via SDF Pre-training and Topology-Aware Fine-Tuning</a></h3>
     <p>Siyi Wu, Leyi Zhao, Haotian Ma, and <strong>Xinyuan Song</strong>.</p>
   </article>
@@ -266,12 +266,12 @@ The list below separates papers where I am a first author or an explicitly marke
     <p>Siyi Wu, Junqiao Wang, Zhaoyang Guan, Leyi Zhao, <strong>Xinyuan Song</strong>, et al.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2023</time><b>First author</b></div>
+    <div class="publication-meta"><span>arXiv</span><time>2023</time></div>
     <h3><a href="https://arxiv.org/abs/2311.06667">Structured Risk Model</a></h3>
     <p><strong>Xinyuan Song</strong>.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2023</time><b>First author</b></div>
+    <div class="publication-meta"><span>arXiv</span><time>2023</time></div>
     <h3><a href="https://arxiv.org/abs/2311.06394">A Design of Convolutional Neural Network Model for the Diagnosis of COVID-19</a></h3>
     <p><strong>Xinyuan Song</strong>.</p>
   </article>

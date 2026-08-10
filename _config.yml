@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Xinyuan Song"
 title_separator          : "-"
 name                     : &name "Xinyuan Song"
-description              : &description "Research in agentic AI, efficient learning, and robust machine learning"
+description              : &description "Research in machine learning, learning theory, and optimization"
 url                      : "https://hik289.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Hik289/Hik289.github.io"
@@ -22,10 +22,10 @@ repository               : "Hik289/Hik289.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           :
+  avatar           : "xinyuan-song-avatar.png"
   name             : "Xinyuan Song"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. student working on agentic AI, efficient learning, and robust machine learning."
+  bio              : "Ph.D. student studying machine learning and its theoretical foundations."
   location         : "Atlanta, Georgia"
   employer         : "Emory University"
   uri              : # URL
@@ -85,7 +85,7 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   primary:
-    title: 'First- and Co-first-author Publications'
+    title: 'Lead-Author Publications'
   collaborative:
     title: 'Collaborative Publications'
   preprints:
@@ -172,6 +172,7 @@ include:
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - files/Xinyuan_Song_CV.pdf
   - .asset-cache
   - .bundle
   - .github

@@ -3,11 +3,10 @@ layout: archive
 title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
+published: false
 redirect_from:
   - /resume
 ---
-
-<p class="cv-download"><a class="btn btn--primary" href="/files/Xinyuan_Song_CV.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i> Download CV</a></p>
 
 ## Education
 
@@ -23,19 +22,6 @@ redirect_from:
 <div class="cv-list">
   <div><span>2020 - 2021</span><p><strong>Alibaba Group</strong><br>Machine Learning Engineer, full-time</p></div>
 </div>
-
-## Research Training
-
-<div class="cv-list">
-  <div><span>2024 - present</span><p><strong>Multi-agent systems</strong><br>Emory University, with Liang Zhao</p></div>
-  <div><span>2023 - 2024</span><p><strong>Large language models for medicine</strong><br>University of Texas at Arlington, with Yingying Zhu</p></div>
-  <div><span>2020 - 2023</span><p><strong>Bayesian statistics</strong><br>National University of Singapore, with Cheng Li</p></div>
-  <div><span>2020 - 2023</span><p><strong>Manifold learning</strong><br>National University of Singapore, with Zhigang Yao</p></div>
-</div>
-
-## Publications
-
-My publications span agentic AI, efficient language models, robust learning, optimization, and multimodal systems. First- and co-first-author papers are separated from collaborative work on the [publications page](/publications/).
 
 ## Awards
 
