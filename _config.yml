@@ -22,7 +22,7 @@ repository               : "Hik289/Hik289.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "xinyuan-song-avatar.png"
+  avatar           : "image.jpg"
   name             : "Xinyuan Song"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. student studying machine learning and its theoretical foundations."
