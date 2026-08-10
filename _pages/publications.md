@@ -16,6 +16,16 @@ Selected publications are grouped by lead-author work, collaborative work, and m
     <p><strong>Xinyuan Song</strong>, Ziyi Ni, Fred Yang, Bo Zhang, Yiming Yan, Yijin Wang, and Jane Zhang.</p>
   </article>
   <article class="publication-item">
+    <div class="publication-meta"><span>ECCV</span><time>2026</time></div>
+    <h3><a href="https://openreview.net/forum?id=koFVTRAo2r">Geometric Regularization for Long-Tailed Semi-Supervised Learning via Gaussian Feature Bridges</a></h3>
+    <p>Hongyang He, <strong>Xinyuan Song</strong>, et al.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>ICML</span><time>2026</time></div>
+    <h3><a href="https://icml.cc/virtual/2026/poster/61592">Newton-Coupled Dual-Teacher Semi-Supervised Learning Framework</a></h3>
+    <p>Hongyang He, Yan Zhong, <strong>Xinyuan Song</strong>, Daizong Liu, Xuanyu Liu, and Victor Sanchez.</p>
+  </article>
+  <article class="publication-item">
     <div class="publication-meta"><span>CPAL</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2511.02122">Matrix Sensing with Kernel Optimal Loss: Robustness and Optimization Landscape</a></h3>
     <p><strong>Xinyuan Song</strong> and Ziye Ma.</p>
