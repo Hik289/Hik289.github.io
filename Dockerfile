@@ -20,4 +20,4 @@ RUN bundle exec jekyll build --strict_front_matter --config _config.yml,_config_
 
 EXPOSE 4000
 
-CMD ["bundle", "exec", "jekyll", "serve", "-H", "0.0.0.0", "--config", "_config.yml,_config_docker.yml"]
+CMD ["ruby", "-run", "-e", "httpd", "_site", "-p", "4000", "-b", "0.0.0.0"]

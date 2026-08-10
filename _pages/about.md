@@ -54,12 +54,3 @@ redirect_from:
 </div>
 
 <p class="section-link"><a href="/publications/">View all publications &rarr;</a></p>
-
-## Background
-
-<div class="timeline-compact">
-  <p><span>2024 - present</span><strong><a href="https://catalog.college.emory.edu/academics/departments/computer-science.html">Emory University</a></strong> Ph.D. student in Computer Science, advised by <a href="https://cs.emory.edu/~lzhao41/">Liang Zhao</a></p>
-  <p><span>2023 - 2024</span><strong><a href="https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse">University of Texas at Arlington</a></strong> Ph.D. studies in Computer Science</p>
-  <p><span>2018 - 2023</span><strong><a href="https://www.stat.nus.edu.sg/">National University of Singapore</a></strong> Ph.D. in Statistics</p>
-  <p><span>2014 - 2018</span><strong><a href="https://english.pku.edu.cn/">Peking University</a></strong> B.S. in Physics, second major in Mathematics</p>
-</div>
