@@ -1,0 +1,6 @@
+.git
+.bundle
+_site
+vendor
+node_modules
+.DS_Store
