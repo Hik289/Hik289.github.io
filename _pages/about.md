@@ -15,27 +15,51 @@ redirect_from:
 
 ## Research
 
-<div class="research-grid">
-  <section>
-    <span class="research-index">01</span>
-    <h3>Machine learning theory</h3>
-    <p>Mathematical foundations of representation, generalization, and learning dynamics.</p>
-  </section>
-  <section>
-    <span class="research-index">02</span>
-    <h3>Efficient machine learning</h3>
-    <p>Depth, sparsity, pruning, and scalable optimization for modern learning systems.</p>
-  </section>
-  <section>
-    <span class="research-index">03</span>
-    <h3>Robust machine learning</h3>
-    <p>Robust optimization, semi-supervised learning, and matrix recovery under uncertainty.</p>
-  </section>
+<div class="research-statement">
+  <p>My research examines how model structure, supervision, and optimization geometry shape generalization. I combine theoretical analysis with empirical machine learning, particularly in settings involving limited labels, distribution imbalance, and constrained computation.</p>
+  <p><strong>Learning theory and optimization.</strong> I study depth and sparsity in large models, optimization landscapes, and recovery guarantees, including the curse of depth in language models and robust low-rank matrix sensing.</p>
+  <p><strong>Robust and data-efficient learning.</strong> I develop semi-supervised methods that combine multi-view supervision, curvature information, feature geometry, and token-aware representations for long-tailed, fine-grained, and limited-label learning.</p>
+  <p><strong>Representation and generative modeling.</strong> I investigate how retrieval, knowledge, and reasoning functions emerge within neural networks and design efficient mechanisms for temporal consistency, image editing, segmentation, and structured quality assessment.</p>
 </div>
 
 ## Selected Work
 
 <div class="selected-work">
+  <article>
+    <div><span class="venue-tag">ACL Findings 2026</span></div>
+    <h3>P-QuASAR: A Unified Probabilistic Framework for Holistic Patent Quality Assessment and Refinement</h3>
+    <p><strong>Xinyuan Song</strong>, Ziyi Ni, Fred Yang, Bo Zhang, Yiming Yan, Yijin Wang, and Jane Zhang.</p>
+  </article>
+  <article>
+    <div><span class="venue-tag">ECCV 2026</span></div>
+    <h3><a href="https://openreview.net/forum?id=koFVTRAo2r">Geometric Regularization for Long-Tailed Semi-Supervised Learning via Gaussian Feature Bridges</a></h3>
+    <p>Hongyang He, <strong>Xinyuan Song</strong>, et al.</p>
+  </article>
+  <article>
+    <div><span class="venue-tag">ICML 2026</span></div>
+    <h3><a href="https://icml.cc/virtual/2026/poster/61592">Newton-Coupled Dual-Teacher Semi-Supervised Learning Framework</a></h3>
+    <p>Hongyang He, Yan Zhong, <strong>Xinyuan Song</strong>, Daizong Liu, Xuanyu Liu, and Victor Sanchez.</p>
+  </article>
+  <article>
+    <div><span class="venue-tag">CPAL 2026</span></div>
+    <h3><a href="https://arxiv.org/abs/2511.02122">Matrix Sensing with Kernel Optimal Loss: Robustness and Optimization Landscape</a></h3>
+    <p><strong>Xinyuan Song</strong> and Ziye Ma.</p>
+  </article>
+  <article>
+    <div><span class="venue-tag">CPAL 2026</span></div>
+    <h3><a href="https://arxiv.org/abs/2504.16016">Efficient Temporal Consistency in Diffusion-Based Video Editing with Adaptor Modules: A Theoretical Framework</a></h3>
+    <p><strong>Xinyuan Song</strong>, Yangfan He, Sida Li, Jianhui Wang, Hongyang He, et al.</p>
+  </article>
+  <article>
+    <div><span class="venue-tag">ICASSP 2026</span></div>
+    <h3><a href="https://arxiv.org/abs/2510.02091">Demystifying the Roles of LLM Layers in Retrieval, Knowledge, and Reasoning</a></h3>
+    <p><strong>Xinyuan Song</strong>, Keyu Wang, Pengxiang Li, Lu Yin, and Shiwei Liu.</p>
+  </article>
+  <article>
+    <div><span class="venue-tag">CPAL 2026</span></div>
+    <h3><a href="https://wrap.warwick.ac.uk/id/eprint/196246/">Token-Aware Representation Augmentation for Fine-Grained Semi-Supervised Learning</a></h3>
+    <p>Hongyang He, Yan Zhong, <strong>Xinyuan Song</strong>, Daizong Liu, and Victor Sanchez.</p>
+  </article>
   <article>
     <div><span class="venue-tag">NeurIPS 2025</span></div>
     <h3><a href="https://www.arxiv.org/pdf/2502.05795">The Curse of Depth in Large Language Models</a></h3>
@@ -47,9 +71,19 @@ redirect_from:
     <p>Dilxat Muhtar, <strong>Xinyuan Song</strong>, Sebastian Pokutta, Max Zimmer, Nico Pelleriti, Thomas Hofmann, and Shiwei Liu.</p>
   </article>
   <article>
-    <div><span class="venue-tag">CPAL 2026</span></div>
-    <h3><a href="https://arxiv.org/abs/2511.02122">Matrix Sensing with Kernel Optimal Loss: Robustness and Optimization Landscape</a></h3>
-    <p><strong>Xinyuan Song</strong> and Ziye Ma.</p>
+    <div><span class="venue-tag">NeurIPS 2025</span></div>
+    <h3><a href="https://arxiv.org/abs/2509.21526">TRiCo: Triadic Game-Theoretic Co-Training for Robust Semi-Supervised Learning</a></h3>
+    <p>Hongyang He, <strong>Xinyuan Song</strong>, Yangfan He, Zeyu Zhang, Yanshu Li, Haochen You, Lifan Sun, and Wenqiao Zhang.</p>
+  </article>
+  <article>
+    <div><span class="venue-tag">ACM Multimedia 2025</span></div>
+    <h3><a href="https://arxiv.org/abs/2411.01819">Free-Mask: A Novel Paradigm of Integration Between the Segmentation Diffusion Model and Image Editing to Improve Segmentation Ability</a></h3>
+    <p>Bo Gao, Jianhui Wang, <strong>Xinyuan Song</strong>, Yangfan He, Fangxu Xing, and Tianyu Shi.</p>
+  </article>
+  <article>
+    <div><span class="venue-tag">Heliyon 2023</span></div>
+    <h3><a href="https://www.sciencedirect.com/science/article/pii/S2405844024076357">Predicting Stock Price of Construction Companies Using Weighted Ensemble Learning</a></h3>
+    <p><strong>Xinyuan Song</strong>.</p>
   </article>
 </div>
 

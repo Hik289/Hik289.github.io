@@ -1,13 +1,9 @@
 ---
 layout: archive
-title: "Publications"
+title: "Selected Publications"
 permalink: /publications/
 author_profile: true
 ---
-
-Selected publications are grouped by lead-author work, collaborative work, and manuscripts. For citation counts and the latest records, see [Google Scholar](https://scholar.google.com/citations?hl=en&user=Dr3wCh4AAAAJ) or [DBLP](https://dblp.org/pid/134/9104-2.html).
-
-## Lead-Author Publications
 
 <div class="publication-list">
   <article class="publication-item">
