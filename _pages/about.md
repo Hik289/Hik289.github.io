@@ -28,12 +28,12 @@ redirect_from:
   <article>
     <div><span class="venue-tag">NeurIPS 2025</span></div>
     <h3><a href="https://www.arxiv.org/pdf/2502.05795">The Curse of Depth in Large Language Models</a></h3>
-    <p>Wenfang Sun, <strong>Xinyuan Song</strong>, Pengxiang Li, Lu Yin, Yefeng Zheng, and Shiwei Liu.</p>
+    <p>Wenfang Sun<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Pengxiang Li, Lu Yin, Yefeng Zheng, and Shiwei Liu.</p>
   </article>
   <article>
     <div><span class="venue-tag">ACM Multimedia 2025</span></div>
     <h3><a href="https://arxiv.org/abs/2411.01819">Free-Mask: A Novel Paradigm of Integration Between the Segmentation Diffusion Model and Image Editing to Improve Segmentation Ability</a></h3>
-    <p>Bo Gao, Jianhui Wang, <strong>Xinyuan Song</strong>, Yangfan He, Fangxu Xing, and Tianyu Shi.</p>
+    <p>Bo Gao<sup>*</sup>, Jianhui Wang<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Yangfan He, Fangxu Xing, and Tianyu Shi.</p>
   </article>
   <article>
     <div><span class="venue-tag">ICASSP 2026</span></div>
@@ -53,17 +53,17 @@ redirect_from:
   <article>
     <div><span class="venue-tag">CPAL 2026</span></div>
     <h3><a href="https://wrap.warwick.ac.uk/id/eprint/196246/">Token-Aware Representation Augmentation for Fine-Grained Semi-Supervised Learning</a></h3>
-    <p>Hongyang He, Yan Zhong, <strong>Xinyuan Song</strong>, Daizong Liu, and Victor Sanchez.</p>
+    <p>Hongyang He<sup>*</sup>, Yan Zhong<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Daizong Liu, and Victor Sanchez.</p>
   </article>
   <article>
     <div><span class="venue-tag">ICML 2026</span></div>
     <h3><a href="https://openreview.net/forum?id=trYJ2pwR0G">When Does Sparsity Mitigate the Curse of Depth in LLMs</a></h3>
-    <p>Dilxat Muhtar, <strong>Xinyuan Song</strong>, Sebastian Pokutta, Max Zimmer, Nico Pelleriti, Thomas Hofmann, and Shiwei Liu.</p>
+    <p>Dilxat Muhtar<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Sebastian Pokutta, Max Zimmer, Nico Pelleriti, Thomas Hofmann, and Shiwei Liu.</p>
   </article>
   <article>
     <div><span class="venue-tag">NeurIPS 2025</span></div>
     <h3><a href="https://arxiv.org/abs/2509.21526">TRiCo: Triadic Game-Theoretic Co-Training for Robust Semi-Supervised Learning</a></h3>
-    <p>Hongyang He, <strong>Xinyuan Song</strong>, Yangfan He, Zeyu Zhang, Yanshu Li, Haochen You, Lifan Sun, and Wenqiao Zhang.</p>
+    <p>Hongyang He<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Yangfan He, Zeyu Zhang, Yanshu Li<sup>*</sup>, Haochen You, Lifan Sun, and Wenqiao Zhang.</p>
   </article>
   <article>
     <div><span class="venue-tag">ACL Findings 2026</span></div>

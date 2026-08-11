@@ -14,7 +14,7 @@ author_profile: true
   <article class="publication-item">
     <div class="publication-meta"><span>ECCV</span><time>2026</time></div>
     <h3><a href="https://openreview.net/forum?id=koFVTRAo2r">Geometric Regularization for Long-Tailed Semi-Supervised Learning via Gaussian Feature Bridges</a></h3>
-    <p>Hongyang He, <strong>Xinyuan Song</strong>, et al.</p>
+    <p>Hongyang He, <strong>Xinyuan Song</strong>, Yan Zhong, Daizong Liu, Yanbin Li, Yangfan He, and Wenqiao Zhang.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>ICML</span><time>2026</time></div>
@@ -29,7 +29,7 @@ author_profile: true
   <article class="publication-item">
     <div class="publication-meta"><span>CPAL</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2504.16016">Efficient Temporal Consistency in Diffusion-Based Video Editing with Adaptor Modules: A Theoretical Framework</a></h3>
-    <p><strong>Xinyuan Song</strong>, Yangfan He, Sida Li, Jianhui Wang, Hongyang He, et al.</p>
+    <p><strong>Xinyuan Song</strong>, Yangfan He, Sida Li, Jianhui Wang, Hongyang He, Xinhang Yuan, Ruoyu Wang, Jiaqi Chen, Keqin Li, Kuan Lu, Menghao Huo, Binxu Li, and Pei Liu.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>ICASSP</span><time>2026</time></div>
