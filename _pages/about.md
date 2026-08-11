@@ -31,19 +31,9 @@ redirect_from:
     <p>Wenfang Sun<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Pengxiang Li, Lu Yin, Yefeng Zheng, and Shiwei Liu.</p>
   </article>
   <article>
-    <div><span class="venue-tag">ACM Multimedia 2025</span></div>
-    <h3><a href="https://arxiv.org/abs/2411.01819">Free-Mask: A Novel Paradigm of Integration Between the Segmentation Diffusion Model and Image Editing to Improve Segmentation Ability</a></h3>
-    <p>Bo Gao<sup>*</sup>, Jianhui Wang<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Yangfan He, Fangxu Xing, and Tianyu Shi.</p>
-  </article>
-  <article>
     <div><span class="venue-tag">ICASSP 2026</span></div>
     <h3><a href="https://arxiv.org/abs/2510.02091">Demystifying the Roles of LLM Layers in Retrieval, Knowledge, and Reasoning</a></h3>
     <p><strong>Xinyuan Song</strong>, Keyu Wang, Pengxiang Li, Lu Yin, and Shiwei Liu.</p>
-  </article>
-  <article>
-    <div><span class="venue-tag">Heliyon 2024</span></div>
-    <h3><a href="https://www.sciencedirect.com/science/article/pii/S2405844024076357">Predicting Stock Price of Construction Companies Using Weighted Ensemble Learning</a></h3>
-    <p><strong>Xinyuan Song</strong>.</p>
   </article>
   <article>
     <div><span class="venue-tag">CPAL 2026</span></div>
@@ -72,13 +62,13 @@ redirect_from:
   </article>
   <article>
     <div><span class="venue-tag">ECCV 2026</span></div>
-    <h3><a href="https://openreview.net/forum?id=koFVTRAo2r">Geometric Regularization for Long-Tailed Semi-Supervised Learning via Gaussian Feature Bridges</a> <a class="paper-pdf" href="https://openreview.net/pdf?id=koFVTRAo2r">PDF</a></h3>
-    <p>Hongyang He, <strong>Xinyuan Song</strong>, Yan Zhong, Daizong Liu, Yanbin Li, Yangfan He, and Wenqiao Zhang.</p>
+    <h3><a href="https://openreview.net/forum?id=koFVTRAo2r">Geometric Regularization for Long-Tailed Semi-Supervised Learning via Gaussian Feature Bridges</a></h3>
+    <p>Hongyang He<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Yan Zhong, Daizong Liu, Yanbin Li, Yangfan He, and Wenqiao Zhang.</p>
   </article>
   <article>
     <div><span class="venue-tag">ICML 2026</span></div>
     <h3><a href="https://icml.cc/virtual/2026/poster/61592">Newton-Coupled Dual-Teacher Semi-Supervised Learning Framework</a></h3>
-    <p>Hongyang He, Yan Zhong, <strong>Xinyuan Song</strong>, Daizong Liu, Xuanyu Liu, and Victor Sanchez.</p>
+    <p>Hongyang He<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Yan Zhong, Daizong Liu, Xuanyu Liu, and Victor Sanchez.</p>
   </article>
   <article>
     <div><span class="venue-tag">CPAL 2026</span></div>
