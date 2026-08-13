@@ -636,6 +636,96 @@ button:focus-visible {
   }
 }
 
+/* Final typographic details */
+.page--home .page__title {
+  display: none;
+}
+
+.page--home .home-intro {
+  margin-top: 0.2rem;
+}
+
+.page__content,
+.archive {
+  text-wrap: pretty;
+}
+
+.selected-work article,
+.publication-item,
+.timeline-compact p,
+.cv-list > div {
+  transition: background-color 140ms ease;
+}
+
+.selected-work article:hover,
+.publication-item:hover,
+.timeline-compact p:hover,
+.cv-list > div:hover {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--xs-soft) 62%, transparent),
+    transparent 82%
+  );
+}
+
+.selected-work h3,
+.publication-item h3 {
+  max-width: 46rem;
+}
+
+.selected-work p,
+.publication-item p {
+  max-width: 52rem;
+}
+
+.contribution-note {
+  margin: 0.8rem 0 0 !important;
+  color: var(--global-text-color-light);
+  font-size: 0.7rem !important;
+  font-style: italic;
+  letter-spacing: 0.01em;
+}
+
+.archive > .contribution-note {
+  margin: -0.75rem 0 1.15rem !important;
+}
+
+.contribution-note sup {
+  color: var(--xs-warm);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.research-statement p strong:first-child {
+  color: var(--xs-accent-deep);
+}
+
+.page__footer-copyright {
+  letter-spacing: 0.01em;
+}
+
+@include breakpoint($large) {
+  #main {
+    grid-template-columns: minmax(165px, 185px) minmax(0, 850px);
+    justify-content: center;
+    gap: clamp(3rem, 5vw, 4.75rem);
+  }
+
+  .page--home .home-intro {
+    margin-top: 0.35rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page--home .home-intro {
+    margin-top: 0;
+  }
+
+  .archive > .contribution-note {
+    margin-top: -0.35rem !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .selected-work article,
   .publication-item,

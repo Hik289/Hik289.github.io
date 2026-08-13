@@ -5,6 +5,8 @@ permalink: /publications/
 author_profile: true
 ---
 
+<p class="contribution-note"><sup>*</sup> Equal contribution.</p>
+
 <div class="publication-list">
   <article class="publication-item">
     <div class="publication-meta"><span>ACL Findings</span><time>2026</time></div>
