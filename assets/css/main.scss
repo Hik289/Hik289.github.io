@@ -1236,3 +1236,17 @@ body {
     font-size: 0.94rem;
   }
 }
+
+/* Stable final layout — keep this last so the legacy grid cannot override it. */
+@include breakpoint($large) {
+  #main {
+    grid-template-columns: minmax(165px, 185px) minmax(0, 850px);
+    justify-content: center;
+    gap: clamp(3rem, 5vw, 4.75rem);
+  }
+
+  #main > .page,
+  #main > .archive {
+    max-width: 850px;
+  }
+}
