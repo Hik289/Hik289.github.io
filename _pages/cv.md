@@ -24,7 +24,7 @@ I am a Ph.D. student in Computer Science at [Emory University](https://catalog.c
 
 <div class="cv-list">
   <div><span>Summer 2026</span><p><strong><a href="https://cielara.ai/">Cielara AI</a></strong><br>Research on memory systems for AI agents. <a href="https://github.com/xfab-xinyuansong/MemOnDemand">MemOnDemand</a> develops query-adaptive hierarchical memory with source-linked retrieval under constrained context budgets; <a href="https://github.com/xfab-xinyuansong/UltraMem">UltraMem</a> studies evidence-grounded retrieval and attribution over ultra-large memory contexts. Papers to appear.</p></div>
-  <div><span>Summer 2025</span><p><strong>Gradient Network</strong><br>Research on multi-agent systems. Representative work: <a href="https://arxiv.org/abs/2507.06520">GradientSys: A Multi-Agent LLM Scheduler with ReAct Orchestration</a>.</p></div>
+  <div><span>Summer 2025</span><p><strong><a href="https://gradient.network">Gradient Network</a></strong><br>Research on multi-agent systems. Representative work: <a href="https://arxiv.org/abs/2507.06520">GradientSys: A Multi-Agent LLM Scheduler with ReAct Orchestration</a>.</p></div>
   <div><span>2020 - 2021</span><p><strong>Alibaba Group</strong><br>Machine Learning Engineer, full-time</p></div>
 </div>
 

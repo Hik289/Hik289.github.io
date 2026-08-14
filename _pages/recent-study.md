@@ -6,11 +6,23 @@ author_profile: true
 ---
 
 <div class="recent-study-intro">
-  <p>Research projects connected to arXiv papers across my public GitHub repositories. Paper titles and author lists are synchronized with arXiv; code links point to the corresponding project repositories.</p>
-  <p class="recent-study-source">17 public repositories · updated August 2026</p>
+  <p>Current research projects and manuscripts. Public-paper metadata follows arXiv; manuscripts under anonymous review remain anonymized. Code links point only to confirmed repositories.</p>
+  <p class="recent-study-source">12 public repositories · 2 private manuscripts · updated August 2026</p>
 </div>
 
 <div class="publication-list recent-study-list">
+  <article class="publication-item">
+    <div class="publication-meta"><span>Anonymous manuscript</span><time>2026</time></div>
+    <h3><a href="/files/recent-study/fedworld-scope-aware-federation.pdf">FedWorld: Scope-Aware Federation of Agent World Models</a></h3>
+    <p>Anonymous submission.</p>
+    <div class="publication-actions"><a class="publication-action" href="/files/recent-study/fedworld-scope-aware-federation.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><span class="publication-action is-disabled" aria-disabled="true" title="No confirmed public repository yet"><i class="fab fa-github" aria-hidden="true"></i>Code</span></div>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>Anonymous manuscript</span><time>2026</time></div>
+    <h3><a href="/files/recent-study/invariant-safety-state-abstraction.pdf">When Do Safe Agents Misgeneralize Across Surfaces? Invariant Safety State Abstraction</a></h3>
+    <p>Anonymous submission.</p>
+    <div class="publication-actions"><a class="publication-action" href="/files/recent-study/invariant-safety-state-abstraction.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><span class="publication-action is-disabled" aria-disabled="true" title="No confirmed public repository yet"><i class="fab fa-github" aria-hidden="true"></i>Code</span></div>
+  </article>
   <article class="publication-item">
     <div class="publication-meta"><span>arXiv 2607.05458</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2607.05458">Learning to Control LLM Agent Harnesses with Offline Reinforcement Learning</a></h3>
@@ -80,37 +92,7 @@ author_profile: true
   <article class="publication-item">
     <div class="publication-meta"><span>arXiv 2605.13716</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2605.13716">SkillOps: Managing LLM Agent Skill Libraries as Self-Maintaining Software Ecosystems</a></h3>
-    <p>Hongji Pu, <strong>Xinyuan Song</strong>, and Liang Zhao.</p>
+    <p><strong>Xinyuan Song</strong>, Hongji Pu, and Liang Zhao.</p>
     <div class="publication-actions"><a class="publication-action" href="https://arxiv.org/pdf/2605.13716"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://github.com/Hik289/SkillOps"><i class="fab fa-github" aria-hidden="true"></i>Code</a><a class="publication-action" href="https://arxiv.org/bibtex/2605.13716"><i class="fas fa-quote-right" aria-hidden="true"></i>BibTeX</a></div>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>arXiv 2601.22209</span><time>2026</time></div>
-    <h3><a href="https://arxiv.org/abs/2601.22209">Learning to Recommend Multi-Agent Subgraphs from Calling Trees</a></h3>
-    <p><strong>Xinyuan Song</strong> and Liang Zhao.</p>
-    <div class="publication-actions"><a class="publication-action" href="https://arxiv.org/pdf/2601.22209"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://github.com/Hik289/Agent_REC"><i class="fab fa-github" aria-hidden="true"></i>Code</a><a class="publication-action" href="https://arxiv.org/bibtex/2601.22209"><i class="fas fa-quote-right" aria-hidden="true"></i>BibTeX</a></div>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>arXiv 2510.02091</span><time>2025</time></div>
-    <h3><a href="https://arxiv.org/abs/2510.02091">Demystifying the Roles of LLM Layers in Retrieval, Knowledge, and Reasoning</a></h3>
-    <p><strong>Xinyuan Song</strong>, Keyu Wang, PengXiang Li, Lu Yin, and Shiwei Liu.</p>
-    <div class="publication-actions"><a class="publication-action" href="https://arxiv.org/pdf/2510.02091"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://github.com/Hik289/llm-layer-importance"><i class="fab fa-github" aria-hidden="true"></i>Code</a><a class="publication-action" href="https://arxiv.org/bibtex/2510.02091"><i class="fas fa-quote-right" aria-hidden="true"></i>BibTeX</a></div>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>arXiv 2510.03246</span><time>2025</time></div>
-    <h3><a href="https://arxiv.org/abs/2510.03246">StructPrune: Structured Global Pruning Asymptotics with Square-Root GPU Memory</a></h3>
-    <p><strong>Xinyuan Song</strong>, Guangji Bai, and Liang Zhao.</p>
-    <div class="publication-actions"><a class="publication-action" href="https://arxiv.org/pdf/2510.03246"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://github.com/Hik289/structured_sparseGPT"><i class="fab fa-github" aria-hidden="true"></i>Code</a><a class="publication-action" href="https://arxiv.org/bibtex/2510.03246"><i class="fas fa-quote-right" aria-hidden="true"></i>BibTeX</a></div>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>arXiv 2502.05795</span><time>2025</time></div>
-    <h3><a href="https://arxiv.org/abs/2502.05795">The Curse of Depth in Large Language Models</a></h3>
-    <p>Wenfang Sun, <strong>Xinyuan Song</strong>, Pengxiang Li, Lu Yin, Yefeng Zheng, and Shiwei Liu.</p>
-    <div class="publication-actions"><a class="publication-action" href="https://arxiv.org/pdf/2502.05795"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://github.com/Hik289/layernorm-scaling"><i class="fab fa-github" aria-hidden="true"></i>Code</a><a class="publication-action" href="https://arxiv.org/bibtex/2502.05795"><i class="fas fa-quote-right" aria-hidden="true"></i>BibTeX</a></div>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>arXiv 2311.06667</span><time>2023</time></div>
-    <h3><a href="https://arxiv.org/abs/2311.06667">Structured Risk Model</a></h3>
-    <p><strong>Xinyuan Song</strong>.</p>
-    <div class="publication-actions"><a class="publication-action" href="https://arxiv.org/pdf/2311.06667"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://github.com/Hik289/structural-risk-adjustments"><i class="fab fa-github" aria-hidden="true"></i>Code</a><a class="publication-action" href="https://arxiv.org/bibtex/2311.06667"><i class="fas fa-quote-right" aria-hidden="true"></i>BibTeX</a></div>
   </article>
 </div>
