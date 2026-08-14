@@ -813,54 +813,6 @@ body {
   letter-spacing: -0.025em;
 }
 
-/* Keep the three primary page links visible instead of moving the last one
-   into the theme's overflow menu at borderline viewport widths. */
-.greedy-nav {
-  min-width: 0;
-}
-
-.greedy-nav .visible-links {
-  width: 100%;
-}
-
-@media screen and (max-width: 560px) {
-  .masthead__inner-wrap {
-    padding-right: 0.55rem;
-    padding-left: 0.55rem;
-  }
-
-  .greedy-nav .visible-links {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto auto auto;
-    align-items: center;
-  }
-
-  .greedy-nav .visible-links li {
-    display: block;
-    min-width: 0;
-  }
-
-  .masthead__menu-item--lg {
-    overflow: hidden;
-    padding-right: 0.2rem;
-  }
-
-  .greedy-nav a {
-    margin: 0 0.22rem;
-    padding: 0.7rem 0;
-    font-size: 0.64rem;
-    letter-spacing: 0;
-  }
-
-  .greedy-nav .visible-links li:first-child a {
-    overflow: hidden;
-    margin-left: 0;
-    font-size: 0.86rem;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-}
-
 .masthead__menu-item.selected a,
 .masthead__menu-item.selected a:hover {
   color: var(--xs-accent);

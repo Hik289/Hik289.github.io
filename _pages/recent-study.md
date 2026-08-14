@@ -15,13 +15,13 @@ author_profile: true
     <div class="publication-meta"><span>Anonymous manuscript</span><time>2026</time></div>
     <h3><a href="/files/recent-study/fedworld-scope-aware-federation.pdf">FedWorld: Scope-Aware Federation of Agent World Models</a></h3>
     <p>Anonymous submission.</p>
-    <div class="publication-actions"><a class="publication-action" href="/files/recent-study/fedworld-scope-aware-federation.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><span class="publication-action is-disabled" aria-disabled="true" title="No confirmed public repository yet"><i class="fab fa-github" aria-hidden="true"></i>Code</span></div>
+    <div class="publication-actions"><a class="publication-action" href="/files/recent-study/fedworld-scope-aware-federation.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://github.com/Hik289/federated-world-model"><i class="fab fa-github" aria-hidden="true"></i>Code</a></div>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>Anonymous manuscript</span><time>2026</time></div>
     <h3><a href="/files/recent-study/invariant-safety-state-abstraction.pdf">When Do Safe Agents Misgeneralize Across Surfaces? Invariant Safety State Abstraction</a></h3>
     <p>Anonymous submission.</p>
-    <div class="publication-actions"><a class="publication-action" href="/files/recent-study/invariant-safety-state-abstraction.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><span class="publication-action is-disabled" aria-disabled="true" title="No confirmed public repository yet"><i class="fab fa-github" aria-hidden="true"></i>Code</span></div>
+    <div class="publication-actions"><a class="publication-action" href="/files/recent-study/invariant-safety-state-abstraction.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://github.com/Hik289/safe_multimodalagents"><i class="fab fa-github" aria-hidden="true"></i>Code</a></div>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>arXiv 2607.05458</span><time>2026</time></div>
