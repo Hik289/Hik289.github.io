@@ -10,7 +10,7 @@ redirect_from:
 <div class="home-intro">
   <p class="home-kicker">Machine Learning &middot; Learning Theory &middot; Optimization</p>
   <p class="home-lead">I am a Ph.D. student in Computer Science at <a href="https://catalog.college.emory.edu/academics/departments/computer-science.html">Emory University</a>, focusing on machine learning and advised by <a href="https://cs.emory.edu/~lzhao41/">Liang Zhao</a>. My research explores the theoretical foundations of machine learning, with particular interests in efficient learning, optimization, and reliable model behavior.</p>
-  <p>Before Emory, I pursued Ph.D. studies in Computer Science at the <a href="https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse">University of Texas at Arlington</a> and completed a Ph.D. in Statistics at the <a href="https://www.stat.nus.edu.sg/">National University of Singapore</a>. I received a B.S. in Physics, with a second major in Mathematics, from <a href="https://english.pku.edu.cn/">Peking University</a>.</p>
+  <p>Before Emory, I pursued Ph.D. studies in Computer Science at the <a href="https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse">University of Texas at Arlington</a>, advised by <a href="https://zyy123jy.github.io/My-Web-Sites/">Yingying Zhu</a>, and completed a Ph.D. in Statistics at the <a href="https://www.stat.nus.edu.sg/">National University of Singapore</a>, advised by <a href="https://www.stat.nus.edu.sg/faculty_member/li-cheng/">Cheng Li</a>. I received a B.S. in Physics, with a second major in Mathematics, from <a href="https://english.pku.edu.cn/">Peking University</a>.</p>
 </div>
 
 ## Research
