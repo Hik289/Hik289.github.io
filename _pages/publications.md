@@ -70,6 +70,131 @@ author_profile: true
   </article>
 </div>
 
+<script>
+(() => {
+  const codeLinks = {
+    "Demystifying the Roles of LLM Layers in Retrieval, Knowledge, and Reasoning": "https://github.com/Hik289/llm-layer-importance",
+    "When Does Sparsity Mitigate the Curse of Depth in LLMs": "https://github.com/pUmpKin-Co/SparsityAndCoD",
+    "The Curse of Depth in Large Language Models": "https://github.com/Hik289/layernorm-scaling",
+    "Self-evolving Agents with Reflective and Memory-Augmented Abilities": "https://github.com/codepassionor/sage",
+    "GPAS: Accelerating Convergence of LLM Pretraining via Gradient-Preserving Activation Scaling": "https://github.com/dandingsky/GPAS",
+    "SOLAR: Serendipity Optimized Language Model Aligned for Recommendation": "https://github.com/SOLAR2025ARR/SOLAR",
+    "ContrastiveGaussian: High-Fidelity 3D Generation with Contrastive Learning and Gaussian Splatting": "https://github.com/YaNLlan-ljb/ContrastiveGaussian",
+    "Learning to Recommend Multi-Agent Subgraphs from Calling Trees": "https://github.com/Hik289/Agent_REC",
+    "StructPrune: Structured Global Pruning Asymptotics with Square-Root GPU Memory": "https://github.com/Hik289/structured_sparseGPT",
+    "AutoSurvey2: Empowering Researchers with Next Level Automated Literature Surveys": "https://github.com/annihi1ation/auto_research",
+    "Structured Risk Model": "https://github.com/Hik289/structural-risk-adjustments"
+  };
+
+  const pdfOverrides = {
+    "P-QuASAR: A Unified Probabilistic Framework for Holistic Patent Quality Assessment and Refinement": "https://aclanthology.org/2026.findings-acl.579.pdf",
+    "Newton-Coupled Dual-Teacher Semi-Supervised Learning Framework": "https://openreview.net/attachment?id=oaYX7VEBcq&name=originally_submitted_PDF",
+    "Token-Aware Representation Augmentation for Fine-Grained Semi-Supervised Learning": "https://raw.githubusercontent.com/mlresearch/v328/main/assets/he26b/he26b.pdf",
+    "EffectCodec: Emotion-Preserving Neural Speech Codec for Expressive Speech Modeling": "https://arxiv.org/pdf/2605.11098",
+    "Beyond Data Augmentation: Energy-Based Kuramoto Neurons for Semi-Supervised Learning": "https://wrap.warwick.ac.uk/id/eprint/199640/",
+    "Who Can You Trust on the Road? Adversarial Intentions in Cooperative MARL": "https://journals.sagepub.com/doi/pdf/10.1177/03611981261438798?download=true"
+  };
+
+  const icon = (name) => `<i class="${name}" aria-hidden="true"></i>`;
+
+  const paperPdf = (title, url) => {
+    if (pdfOverrides[title]) return pdfOverrides[title];
+    if (!url) return "";
+
+    const arxiv = url.match(/arxiv\.org\/(?:abs|pdf)\/(\d{4}\.\d{4,5})/i);
+    if (arxiv) return `https://arxiv.org/pdf/${arxiv[1]}`;
+
+    const openreview = url.match(/openreview\.net\/forum\?id=([^&]+)/i);
+    if (openreview) return `https://openreview.net/pdf?id=${openreview[1]}`;
+
+    return url;
+  };
+
+  const makeLink = (label, iconClass, href, extraClass = "") => {
+    if (!href) {
+      return `<span class="publication-action is-disabled ${extraClass}" aria-disabled="true" title="Not publicly available yet">${icon(iconClass)}${label}</span>`;
+    }
+    return `<a class="publication-action ${extraClass}" href="${href}" target="_blank" rel="noopener noreferrer">${icon(iconClass)}${label}</a>`;
+  };
+
+  const cleanAuthors = (item) => {
+    const authorLine = item.querySelector("p");
+    if (!authorLine) return "";
+    const clone = authorLine.cloneNode(true);
+    clone.querySelectorAll("sup").forEach((node) => node.remove());
+    return clone.textContent.trim().replace(/\.$/, "");
+  };
+
+  const bibAuthors = (authors) => authors
+    .replace(/\bet al\.?/gi, "others")
+    .replace(/,\s+and\s+/i, " and ")
+    .replace(/\s+and\s+/gi, " and ")
+    .split(/,\s*/)
+    .filter(Boolean)
+    .join(" and ");
+
+  const initializePublicationActions = () => {
+    document.querySelectorAll(".publication-list .publication-item").forEach((item) => {
+    const heading = item.querySelector("h3");
+    if (!heading || item.querySelector(".publication-actions")) return;
+
+    const title = heading.textContent.trim();
+    const titleLink = heading.querySelector("a");
+    const paperUrl = titleLink ? titleLink.href : "";
+    const venue = item.querySelector(".publication-meta span")?.textContent.trim() || "Preprint";
+    const year = item.querySelector(".publication-meta time")?.textContent.trim() || "";
+    const pdfUrl = paperPdf(title, paperUrl);
+    const codeUrl = codeLinks[title] || "";
+
+    const actions = document.createElement("div");
+    actions.className = "publication-actions";
+    actions.innerHTML = [
+      makeLink("PDF", "fas fa-file-pdf", pdfUrl),
+      makeLink("Code", "fab fa-github", codeUrl),
+      `<button class="publication-action bibtex-action" type="button">${icon("fas fa-quote-right")}BibTeX</button>`
+    ].join("");
+
+    actions.querySelector(".bibtex-action").addEventListener("click", (event) => {
+      const firstAuthor = cleanAuthors(item).split(/,|\sand\s/)[0].trim().split(/\s+/).pop() || "paper";
+      const keyword = title.match(/[A-Za-z]{4,}/)?.[0] || "paper";
+      const key = `${firstAuthor}${year}${keyword}`.replace(/[^a-z0-9]/gi, "").toLowerCase();
+      const arxiv = paperUrl.match(/arxiv\.org\/(?:abs|pdf)\/(\d{4}\.\d{4,5})/i);
+      const fields = [
+        `  title = {${title}},`,
+        `  author = {${bibAuthors(cleanAuthors(item))}},`,
+        `  year = {${year}},`,
+        `  journal = {${venue}}${arxiv || paperUrl ? "," : ""}`
+      ];
+      if (arxiv) {
+        fields.push(`  eprint = {${arxiv[1]}},`, "  archivePrefix = {arXiv}");
+      } else if (paperUrl) {
+        fields.push(`  url = {${paperUrl}}`);
+      }
+      const bibtex = `@article{${key},\n${fields.join("\n")}\n}\n`;
+      const blobUrl = URL.createObjectURL(new Blob([bibtex], { type: "text/plain;charset=utf-8" }));
+      const download = document.createElement("a");
+      download.href = blobUrl;
+      download.download = `${key}.bib`;
+      download.click();
+      URL.revokeObjectURL(blobUrl);
+      const button = event.currentTarget;
+      const original = button.innerHTML;
+      button.innerHTML = `${icon("fas fa-check")}Saved`;
+      window.setTimeout(() => { button.innerHTML = original; }, 1400);
+    });
+
+      item.appendChild(actions);
+    });
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializePublicationActions, { once: true });
+  } else {
+    initializePublicationActions();
+  }
+})();
+</script>
+
 ## Collaborative Publications
 
 <div class="publication-list">
