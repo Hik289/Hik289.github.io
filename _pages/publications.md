@@ -9,44 +9,9 @@ author_profile: true
 
 <div class="publication-list">
   <article class="publication-item">
-    <div class="publication-meta"><span>ACL Findings</span><time>2026</time></div>
-    <h3>P-QuASAR: A Unified Probabilistic Framework for Holistic Patent Quality Assessment and Refinement</h3>
-    <p><strong>Xinyuan Song</strong>, Ziyi Ni, Fred Yang, Bo Zhang, Yiming Yan, Yijin Wang, and Jane Zhang.</p>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>ECCV</span><time>2026</time></div>
-    <h3><a href="https://openreview.net/forum?id=koFVTRAo2r">Geometric Regularization for Long-Tailed Semi-Supervised Learning via Gaussian Feature Bridges</a></h3>
-    <p>Hongyang He<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Yan Zhong, Daizong Liu, Yanbin Li, Yangfan He, and Wenqiao Zhang.</p>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>ICML</span><time>2026</time></div>
-    <h3><a href="https://icml.cc/virtual/2026/poster/61592">Newton-Coupled Dual-Teacher Semi-Supervised Learning Framework</a></h3>
-    <p>Hongyang He<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Yan Zhong, Daizong Liu, Xuanyu Liu, and Victor Sanchez.</p>
-  </article>
-  <article class="publication-item">
     <div class="publication-meta"><span>CPAL</span><b class="oral-badge">Oral</b><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2511.02122">Matrix Sensing with Kernel Optimal Loss: Robustness and Optimization Landscape</a></h3>
     <p><strong>Xinyuan Song</strong> and Ziye Ma.</p>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>CPAL</span><time>2026</time></div>
-    <h3><a href="https://arxiv.org/abs/2504.16016">Efficient Temporal Consistency in Diffusion-Based Video Editing with Adaptor Modules: A Theoretical Framework</a></h3>
-    <p><strong>Xinyuan Song</strong>, Yangfan He, Sida Li, Jianhui Wang, Hongyang He, Xinhang Yuan, Ruoyu Wang, Jiaqi Chen, Keqin Li, Kuan Lu, Menghao Huo, Binxu Li, and Pei Liu.</p>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>ICASSP</span><time>2026</time></div>
-    <h3><a href="https://arxiv.org/abs/2510.02091">Demystifying the Roles of LLM Layers in Retrieval, Knowledge, and Reasoning</a></h3>
-    <p><strong>Xinyuan Song</strong>, Keyu Wang, Pengxiang Li, Lu Yin, and Shiwei Liu.</p>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>CPAL</span><time>2026</time></div>
-    <h3><a href="https://wrap.warwick.ac.uk/id/eprint/196246/">Token-Aware Representation Augmentation for Fine-Grained Semi-Supervised Learning</a></h3>
-    <p>Hongyang He<sup>*</sup>, Yan Zhong<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Daizong Liu, and Victor Sanchez.</p>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>ICML</span><time>2026</time></div>
-    <h3><a href="https://openreview.net/forum?id=trYJ2pwR0G">When Does Sparsity Mitigate the Curse of Depth in LLMs</a></h3>
-    <p>Dilxat Muhtar<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Sebastian Pokutta, Max Zimmer, Nico Pelleriti, Thomas Hofmann, and Shiwei Liu.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>NeurIPS</span><time>2025</time></div>
@@ -58,6 +23,46 @@ author_profile: true
     <h3><a href="https://arxiv.org/abs/2509.21526">TRiCo: Triadic Game-Theoretic Co-Training for Robust Semi-Supervised Learning</a></h3>
     <p>Hongyang He<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Yangfan He, Zeyu Zhang, Yanshu Li<sup>*</sup>, Haochen You, Lifan Sun, and Wenqiao Zhang.</p>
   </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>ICML</span><time>2026</time></div>
+    <h3><a href="https://icml.cc/virtual/2026/poster/61592">Newton-Coupled Dual-Teacher Semi-Supervised Learning Framework</a></h3>
+    <p>Hongyang He<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Yan Zhong, Daizong Liu, Xuanyu Liu, and Victor Sanchez.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>ICML</span><time>2026</time></div>
+    <h3><a href="https://openreview.net/forum?id=trYJ2pwR0G">When Does Sparsity Mitigate the Curse of Depth in LLMs</a></h3>
+    <p>Dilxat Muhtar<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Sebastian Pokutta, Max Zimmer, Nico Pelleriti, Thomas Hofmann, and Shiwei Liu.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>ICASSP</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2510.02091">Demystifying the Roles of LLM Layers in Retrieval, Knowledge, and Reasoning</a></h3>
+    <p><strong>Xinyuan Song</strong>, Keyu Wang, Pengxiang Li, Lu Yin, and Shiwei Liu.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>CPAL</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2504.16016">Efficient Temporal Consistency in Diffusion-Based Video Editing with Adaptor Modules: A Theoretical Framework</a></h3>
+    <p><strong>Xinyuan Song</strong>, Yangfan He, Sida Li, Jianhui Wang, Hongyang He, Xinhang Yuan, Ruoyu Wang, Jiaqi Chen, Keqin Li, Kuan Lu, Menghao Huo, Binxu Li, and Pei Liu.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>ACL Findings</span><time>2026</time></div>
+    <h3>P-QuASAR: A Unified Probabilistic Framework for Holistic Patent Quality Assessment and Refinement</h3>
+    <p><strong>Xinyuan Song</strong>, Ziyi Ni, Fred Yang, Bo Zhang, Yiming Yan, Yijin Wang, and Jane Zhang.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>CPAL</span><time>2026</time></div>
+    <h3><a href="https://wrap.warwick.ac.uk/id/eprint/196246/">Token-Aware Representation Augmentation for Fine-Grained Semi-Supervised Learning</a></h3>
+    <p>Hongyang He<sup>*</sup>, Yan Zhong<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Daizong Liu, and Victor Sanchez.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>ECCV</span><time>2026</time></div>
+    <h3><a href="https://openreview.net/forum?id=koFVTRAo2r">Geometric Regularization for Long-Tailed Semi-Supervised Learning via Gaussian Feature Bridges</a></h3>
+    <p>Hongyang He<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Yan Zhong, Daizong Liu, Yanbin Li, Yangfan He, and Wenqiao Zhang.</p>
+  </article>
+</div>
+
+## Additional Publications
+
+<div class="publication-list">
   <article class="publication-item">
     <div class="publication-meta"><span>ACM Multimedia</span><time>2025</time></div>
     <h3><a href="https://arxiv.org/abs/2411.01819">Free-Mask: A Novel Paradigm of Integration Between the Segmentation Diffusion Model and Image Editing to Improve Segmentation Ability</a></h3>
