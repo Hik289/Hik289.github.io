@@ -71,7 +71,7 @@ redirect_from:
     <p>Hongyang He<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Yan Zhong, Daizong Liu, Xuanyu Liu, and Victor Sanchez.</p>
   </article>
   <article>
-    <div><span class="venue-tag">CPAL 2026</span></div>
+    <div><span class="venue-tag">CPAL 2026</span><b class="oral-badge">Oral</b></div>
     <h3><a href="https://arxiv.org/abs/2511.02122">Matrix Sensing with Kernel Optimal Loss: Robustness and Optimization Landscape</a></h3>
     <p><strong>Xinyuan Song</strong> and Ziye Ma.</p>
   </article>

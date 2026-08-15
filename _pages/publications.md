@@ -24,7 +24,7 @@ author_profile: true
     <p>Hongyang He<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Yan Zhong, Daizong Liu, Xuanyu Liu, and Victor Sanchez.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>CPAL</span><time>2026</time></div>
+    <div class="publication-meta"><span>CPAL</span><b class="oral-badge">Oral</b><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2511.02122">Matrix Sensing with Kernel Optimal Loss: Robustness and Optimization Landscape</a></h3>
     <p><strong>Xinyuan Song</strong> and Ziye Ma.</p>
   </article>
@@ -83,7 +83,8 @@ author_profile: true
     "Learning to Recommend Multi-Agent Subgraphs from Calling Trees": "https://github.com/Hik289/Agent_REC",
     "StructPrune: Structured Global Pruning Asymptotics with Square-Root GPU Memory": "https://github.com/Hik289/structured_sparseGPT",
     "AutoSurvey2: Empowering Researchers with Next Level Automated Literature Surveys": "https://github.com/annihi1ation/auto_research",
-    "Structured Risk Model": "https://github.com/Hik289/structural-risk-adjustments"
+    "Structured Risk Model": "https://github.com/Hik289/structural-risk-adjustments",
+    "Matrix Sensing with Kernel Optimal Loss: Robustness and Optimization Landscape": "https://github.com/Hik289/Hik289.github.io/blob/main/files/code/matrix-sensing/matrix_sensing.py"
   };
 
   const pdfOverrides = {
