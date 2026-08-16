@@ -912,6 +912,21 @@ body {
   color: color-mix(in srgb, var(--xs-accent) 78%, var(--global-text-color-light));
 }
 
+.author__urls .author-contact-link .fa-fw {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.38rem;
+  padding: 0;
+  border-radius: 0.34rem;
+  color: var(--xs-accent);
+  background: var(--xs-soft);
+  font-size: 0.64rem;
+  vertical-align: -0.08rem;
+}
+
 .home-intro {
   max-width: 800px;
   overflow: visible;
