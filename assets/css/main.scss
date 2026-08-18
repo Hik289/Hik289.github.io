@@ -1521,42 +1521,78 @@ body {
   background: color-mix(in srgb, var(--xs-soft) 35%, transparent);
 }
 
-.selected-work,
+.selected-work {
+  display: grid;
+  gap: 0.64rem;
+}
+
 .publication-list,
 .timeline-compact,
 .cv-list {
-  display: grid;
-  gap: 0.64rem;
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--xs-hairline);
+  border-radius: 0.92rem;
+  background: color-mix(in srgb, var(--xs-card) 91%, transparent);
+  box-shadow: var(--xs-panel-shadow);
 }
 
 .selected-work article,
 .publication-item {
   grid-template-columns: 7.35rem minmax(0, 1fr);
   padding: 1.02rem 1.08rem;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease, background-color 160ms ease;
+}
+
+.selected-work article {
   border: 1px solid var(--xs-hairline);
   border-radius: 0.82rem;
   background: color-mix(in srgb, var(--xs-card) 92%, transparent);
   box-shadow: 0 1px 0 color-mix(in srgb, var(--xs-card) 62%, transparent);
-  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease, background-color 160ms ease;
 }
 
-.selected-work article:first-child,
-.publication-item:first-child {
+.publication-item {
+  border: 0;
+  border-bottom: 1px solid var(--xs-hairline);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.selected-work article:first-child {
   border-top: 1px solid var(--xs-hairline);
 }
 
-.selected-work article:hover,
-.publication-item:hover {
+.publication-item:first-child {
+  border-top: 0;
+}
+
+.publication-item:last-child {
+  border-bottom: 0;
+}
+
+.selected-work article:hover {
   border-color: color-mix(in srgb, var(--xs-accent) 30%, var(--global-border-color));
   background: var(--xs-panel);
   box-shadow: var(--xs-panel-shadow-hover);
   transform: translateY(-1px);
 }
 
-.selected-work article:has(.oral-badge),
-.publication-item:has(.oral-badge) {
+.publication-item:hover {
+  border-color: var(--xs-hairline);
+  background: color-mix(in srgb, var(--xs-soft) 42%, transparent);
+  box-shadow: none;
+  transform: none;
+}
+
+.selected-work article:has(.oral-badge) {
   border-color: color-mix(in srgb, #b42318 22%, var(--global-border-color));
   box-shadow: inset 3px 0 0 rgba(180, 35, 24, 0.72), var(--xs-panel-shadow);
+}
+
+.publication-item:has(.oral-badge) {
+  background: color-mix(in srgb, rgba(180, 35, 24, 0.055) 82%, transparent);
+  box-shadow: inset 3px 0 0 rgba(180, 35, 24, 0.68);
 }
 
 .selected-work article > div {
@@ -1584,7 +1620,22 @@ body {
 
 .venue-tag,
 .publication-meta span {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0.16rem 0.4rem;
+  border: 1px solid color-mix(in srgb, var(--xs-accent) 20%, var(--global-border-color));
+  border-radius: 0.35rem;
+  background: color-mix(in srgb, var(--xs-soft) 66%, transparent);
   letter-spacing: 0.07em;
+}
+
+.publication-meta {
+  gap: 0.3rem;
+}
+
+.publication-meta time {
+  padding-left: 0.08rem;
 }
 
 .publication-actions {
@@ -1632,20 +1683,26 @@ body {
 .timeline-compact p,
 .cv-list > div {
   padding: 0.9rem 1rem;
-  border: 1px solid var(--xs-hairline);
-  border-radius: 0.72rem;
-  background: color-mix(in srgb, var(--xs-card) 90%, transparent);
+  border: 0;
+  border-bottom: 1px solid var(--xs-hairline);
+  border-radius: 0;
+  background: transparent;
 }
 
 .timeline-compact p:first-child,
 .cv-list > div:first-child {
-  border-top: 1px solid var(--xs-hairline);
+  border-top: 0;
+}
+
+.timeline-compact p:last-child,
+.cv-list > div:last-child {
+  border-bottom: 0;
 }
 
 .timeline-compact p:hover,
 .cv-list > div:hover {
-  border-color: color-mix(in srgb, var(--xs-accent) 28%, var(--global-border-color));
-  background: var(--xs-panel);
+  border-color: var(--xs-hairline);
+  background: color-mix(in srgb, var(--xs-soft) 42%, transparent);
 }
 
 .recent-study-intro {
@@ -1659,6 +1716,26 @@ body {
 .page__footer {
   border-top: 1px solid var(--xs-hairline);
   background: color-mix(in srgb, var(--global-footer-bg-color) 88%, transparent);
+}
+
+.page__footer-follow .social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.42rem 0.9rem;
+}
+
+.page__footer-follow .social-icons a {
+  color: var(--global-text-color-light);
+}
+
+.page__footer-follow .social-icons a:hover {
+  color: var(--xs-accent);
+}
+
+.page__footer-copyright {
+  color: var(--global-text-color-light);
+  line-height: 1.65;
 }
 
 @include breakpoint($large) {
@@ -1741,18 +1818,26 @@ body {
     padding: 0.66rem 0.75rem;
   }
 
-  .selected-work,
-  .publication-list,
-  .timeline-compact,
-  .cv-list {
+  .selected-work {
     gap: 0.52rem;
   }
 
-  .selected-work article,
-  .publication-item {
+  .publication-list,
+  .timeline-compact,
+  .cv-list {
+    border-radius: 0.76rem;
+  }
+
+  .selected-work article {
     display: block;
     padding: 0.88rem 0.9rem;
     border-radius: 0.7rem;
+  }
+
+  .publication-item {
+    display: block;
+    padding: 0.9rem;
+    border-radius: 0;
   }
 
   .selected-work h3,
