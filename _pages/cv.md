@@ -9,7 +9,7 @@ redirect_from:
 
 ## Profile
 
-<p class="cv-summary">I am a Ph.D. student in Computer Science at <a href="https://catalog.college.emory.edu/academics/departments/computer-science.html">Emory University</a>, focusing on machine learning and advised by <a href="https://cs.emory.edu/~lzhao41/">Liang Zhao</a>. My work explores the theoretical foundations of machine learning, particularly efficient learning, optimization, and reliable model behavior.</p>
+I am a Ph.D. student in Computer Science at [Emory University](https://catalog.college.emory.edu/academics/departments/computer-science.html), focusing on machine learning and advised by [Liang Zhao](https://cs.emory.edu/~lzhao41/). My work explores the theoretical foundations of machine learning, particularly efficient learning, optimization, and reliable model behavior.
 
 ## Education
 
@@ -30,7 +30,5 @@ redirect_from:
 
 ## Honors and Awards
 
-<ul class="cv-awards">
-  <li>Silver Medal, Chinese Physics Olympiad, national level</li>
-  <li>Silver Medal, Chinese Mathematics Olympiad, national level</li>
-</ul>
+- Silver Medal, Chinese Physics Olympiad, national level
+- Silver Medal, Chinese Mathematics Olympiad, national level
