@@ -2114,3 +2114,122 @@ body {
     margin-top: 3.25rem;
   }
 }
+
+/* CV and interaction details. */
+.cv-summary {
+  max-width: 48rem;
+  margin: 0 0 1.2rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--xs-hairline);
+  border-left: 3px solid var(--xs-accent);
+  border-radius: 0.7rem;
+  background: color-mix(in srgb, var(--xs-soft) 42%, transparent);
+  color: color-mix(in srgb, var(--xs-ink) 82%, var(--global-text-color));
+  font-size: 0.88rem;
+  line-height: 1.68;
+}
+
+.cv-awards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.62rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cv-awards li {
+  position: relative;
+  margin: 0;
+  padding: 0.82rem 0.9rem 0.82rem 2rem;
+  border: 1px solid var(--xs-hairline);
+  border-radius: 0.68rem;
+  background: color-mix(in srgb, var(--xs-card) 90%, transparent);
+  color: var(--global-text-color);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.cv-awards li::before {
+  position: absolute;
+  top: 1.02rem;
+  left: 0.88rem;
+  width: 0.52rem;
+  height: 0.52rem;
+  border: 2px solid color-mix(in srgb, var(--xs-warm) 72%, var(--global-border-color));
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--xs-warm) 16%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--xs-warm) 7%, transparent);
+  content: "";
+}
+
+.publication-action {
+  min-height: 1.9rem;
+  white-space: nowrap;
+}
+
+.publication-action i {
+  width: 0.8rem;
+  text-align: center;
+}
+
+.publication-action:active:not(.is-disabled) {
+  transform: translateY(0);
+}
+
+@include breakpoint($large) {
+  .cv-list > div {
+    position: relative;
+    grid-template-columns: 7.6rem minmax(0, 1fr);
+    gap: 1.45rem;
+    padding: 1rem 1.08rem;
+  }
+
+  .cv-list > div::before {
+    position: absolute;
+    z-index: 1;
+    top: 1.28rem;
+    left: 9.24rem;
+    width: 0.48rem;
+    height: 0.48rem;
+    border: 2px solid var(--xs-card);
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--xs-accent) 74%, var(--global-border-color));
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--xs-accent) 28%, var(--global-border-color));
+    content: "";
+  }
+
+  .cv-list > div:not(:last-child)::after {
+    position: absolute;
+    top: 1.72rem;
+    bottom: -0.4rem;
+    left: 9.47rem;
+    width: 1px;
+    background: color-mix(in srgb, var(--xs-accent) 20%, var(--global-border-color));
+    content: "";
+  }
+
+  .cv-list > div:hover::before {
+    background: var(--xs-accent);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .greedy-nav a {
+    min-height: 2.65rem;
+  }
+
+  .cv-summary {
+    padding: 0.82rem 0.88rem;
+    font-size: 0.84rem;
+  }
+
+  .cv-awards {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .publication-action {
+    min-height: 2rem;
+  }
+}
