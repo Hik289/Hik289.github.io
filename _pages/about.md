@@ -9,17 +9,17 @@ redirect_from:
 
 <div class="home-intro">
   <p class="home-kicker">Machine Learning &middot; Learning Theory &middot; Optimization</p>
-  <p class="home-lead">I am a Ph.D. student in Computer Science at <a href="https://catalog.college.emory.edu/academics/departments/computer-science.html">Emory University</a>, focusing on machine learning and advised by <a href="https://cs.emory.edu/~lzhao41/">Liang Zhao</a>. My research explores the theoretical foundations of machine learning, with particular interests in efficient learning, optimization, and reliable model behavior.</p>
-  <p>Before Emory, I pursued Ph.D. studies in Computer Science at the <a href="https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse">University of Texas at Arlington</a>, advised by <a href="https://zyy123jy.github.io/My-Web-Sites/">Yingying Zhu</a>, and completed a Ph.D. in Statistics at the <a href="https://www.stat.nus.edu.sg/">National University of Singapore</a>, advised by <a href="https://www.stat.nus.edu.sg/faculty_member/li-cheng/">Cheng Li</a>. I received a B.S. in Physics, with a second major in Mathematics, from <a href="https://english.pku.edu.cn/">Peking University</a>.</p>
+  <p class="home-lead">I am a Ph.D. student in Computer Science at <a href="https://catalog.college.emory.edu/academics/departments/computer-science.html">Emory University</a>, where I work with <a href="https://cs.emory.edu/~lzhao41/">Liang Zhao</a>. My research focuses on learning theory, optimization, and the reliability and efficiency of machine learning systems.</p>
+  <p>Before joining Emory, I was a Ph.D. student in Computer Science at the <a href="https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse">University of Texas at Arlington</a>, advised by <a href="https://zyy123jy.github.io/My-Web-Sites/">Yingying Zhu</a>. I earned a Ph.D. in Statistics from the <a href="https://www.stat.nus.edu.sg/">National University of Singapore</a>, where I was advised by <a href="https://www.stat.nus.edu.sg/faculty_member/li-cheng/">Cheng Li</a>, and a B.S. in Physics with a second major in Mathematics from <a href="https://english.pku.edu.cn/">Peking University</a>.</p>
 </div>
 
 ## Research
 
 <div class="research-statement">
-  <p>My research examines how model structure, supervision, and optimization geometry shape generalization. I combine theoretical analysis with empirical machine learning, particularly in settings involving limited labels, distribution imbalance, and constrained computation.</p>
-  <p><strong>Learning theory and optimization.</strong> I study depth and sparsity in large models, optimization landscapes, and recovery guarantees, including the curse of depth in language models and robust low-rank matrix sensing.</p>
-  <p><strong>Robust and data-efficient learning.</strong> I develop semi-supervised methods that combine multi-view supervision, curvature information, feature geometry, and token-aware representations for long-tailed, fine-grained, and limited-label learning.</p>
-  <p><strong>Representation and generative modeling.</strong> I investigate how retrieval, knowledge, and reasoning functions emerge within neural networks and design efficient mechanisms for temporal consistency, image editing, segmentation, and structured quality assessment.</p>
+  <p>I study how model architecture, supervision, and optimization affect generalization. My work combines theoretical analysis with experiments, especially in settings with limited labels, imbalanced data, or computational constraints.</p>
+  <p><strong>Learning theory and optimization.</strong> I study depth and sparsity in large models, the geometry of nonconvex optimization, and recovery guarantees. Recent work includes depth-related limitations in language models and robust low-rank matrix sensing.</p>
+  <p><strong>Robust and data-efficient learning.</strong> I develop semi-supervised methods for long-tailed, fine-grained, and limited-label settings using multi-view supervision, curvature, feature geometry, and token-level representations.</p>
+  <p><strong>Representation and generative modeling.</strong> I study how retrieval, factual knowledge, and reasoning are distributed across neural networks, and I develop efficient methods for temporal consistency, image editing, segmentation, and structured quality assessment.</p>
 </div>
 
 ## Selected Work
