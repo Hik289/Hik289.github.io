@@ -6,8 +6,8 @@ author_profile: true
 ---
 
 <div class="recent-study-intro">
-  <p>Working papers and active research projects. Metadata for public papers is taken from arXiv. Manuscripts under anonymous review are listed without author information, and code is linked only when a repository has been verified.</p>
-  <p class="recent-study-source">12 public repositories · 2 manuscripts under anonymous review · updated August 2026</p>
+  <p>This page lists working papers and ongoing projects. Metadata for public papers comes from arXiv. Papers under anonymous review appear without author names; code is linked only after the repository has been checked.</p>
+  <p class="recent-study-source">12 public code repositories · 2 manuscripts under anonymous review · updated August 2026</p>
 </div>
 
 <div class="publication-list recent-study-list">
