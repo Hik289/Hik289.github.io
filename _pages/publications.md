@@ -132,7 +132,6 @@ author_profile: true
   };
 
   const bibAuthors = (authors) => authors
-    .replace(/\bet al\.?/gi, "others")
     .replace(/,\s+and\s+/i, " and ")
     .replace(/\s+and\s+/gi, " and ")
     .split(/,\s*/)
@@ -212,7 +211,7 @@ author_profile: true
   <article class="publication-item">
     <div class="publication-meta"><span>CVPR</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2602.19565">DICArt: Advancing Category-level Articulated Object Pose Estimation in Discrete State-Spaces</a></h3>
-    <p>Li Zhang, Mingyu Mei, Ailing Wang, Xianhui Meng, Yan Zhong, <strong>Xinyuan Song</strong>, et al.</p>
+    <p>Li Zhang, Mingyu Mei, Ailing Wang, Xianhui Meng, Yan Zhong, <strong>Xinyuan Song</strong>, Liu Liu, Rujing Wang, Zaixing He, and Cewu Lu.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>ACM Multimedia</span><time>2026</time></div>
@@ -227,22 +226,22 @@ author_profile: true
   <article class="publication-item">
     <div class="publication-meta"><span>CPAL</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2501.04606">Enhancing Low-Cost Video Editing with Lightweight Adaptors and Temporal-Aware Inversion</a></h3>
-    <p>Yangfan He, Sida Li, Jianhui Wang, <strong>Xinyuan Song</strong>, et al.</p>
+    <p>Yangfan He, Sida Li, Jianhui Wang, Kun Li, <strong>Xinyuan Song</strong>, Xinhang Yuan, Keqin Li, Kuan Lu, Menghao Huo, Jingqun Tang, Yi Xin, Jiaqi Chen, Miao Zhang, and Xueqian Wang.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>CPAL</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2602.10619">Improving Medical Visual Reinforcement Fine-Tuning via Perception and Reasoning Augmentation</a></h3>
-    <p>Guangjing Yang, Zhangyuan Yu, Ziyuan Qin, <strong>Xinyuan Song</strong>, et al.</p>
+    <p>Guangjing Yang, ZhangYuan Yu, Ziyuan Qin, <strong>Xinyuan Song</strong>, Huahui Yi, Qingbo Kang, Jun Gao, Yiyue Li, Chenlin Du, and Qicheng Lao.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>ICASSP</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2504.18204">Optimizing Multi-Round Enhanced Training in Diffusion Models for Improved Preference Understanding</a></h3>
-    <p>Kun Li, Jianhui Wang, Yangfan He, <strong>Xinyuan Song</strong>, et al.</p>
+    <p>Kun Li, Jianhui Wang, Yangfan He, <strong>Xinyuan Song</strong>, Ruoyu Wang, Hongyang He, Wenxin Zhang, Jiaqi Chen, Keqin Li, Sida Li, Miao Zhang, Tianyu Shi, and Xueqian Wang.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>ICASSP</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2409.00872">Self-evolving Agents with Reflective and Memory-Augmented Abilities</a></h3>
-    <p>Xuechen Liang, Yangfan He, Yinghui Xia, <strong>Xinyuan Song</strong>, et al.</p>
+    <p>Xuechen Liang, Yangfan He, Yinghui Xia, <strong>Xinyuan Song</strong>, Jianhui Wang, Meiling Tao, Li Sun, Xinhang Yuan, Jiayi Su, Keqin Li, Jiaqi Chen, Jinsong Yang, Siyuan Chen, and Tianyu Shi.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>ICLR CAO Workshop</span><time>2026</time></div>
@@ -252,12 +251,12 @@ author_profile: true
   <article class="publication-item">
     <div class="publication-meta"><span>ICLR LLM Reasoning Workshop</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2412.20367">Enhancing Code LLMs with Reinforcement Learning in Code Generation: A Survey</a></h3>
-    <p>Junqiao Wang, Zeng Zhang, Yangfan He, Zihao Zhang, <strong>Xinyuan Song</strong>, et al.</p>
+    <p>Junqiao Wang, Zeng Zhang, Yangfan He, Zihao Zhang, <strong>Xinyuan Song</strong>, Yuyang Song, Tianyu Shi, Yuchen Li, Hengyuan Xu, Kunyu Wu, Xin Yi, Zhongwei Wan, Xinhang Yuan, Zijun Wang, Kuan Lu, Menghao Huo, Tang Jingqun, Guangwu Qian, Keqin Li, Qiuwu Chen, and Lewei He.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>WWW LARS Workshop</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2503.23512">SCORE: Story Coherence and Retrieval Enhancement for AI Narratives</a></h3>
-    <p>Qiang Yi, Yangfan He, Jianhui Wang, <strong>Xinyuan Song</strong>, et al.</p>
+    <p>Qiang Yi, Yangfan He, Jianhui Wang, <strong>Xinyuan Song</strong>, ShiYao Qian, Xinhang Yuan, Yi Xin, Yijin Wang, Jingqun Tang, Yuchen Li, Junjiang Lin, Hongyang He, Zhen Tian, Tianxiang Xu, Keqin Li, Kuan Lu, Menghao Huo, Jiaqi Chen, Miao Zhang, Tianyu Shi, and Jianyuan Ni.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>CVPR DataCV Workshop</span><time>2026</time></div>
@@ -267,12 +266,12 @@ author_profile: true
   <article class="publication-item">
     <div class="publication-meta"><span>BIO Integration</span><time>2026</time></div>
     <h3><a href="https://www.scienceopen.com/hosted-document?doi=10.15212/bioi-2025-0199">Large Language Models and Cognitive Science: A Comprehensive Review of Similarities, Differences, and Challenges</a></h3>
-    <p>Qian Niu, Junyu Liu, Ziqian Bi, et al., <strong>Xinyuan Song</strong>, and Zekun Jiang.</p>
+    <p>Qian Niu, Junyu Liu, Ziqian Bi, Pohsun Feng, Benji Peng, Keyu Chen, Ming Li, Lawrence KQ Yan, Yichao Zhang, Caitlyn Heqi Yin, Cheng Fei, Tianyang Wang, Yunze Wang, Silin Chen, Ming Liu, Ziyuan Qin, Riyang Bao, <strong>Xinyuan Song</strong>, and Zekun Jiang.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>NeurIPS</span><time>2025</time></div>
     <h3><a href="https://arxiv.org/abs/2506.22049">GPAS: Accelerating Convergence of LLM Pretraining via Gradient-Preserving Activation Scaling</a></h3>
-    <p>Tianhao Chen, Xin Xu, Zijing Liu, Pengxiang Li, <strong>Xinyuan Song</strong>, et al.</p>
+    <p>Tianhao Chen, Xin Xu, Zijing Liu, Pengxiang Li, <strong>Xinyuan Song</strong>, Ajay Kumar Jaiswal, Fan Zhang, Jishan Hu, Yang Wang, Hao Chen, Shizhe Diao, Shiwei Liu, Yu Li, Lu Yin, and Can Yang.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>TKDD</span><time>2025</time></div>
@@ -282,12 +281,12 @@ author_profile: true
   <article class="publication-item">
     <div class="publication-meta"><span>EMNLP</span><time>2025</time></div>
     <h3><a href="https://eprints.gla.ac.uk/363276/">SOLAR: Serendipity Optimized Language Model Aligned for Recommendation</a></h3>
-    <p>Zichen Yuan, Lifan Sun, Yucen Zhuang, et al., <strong>Xinyuan Song</strong>, Youhua Li, Joemon M. Jose, and Yongxin Ni.</p>
+    <p>Zichen Yuan, Lifan Sun, Yucen Zhuang, Yue Wang, <strong>Xinyuan Song</strong>, Tianqi Xu, Siyuan Li, Junchen Fu, Youhua Li, Sirui Hong, Jiaqi Chen, Joemon M. Jose, and Yongxin Ni.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>CIKM</span><time>2025</time></div>
     <h3><a href="https://cikm2025.org/program/accepted-papers">AMBER: Adaptive Meta Balanced Paradigm for Heterogeneous Graph-Based Knowledge Tracing</a></h3>
-    <p>Zichen Yuan, Lifan Sun, Yucen Zhuang, et al., <strong>Xinyuan Song</strong>, Youhua Li, Joemon M. Jose, and Yongxin Ni.</p>
+    <p>Lifan Sun, Zichen Yuan, Ersheng Ni, Weihua Cheng, <strong>Xinyuan Song</strong>, Linkun Dai, Hongwei Jiang, Sibo Xu, Mengmeng Chen, Yucen Zhuang, Yongxin Ni, and Youhua Li.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>ACM Multimedia</span><time>2025</time></div>
@@ -307,7 +306,7 @@ author_profile: true
   <article class="publication-item">
     <div class="publication-meta"><span>Neurocomputing</span><time>2025</time></div>
     <h3><a href="https://arxiv.org/abs/2501.15167">Enhancing Intent Understanding for Ambiguous Prompt: A Human-Machine Co-adaption Strategy</a></h3>
-    <p>Yangfan He, Jianhui Wang, Yijin Wang, Yan Zhong, <strong>Xinyuan Song</strong>, et al.</p>
+    <p>Yangfan He, Jianhui Wang, Yijin Wang, Yan Zhong, <strong>Xinyuan Song</strong>, Junjiang Lin, Xinhang Yuan, Jingqun Tang, Yi Xin, Hao Zhang, Yuchen Li, Zijian Zhang, Hongyang He, Tianxiang Xu, Miao Zhang, Kuan Lu, Menghao Huo, Keqin Li, Jiaqi Chen, Tianyu Shi, and Jianyuan Ni.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>Transportation Research Record</span><time>2025</time></div>
@@ -322,7 +321,7 @@ author_profile: true
   <article class="publication-item">
     <div class="publication-meta"><span>BIO Integration</span><time>2025</time></div>
     <h3><a href="https://www.scienceopen.com/hosted-document?doi=10.15212/bioi-2025-0198">From Bench to Bedside: A Review of Clinical Trials in Drug Discovery and Development</a></h3>
-    <p>Tianyang Wang, Ming Liu, Benji Peng, <strong>Xinyuan Song</strong>, et al.</p>
+    <p>Tianyang Wang, Ming Liu, Benji Peng, <strong>Xinyuan Song</strong>, Charles Zhang, Xintian Sun, Qian Niu, Junyu Liu, Silin Chen, Keyu Chen, Ming Li, Pohsun Feng, Ziqian Bi, Yunze Wang, Yichao Zhang, Cheng Fei, Lawrence KQ Yan, Ziyuan Qin, Riyang Bao, and Zekun Jiang.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>Neural Networks</span><time>2024</time></div>
@@ -352,7 +351,7 @@ author_profile: true
   <article class="publication-item">
     <div class="publication-meta"><span>arXiv</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2510.26012">AutoSurvey2: Empowering Researchers with Next Level Automated Literature Surveys</a></h3>
-    <p>Siyi Wu, Xinliang Chia, Ziqian Bi, et al., <strong>Xinyuan Song</strong>.</p>
+    <p>Siyi Wu, Chiaxin Liang, Ziqian Bi, Leyi Zhao, Tianyang Wang, Junhao Song, Yichao Zhang, Keyu Chen, Benji Peng, and <strong>Xinyuan Song</strong>.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
@@ -382,12 +381,12 @@ author_profile: true
   <article class="publication-item">
     <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
     <h3><a href="https://arxiv.org/abs/2509.11079">Difficulty-Aware Agent Orchestration in LLM-Powered Workflows</a></h3>
-    <p>Jinwei Su, Yinghui Xia, Qizhen Lan, <strong>Xinyuan Song</strong>, et al.</p>
+    <p>Jinwei Su, Qizhen Lan, Yinghui Xia, Lifan Sun, Weiyou Tian, Tianyu Shi, <strong>Xinyuan Song</strong>, Lewei He, and Yang Jingsong.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
     <h3><a href="https://arxiv.org/abs/2509.09751">Meta-Learning Reinforcement Learning for Crypto-Return Prediction</a></h3>
-    <p>Junqiao Wang, Zhaoyang Guan, Guanyu Liu, et al., <strong>Xinyuan Song</strong>, et al.</p>
+    <p>Junqiao Wang, Zhaoyang Guan, Guanyu Liu, Tianze Xia, Xianzhi Li, Shuo Yin, <strong>Xinyuan Song</strong>, Chuhan Cheng, Tianyu Shi, and Alex Lee.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
@@ -397,12 +396,12 @@ author_profile: true
   <article class="publication-item">
     <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
     <h3><a href="https://arxiv.org/abs/2509.09498">SEDM: Scalable Self-Evolving Distributed Memory for Agents</a></h3>
-    <p>Haoran Xu, Jiacong Hu, Ke Zhang, Lei Yu, Yuxin Tang, <strong>Xinyuan Song</strong>, et al.</p>
+    <p>Haoran Xu, Jiacong Hu, Ke Zhang, Lei Yu, Yuxin Tang, <strong>Xinyuan Song</strong>, Yiqun Duan, Lynn Ai, and Bill Shi.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
     <h3><a href="https://arxiv.org/abs/2507.20474">MountainLion: A Multi-Modal LLM-Based Agent System for Interpretable and Adaptive Financial Trading</a></h3>
-    <p>Siyi Wu, Junqiao Wang, Zhaoyang Guan, Leyi Zhao, <strong>Xinyuan Song</strong>, et al.</p>
+    <p>Siyi Wu, Junqiao Wang, Zhaoyang Guan, Leyi Zhao, <strong>Xinyuan Song</strong>, Xinyu Ying, Dexu Yu, Jinhao Wang, Hanlin Zhang, Michele Pak, Yangfan He, Yi Xin, Jianhui Wang, and Tianyu Shi.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>arXiv</span><time>2023</time></div>
