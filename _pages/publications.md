@@ -55,7 +55,7 @@ author_profile: true
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>ECCV</span><time>2026</time></div>
-    <h3><a href="https://openreview.net/forum?id=koFVTRAo2r">Geometric Regularization for Long-Tailed Semi-Supervised Learning via Gaussian Feature Bridges</a></h3>
+    <h3><a href="https://arxiv.org/pdf/2608.20710">Geometric Regularization for Long-Tailed Semi-Supervised Learning via Gaussian Feature Bridges</a></h3>
     <p>Hongyang He<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Yan Zhong, Daizong Liu, Yanbin Li, Yangfan He, and Wenqiao Zhang.</p>
   </article>
 </div>
