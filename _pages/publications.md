@@ -58,11 +58,6 @@ author_profile: true
     <h3><a href="https://arxiv.org/pdf/2608.20710">Geometric Regularization for Long-Tailed Semi-Supervised Learning via Gaussian Feature Bridges</a></h3>
     <p>Hongyang He<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Yan Zhong, Daizong Liu, Yanbin Li, Yangfan He, and Wenqiao Zhang.</p>
   </article>
-</div>
-
-## Additional Publications
-
-<div class="publication-list">
   <article class="publication-item">
     <div class="publication-meta"><span>ACM Multimedia</span><time>2025</time></div>
     <h3><a href="https://arxiv.org/abs/2411.01819">Free-Mask: A Novel Paradigm of Integration Between the Segmentation Diffusion Model and Image Editing to Improve Segmentation Ability</a></h3>
@@ -276,7 +271,7 @@ author_profile: true
   <article class="publication-item">
     <div class="publication-meta"><span>TKDD</span><time>2025</time></div>
     <h3><a href="https://dl.acm.org/doi/pdf/10.1145/3786346">Bridging NIP and MLM: A Unified Meta-Learning Framework for Personalized Sequential Recommendation</a></h3>
-    <p>Youhua Li, Yongxin Ni, and <strong>Xinyuan Song</strong>.</p>
+    <p>Youhua Li, Ersheng Ni, Yihao Liu, Sibo Xu, Tianyi Xu, Mingxuan Wu, Junchen Fu, Yucheng Zhang, Yuanqi He, <strong>Xinyuan Song</strong>, and Yongxin Ni.</p>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>EMNLP</span><time>2025</time></div>
@@ -330,9 +325,9 @@ author_profile: true
   </article>
 </div>
 
-## Preprints and Manuscripts
+## Preprints
 
-<div class="publication-list">
+<div class="publication-list preprint-list">
   <article class="publication-item">
     <div class="publication-meta"><span>TechRxiv</span><time>2026</time></div>
     <h3><a href="https://www.techrxiv.org/users/1023031/articles/1386150-complex-networks-of-ai-agentic-systems-topology-memory-and-update-dynamics">Complex Networks of AI Agentic Systems: Topology, Memory, and Update Dynamics</a></h3>
@@ -359,7 +354,7 @@ author_profile: true
     <p>Ween Yang, Jason Liu, Suli Wang, <strong>Xinyuan Song</strong>, Lynn Ai, Eric Yang, and Tianyu Shi.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>Manuscript</span><time>2025</time></div>
+    <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
     <h3><a href="https://gavenma.github.io/files/papers/Matrix_Lasso_NeurIPS_2025.pdf">Recovery Guarantees of the Matrix Lasso Problem: On Equivalence of Convex and Non-Convex Formulations</a></h3>
     <p>Jinji Yang, <strong>Xinyuan Song</strong>, and Ziye Ma.</p>
   </article>
@@ -374,7 +369,7 @@ author_profile: true
     <p>Siyi Wu, Zeyu Wang, <strong>Xinyuan Song</strong>, Zhengpeng Zhou, Lifan Sun, and Tianyu Shi.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>Manuscript</span><time>2025</time></div>
+    <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
     <h3><a href="https://arxiv.org/abs/2503.14523">SDF-TopoNet: A Two-Stage Framework for Tubular Structure Segmentation via SDF Pre-training and Topology-Aware Fine-Tuning</a></h3>
     <p>Siyi Wu, Leyi Zhao, Haotian Ma, and <strong>Xinyuan Song</strong>.</p>
   </article>

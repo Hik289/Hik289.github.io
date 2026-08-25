@@ -1108,6 +1108,12 @@ body {
   letter-spacing: 0.04em;
 }
 
+.preprint-list .publication-meta span,
+.preprint-list .publication-meta time {
+  color: color-mix(in srgb, var(--global-text-color-light) 72%, transparent);
+  font-weight: 600;
+}
+
 .selected-work .oral-badge,
 .publication-meta .oral-badge {
   display: inline-flex;

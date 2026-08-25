@@ -23,7 +23,7 @@ I am a Ph.D. student in Computer Science at [Emory University](https://catalog.c
 ## Industry Experience
 
 <div class="cv-list">
-  <div><span>Summer 2026</span><p><strong><a href="https://cielara.ai/">Cielara AI</a></strong><br>Research on memory for language-model agents. <a href="https://github.com/xfab-xinyuansong/MemOnDemand">MemOnDemand</a> uses query-adaptive hierarchical memory and source-linked retrieval under tight context budgets; <a href="https://github.com/xfab-xinyuansong/UltraMem">UltraMem</a> focuses on evidence-grounded retrieval and attribution over very long contexts. Manuscripts forthcoming.</p></div>
+  <div><span>Summer 2026</span><p><strong><a href="https://cielara.ai/">Cielara AI</a></strong><br>Research on memory for language-model agents. <a href="https://github.com/xfab-xinyuansong/MemOnDemand">MemOnDemand</a> uses query-adaptive hierarchical memory and source-linked retrieval under tight context budgets; <a href="https://github.com/xfab-xinyuansong/UltraMem">UltraMem</a> focuses on evidence-grounded retrieval and attribution over very long contexts. Preprints forthcoming.</p></div>
   <div><span>Summer 2025</span><p><strong><a href="https://gradient.network">Gradient Network</a></strong><br>Research on multi-agent systems, including work on <a href="https://arxiv.org/abs/2507.06520">GradientSys: A Multi-Agent LLM Scheduler with ReAct Orchestration</a>.</p></div>
   <div><span>2020 &ndash; 2021</span><p><strong><a href="https://www.alibabagroup.com/en-US/">Alibaba Group</a></strong><br>Full-time Machine Learning Engineer</p></div>
 </div>

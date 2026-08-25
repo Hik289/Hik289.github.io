@@ -7,18 +7,18 @@ author_profile: true
 
 <div class="recent-study-intro">
   <p>This page lists working papers and ongoing projects. Metadata for public papers comes from arXiv. Papers under anonymous review appear without author names; code is linked only after the repository has been checked.</p>
-  <p class="recent-study-source">12 public code repositories · 2 manuscripts under anonymous review · updated August 2026</p>
+  <p class="recent-study-source">12 public code repositories · 2 anonymous preprints · updated August 2026</p>
 </div>
 
-<div class="publication-list recent-study-list">
+<div class="publication-list recent-study-list preprint-list">
   <article class="publication-item">
-    <div class="publication-meta"><span>Anonymous manuscript</span><time>2026</time></div>
+    <div class="publication-meta"><span>arXiv</span><time>2026</time></div>
     <h3><a href="/files/recent-study/fedworld-scope-aware-federation.pdf">FedWorld: Scope-Aware Federation of Agent World Models</a></h3>
     <p>Under anonymous review.</p>
     <div class="publication-actions"><a class="publication-action" href="/files/recent-study/fedworld-scope-aware-federation.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://github.com/Hik289/federated-world-model"><i class="fab fa-github" aria-hidden="true"></i>Code</a></div>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>Anonymous manuscript</span><time>2026</time></div>
+    <div class="publication-meta"><span>arXiv</span><time>2026</time></div>
     <h3><a href="/files/recent-study/invariant-safety-state-abstraction.pdf">When Do Safe Agents Misgeneralize Across Surfaces? Invariant Safety State Abstraction</a></h3>
     <p>Under anonymous review.</p>
     <div class="publication-actions"><a class="publication-action" href="/files/recent-study/invariant-safety-state-abstraction.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://github.com/Hik289/safe_multimodalagents"><i class="fab fa-github" aria-hidden="true"></i>Code</a></div>
