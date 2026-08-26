@@ -1346,31 +1346,6 @@ html[data-theme="dark"] .publication-meta .oral-badge {
   background: transparent;
 }
 
-.recent-study-intro {
-  margin: 0.2rem 0 2.1rem;
-  padding: 0.1rem 0 0.1rem 1rem;
-  border-left: 2px solid var(--xs-accent);
-}
-
-.recent-study-intro p {
-  max-width: 42rem;
-  margin: 0;
-  color: var(--global-text-color-light);
-  font-size: 0.84rem;
-  line-height: 1.65;
-}
-
-.recent-study-intro p + p {
-  margin-top: 0.45rem;
-}
-
-.recent-study-source {
-  font-family: $sans-serif;
-  font-size: 0.68rem !important;
-  letter-spacing: 0.035em;
-  text-transform: uppercase;
-}
-
 .recent-study-list .publication-item {
   padding-top: 1.15rem;
   padding-bottom: 1.15rem;

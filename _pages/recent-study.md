@@ -5,11 +5,6 @@ permalink: /recent-study/
 author_profile: true
 ---
 
-<div class="recent-study-intro">
-  <p>This page lists working papers and ongoing projects. Metadata for public papers comes from arXiv. Papers under anonymous review appear without author names; code is linked only after the repository has been checked.</p>
-  <p class="recent-study-source">12 public code repositories · 2 anonymous preprints · updated August 2026</p>
-</div>
-
 <div class="publication-list recent-study-list preprint-list">
   <article class="publication-item">
     <div class="publication-meta"><span>arXiv</span><time>2026</time></div>

@@ -77,6 +77,6 @@ redirect_from:
   </article>
 </div>
 
-<p class="contribution-note"><sup>*</sup> Equal contribution.</p>
-
 <p class="section-link"><a href="/publications/">View all publications &rarr;</a></p>
+
+<p class="contribution-note"><sup>*</sup> Equal contribution.</p>
