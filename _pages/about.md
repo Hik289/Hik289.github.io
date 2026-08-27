@@ -80,3 +80,11 @@ redirect_from:
 <p class="section-link"><a href="/publications/">View all publications &rarr;</a></p>
 
 <p class="contribution-note"><sup>*</sup> Equal contribution.</p>
+
+<section class="visitor-map-section" aria-labelledby="visitor-map-heading">
+  <h2 id="visitor-map-heading">Visitors</h2>
+  <div class="visitor-map-widget" role="img" aria-label="World map showing approximate recent visitor locations as red dots">
+    <script async src="https://feed-pulse.com/api/embed/visitor-globe.js?site_id=dfdca402-47a4-4b27-92eb-7df55f894c2f&map=flat&w=680&h=360&theme=ivory&speed=off&poll=30000"></script>
+    <noscript>The visitor map requires JavaScript.</noscript>
+  </div>
+</section>

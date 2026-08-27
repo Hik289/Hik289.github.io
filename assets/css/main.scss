@@ -696,6 +696,50 @@ button:focus-visible {
   font-weight: 700;
 }
 
+.visitor-map-section {
+  margin-top: 2.6rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid var(--global-border-color);
+}
+
+.visitor-map-section h2 {
+  margin: 0 0 1rem;
+}
+
+.visitor-map-widget {
+  display: flex;
+  min-height: 16rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.visitor-map-widget [data-fp-globe] {
+  display: block !important;
+  width: 100%;
+  max-width: 42.5rem;
+  padding: 0 !important;
+  color: var(--global-text-color-light) !important;
+  background: transparent !important;
+}
+
+.visitor-map-widget [data-fp-globe] canvas {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 0.65rem !important;
+  filter: hue-rotate(218deg) saturate(1.15);
+}
+
+.visitor-map-widget [data-fp-globe] > div {
+  display: none;
+}
+
+.visitor-map-widget [data-fp-attribution="globe"] {
+  margin-top: 0.35rem !important;
+  color: var(--global-text-color-light) !important;
+  text-align: right;
+}
+
 .research-statement p strong:first-child {
   color: var(--xs-accent-deep);
 }
