@@ -1,11 +1,5 @@
-// Isolation Syntax
-// ================
 
 
-// Isolate [Mixin]
-// ---------------
-// Set isolation as an override.
-// - $location: <span>
 @mixin isolate(
   $isolate: 1
 ) {
@@ -20,11 +14,6 @@
   @include isolate-output($output...);
 }
 
-
-// Isolate [function]
-// ------------------
-// Return an isolation offset width.
-// - $location: <span>
 @function isolate(
   $isolate: 1
 ) {
@@ -42,11 +31,6 @@
   @return get-isolation($isolate);
 }
 
-
-// Get Isolation
-// -------------
-// Return the isolation offset width
-// - $input: <map>
 @function get-isolation(
   $input
 ) {

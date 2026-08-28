@@ -7,7 +7,7 @@
     float: none;
     padding-right: 0;
   }
-  
+
   @media (min-width: 80em) {
     .archive {
       width: 70%;
@@ -16,39 +16,39 @@
 </style>
 
 <div class="cv-container">
-  <!-- Basic Information -->
+
   <div class="cv-section cv-header">
     <h1>{{ cv.basics.name }}</h1>
     {% if cv.basics.label %}
     <h2>{{ cv.basics.label }}</h2>
     {% endif %}
-    
+
     <div class="cv-contact">
       {% if cv.basics.email %}
       <div class="cv-contact-item">
         <i class="fas fa-envelope"></i> {{ cv.basics.email }}
       </div>
       {% endif %}
-      
+
       {% if cv.basics.phone %}
       <div class="cv-contact-item">
         <i class="fas fa-phone"></i> {{ cv.basics.phone }}
       </div>
       {% endif %}
-      
+
       {% if cv.basics.website %}
       <div class="cv-contact-item">
         <i class="fas fa-globe"></i> <a href="{{ cv.basics.website }}" target="_blank">{{ cv.basics.website }}</a>
       </div>
       {% endif %}
-      
+
       {% if cv.basics.location.city %}
       <div class="cv-contact-item">
         <i class="fas fa-map-marker-alt"></i> {{ cv.basics.location.city }}{% if cv.basics.location.region %}, {{ cv.basics.location.region }}{% endif %}{% if cv.basics.location.countryCode %}, {{ cv.basics.location.countryCode }}{% endif %}
       </div>
       {% endif %}
     </div>
-    
+
     {% if cv.basics.profiles.size > 0 %}
     <div class="cv-profiles">
       {% for profile in cv.basics.profiles %}
@@ -59,17 +59,17 @@
     </div>
     {% endif %}
   </div>
-  
+
   {% if cv.basics.summary %}
-  <!-- Summary -->
+
   <div class="cv-section">
     <h2>Summary</h2>
     <p>{{ cv.basics.summary }}</p>
   </div>
   {% endif %}
-  
+
   {% if cv.education.size > 0 %}
-  <!-- Education -->
+
   <div class="cv-section">
     <h2>Education</h2>
     <ul class="cv-list">
@@ -95,9 +95,9 @@
     </ul>
   </div>
   {% endif %}
-  
+
   {% if cv.work.size > 0 %}
-  <!-- Work Experience -->
+
   <div class="cv-section">
     <h2>Work Experience</h2>
     <ul class="cv-list">
@@ -125,9 +125,9 @@
     </ul>
   </div>
   {% endif %}
-  
+
   {% if cv.skills.size > 0 %}
-  <!-- Skills -->
+
   <div class="cv-section">
     <h2>Skills</h2>
     <div class="cv-skills">
@@ -144,9 +144,9 @@
     </div>
   </div>
   {% endif %}
-  
+
   {% if cv.publications.size > 0 %}
-  <!-- Publications -->
+
   <div class="cv-section">
     <h2>Publications</h2>
     <ul class="cv-list">
@@ -172,9 +172,9 @@
     </ul>
   </div>
   {% endif %}
-  
+
   {% if cv.presentations.size > 0 %}
-  <!-- Presentations/Talks -->
+
   <div class="cv-section">
     <h2>Presentations</h2>
     <ul class="cv-list">
@@ -198,9 +198,9 @@
     </ul>
   </div>
   {% endif %}
-  
+
   {% if cv.teaching.size > 0 %}
-  <!-- Teaching -->
+
   <div class="cv-section">
     <h2>Teaching</h2>
     <ul class="cv-list">
@@ -224,9 +224,9 @@
     </ul>
   </div>
   {% endif %}
-  
+
   {% if cv.portfolio.size > 0 %}
-  <!-- Portfolio -->
+
   <div class="cv-section">
     <h2>Portfolio</h2>
     <ul class="cv-list">
@@ -252,9 +252,9 @@
     </ul>
   </div>
   {% endif %}
-  
+
   {% if cv.languages.size > 0 %}
-  <!-- Languages -->
+
   <div class="cv-section">
     <h2>Languages</h2>
     <ul class="cv-list">
@@ -269,9 +269,9 @@
     </ul>
   </div>
   {% endif %}
-  
+
   {% if cv.interests.size > 0 %}
-  <!-- Interests -->
+
   <div class="cv-section">
     <h2>Interests</h2>
     <ul class="cv-list">
@@ -288,9 +288,9 @@
     </ul>
   </div>
   {% endif %}
-  
+
   {% if cv.references.size > 0 %}
-  <!-- References -->
+
   <div class="cv-section">
     <h2>References</h2>
     <ul class="cv-list">

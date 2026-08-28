@@ -1,10 +1,5 @@
-// Padding Syntax
-// ==============
 
-// Prefix
-// ------
-// Add spanning-padding before an element.
-// - $span  : <span>
+
 @mixin prefix(
   $span
 ) {
@@ -22,10 +17,6 @@
   @include padding-output($width, null, $flow);
 }
 
-// Suffix
-// ------
-// Add spanning-padding after an element.
-// - $span  : <span>
 @mixin suffix(
   $span
 ) {
@@ -43,11 +34,6 @@
   @include padding-output(null, $width, $flow);
 }
 
-// Pad
-// ---
-// Add spanning-padding before and after an element.
-// - $pre     : <span>
-// - [$post]  : <span>
 @mixin pad(
   $pre,
   $post: false

@@ -1,27 +1,23 @@
 {
-  "name": "academic-pages",
-  "version": "0.8.1.1",
-  "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
+  "name": "xinyuan-song-website",
+  "version": "1.0.0",
+  "description": "Build tools for Xinyuan Song's personal website",
   "repository": {
     "type": "git",
-    "url": "https://github.com/academicpages/academicpages.github.io"
+    "url": "git@github.com:Hik289/Hik289.github.io.git"
   },
   "keywords": [
     "jekyll",
-    "theme",
-    "minimal"
+    "personal-website"
   ],
-  "contributors": [
-    "Michael Rose",
-    "Robert Zupko"
-  ],
+  "author": "Xinyuan Song",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/academicpages/academicpages.github.io/issues"
+    "url": "https://github.com/Hik289/Hik289.github.io/issues"
   },
-  "homepage": "https://github.com/academicpages/academicpages.github.io",
+  "homepage": "https://hik289.github.io",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 18"
   },
   "dependencies": {
     "jquery": "^3.7.1",
@@ -30,7 +26,7 @@
   "devDependencies": {
     "jslint": "^0.12.1",
     "onchange": "^7.1.0",
-    "uglify-js": "^3.19.3"    
+    "uglify-js": "^3.19.3"
   },
   "scripts": {
     "uglify": "uglifyjs node_modules/jquery/dist/jquery.min.js assets/js/plugins/jquery.greedy-navigation.js assets/js/_main.js assets/js/theme.js -c -m -o assets/js/main.min.js",

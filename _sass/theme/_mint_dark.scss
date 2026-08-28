@@ -1,7 +1,5 @@
-/* ==========================================================================
-   MINT THEME - DARK VERSION
-   ========================================================================== */
-/* Color codes used for the theme */
+
+
 $primary-color              : #30e3ca;
 $background                 : #1a2421;
 $background-light           : #243430;
@@ -15,14 +13,12 @@ $footer                    : #0f1614;
 $border                    : #2e443f;
 $border-light              : #3d5950;
 
-/* Color codes used for the site */
 $danger-color               : #e74c3c;
 $info-color                 : #4effd9;
 $notice-color               : #30e3ca;
 $success-color              : #2ecc71;
 $warning-color              : #f39c12;
 
-/* Other basic settings for the template */
 $border-radius              : 4px;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
 $global-transition          : all 0.2s ease-in-out;
@@ -32,7 +28,6 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Dark theme for the site */
 html[data-theme="dark"] {
   --global-base-color                 : #{$primary-color};
   --global-bg-color                   : #{$background};
@@ -53,7 +48,6 @@ html[data-theme="dark"] {
 
 }
 
-/* Footer styling for dark mode */
 html[data-theme="dark"] {
   footer {
     color: #{$text};

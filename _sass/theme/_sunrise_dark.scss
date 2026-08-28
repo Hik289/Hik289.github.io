@@ -1,7 +1,5 @@
-/* ==========================================================================
-    SUNRISE THEME - DARK VERSION
-    ========================================================================== */
-/* Color codes used for the theme */
+
+
 $primary-color              : #ff8793;
 $dark-primary-color         : #ff5568;
 $darker-primary-color       : #d4741f;
@@ -21,14 +19,12 @@ $border-dark               : #5a3f28;
 $code-bg                   : #0d0806;
 $code-bg-dark              : #0f0907;
 
-/* Color codes used for the site */
 $danger-color               : #ff6b7f;
 $info-color                 : #52adc8;
 $notice-color               : #f9b248;
 $success-color              : #78c978;
 $warning-color              : #f9b248;
 
-/* Other basic settings for the template */
 $border-radius              : 4px;
 $box-shadow                 : 0 1px 1px rgba(255, 255, 255, 0.125);
 $global-transition          : all 0.2s ease-in-out;
@@ -38,7 +34,6 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Sunset dark theme CSS variables */
 html[data-theme="dark"] {
     --global-base-color                 : #{$primary-color};
     --global-bg-color                   : #{$background};

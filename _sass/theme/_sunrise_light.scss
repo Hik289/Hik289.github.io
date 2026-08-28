@@ -1,7 +1,5 @@
-/* ==========================================================================
-   SUNRISE THEME - LIGHT VERSION
-   ========================================================================== */
-/* Color codes used for the theme */
+
+
 $primary-color              : #fc3a52;
 $dark-primary-color         : mix(#000, $primary-color, 40%);
 $darker-primary-color       : mix(#000, $primary-color, 60%);
@@ -19,14 +17,12 @@ $footer                    : #f9b248;
 $border                    : mix(#000, $background, 20%);
 $border-dark               : mix(#000, $background, 30%);
 
-/* Color codes used for the site */
 $danger-color               : #cc6666;
 $info-color                 : #81a2be;
 $notice-color               : #de935f;
 $success-color              : #b5bd68;
 $warning-color              : #f0c674;
 
-/* Other basic settings for the template */
 $border-radius              : 4px;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
 $global-transition          : all 0.2s ease-in-out;
@@ -36,7 +32,6 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Light theme for the site */
 :root {
     --global-base-color                 : #{$primary-color};
     --global-bg-color                   : #{$background};

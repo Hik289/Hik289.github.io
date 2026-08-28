@@ -1,7 +1,5 @@
-/* ==========================================================================
-  MINT THEME - LIGHT VERSION
-  ========================================================================== */
-/* Color codes used for the theme */
+
+
 $primary-color              : #11999e;
 $dark-primary-color         : mix(#000, $primary-color, 40%);
 $darker-primary-color       : mix(#000, $primary-color, 60%);
@@ -19,14 +17,12 @@ $footer                    : #30e3ca;
 $border                    : mix(#fff, #40514e, 75%);
 $border-dark               : mix(#fff, #40514e, 60%);
 
-/* Color codes used for the site */
 $danger-color               : #e74c3c;
 $info-color                 : #11999e;
 $notice-color               : #30e3ca;
 $success-color              : #2ecc71;
 $warning-color              : #f39c12;
 
-/* Other basic settings for the template */
 $border-radius              : 4px;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
 $global-transition          : all 0.2s ease-in-out;
@@ -36,7 +32,6 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Light theme for the site */
 :root {
   --global-base-color                 : #{$primary-color};
   --global-bg-color                   : #{$background};
@@ -60,5 +55,4 @@ $sidebar-screen-min-width   : 1024px;
 footer {
   color: #{$text};
 }
-
 

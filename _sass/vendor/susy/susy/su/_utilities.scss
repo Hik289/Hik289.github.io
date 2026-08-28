@@ -1,10 +1,5 @@
-// Map Functions
-// =============
 
 
-// Truncate List
-// -------------
-// - Return a list, truncated to a given length
 @function _susy-truncate-list(
   $list,
   $length
@@ -18,10 +13,6 @@
   @return $_return;
 }
 
-
-// Deep Get
-// --------
-// - Return a value deep in nested maps
 @function _susy-deep-get(
   $map,
   $keys...
@@ -37,10 +28,6 @@
   @return $_return;
 }
 
-
-// Deep Set
-// --------
-// - Set a value deep in nested maps
 @function _susy-deep-set(
   $map,
   $keys-value...
@@ -63,10 +50,6 @@
   @return $_return;
 }
 
-
-// Deep Merge
-// ----------
-// Return 2 objects of any depth, merged
 @function _susy-deep-merge(
   $map1,
   $map2
@@ -84,10 +67,6 @@
   @return $map1;
 }
 
-
-// Deep Has-Key
-// ------------
-// - Return true if a deep key exists
 @function _susy-deep-has-key(
   $map,
   $keys...

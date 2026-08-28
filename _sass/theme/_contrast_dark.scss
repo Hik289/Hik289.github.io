@@ -1,7 +1,5 @@
-/* ==========================================================================
-   CONTRAST THEME - DARK VERSION
-   ========================================================================== */
-/* Color codes used for the theme */
+
+
 $primary-color              : #ff6c60;
 $background                 : #000000;
 $background-light           : #1a1a1a;
@@ -17,14 +15,12 @@ $border-light              : #666666;
 $selection-bg              : #264f78;
 $selection-text            : #ffffff;
 
-/* Color codes used for the site */
 $danger-color               : #ff6c60;
 $info-color                 : #96cbfe;
 $notice-color               : #ffffff;
 $success-color              : #a8ff60;
 $warning-color              : #e9c062;
 
-/* Other basic settings for the template */
 $border-radius              : 4px;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
 $global-transition          : all 0.2s ease-in-out;
@@ -34,7 +30,6 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Dark theme for the site */
 html[data-theme="dark"] {
   --global-base-color                 : #{$primary-color};
   --global-bg-color                   : #{$background};
@@ -57,7 +52,6 @@ html[data-theme="dark"] {
   --global-selection-text-color       : #{$selection-text};
 }
 
-/* Text selection styling for dark theme */
 html[data-theme="dark"] ::selection {
   background-color: var(--global-selection-bg-color);
   color: var(--global-selection-text-color);
@@ -68,7 +62,6 @@ html[data-theme="dark"] ::-moz-selection {
   color: var(--global-selection-text-color);
 }
 
-/* Override notice colors for high contrast in dark mode */
 html[data-theme="dark"] {
   .page__content {
     .notice,
@@ -107,7 +100,7 @@ html[data-theme="dark"] {
     }
 
     .notice--danger {
-      background-color: mix($background, $danger-color, 85%);      
+      background-color: mix($background, $danger-color, 85%);
       color: #{$text};
       border-color: #{$text};
     }

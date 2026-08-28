@@ -1,10 +1,4 @@
-/* ==========================================================================
-   NAVIGATION
-   ========================================================================== */
 
-/*
-   Breadcrumb navigation links
-   ========================================================================== */
 
 .breadcrumbs {
   @include container;
@@ -50,11 +44,6 @@
     font-weight: bold;
   }
 }
-
-
-/*
-   Post pagination navigation links
-   ========================================================================== */
 
 .pagination {
   @include full();
@@ -120,7 +109,6 @@
     }
   }
 
-  /* next/previous buttons */
   &--pager {
     display: block;
     padding: 1em 2em;
@@ -166,11 +154,6 @@
   padding-top: 2em;
   border-top: 1px solid var(--global-border-color);
 }
-
-
-/*
-   Priority plus navigation
-   ========================================================================== */
 
 .greedy-nav {
   position: relative;
@@ -240,13 +223,13 @@
         transition: $global-transition;
         -webkit-transform: scaleX(0);
             -ms-transform: scaleX(0);
-                transform: scaleX(0); /* hide*/
+                transform: scaleX(0);
       }
 
       &:hover:before {
         -webkit-transform: scaleX(1);
             -ms-transform: scaleX(1);
-                transform: scaleX(1); /* reveal*/
+                transform: scaleX(1);
       }
     }
   }
@@ -310,11 +293,6 @@
   }
 }
 
-
-/*
-   Navigation list
-   ========================================================================== */
-
 .nav__list {
   font-size: 1.25rem;
 
@@ -365,11 +343,6 @@
   text-transform: uppercase;
   border-bottom: 1px solid var(--global-border-color);
 }
-
-
-/*
-   Table of contents navigation
-   ========================================================================== */
 
 .toc {
   font-family: $sans-serif-narrow;
@@ -424,7 +397,6 @@
     font-weight: normal;
   }
 
-  /* hide sub sub links on small screens*/
   li > ul li {
     display: none;
 

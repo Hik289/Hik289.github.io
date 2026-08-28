@@ -461,7 +461,7 @@
 .ai-zotero-square:before {
   content: "\e932";
 }
-/*  Duplication of the FontAwesome style classes using 'ai' in place of 'fa'. */
+
 .ai-lg {
   font-size: 1.33333em;
   line-height: 0.75em;

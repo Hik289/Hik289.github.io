@@ -1,11 +1,5 @@
-// rem Support
-// ===========
 
-// rem
-// ---
-// Check for an existing support mixin, or output directly.
-// - $prop  : <css property>
-// - $val   : <css value>
+
 @mixin susy-rem(
   $prop,
   $val

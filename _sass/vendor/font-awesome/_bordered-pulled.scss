@@ -1,5 +1,4 @@
-// bordered + pulled icons
-// -------------------------
+
 
 .#{$fa-css-prefix}-border {
   border-color: var(--#{$fa-css-prefix}-border-color, #{$fa-border-color});
@@ -11,10 +10,10 @@
 
 .#{$fa-css-prefix}-pull-left {
   float: left;
-  margin-right: var(--#{$fa-css-prefix}-pull-margin, #{$fa-pull-margin}); 
+  margin-right: var(--#{$fa-css-prefix}-pull-margin, #{$fa-pull-margin});
 }
 
 .#{$fa-css-prefix}-pull-right {
   float: right;
-  margin-left: var(--#{$fa-css-prefix}-pull-margin, #{$fa-pull-margin}); 
+  margin-left: var(--#{$fa-css-prefix}-pull-margin, #{$fa-pull-margin});
 }

@@ -1,8 +1,5 @@
-/* ==========================================================================
-   JSON CV
-   ========================================================================== */
 
-/* CV Template Styles */
+
 .cv-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -11,7 +8,6 @@
   line-height: 1.6;
 }
 
-/* Header Styles */
 .cv-header {
   margin-bottom: 2rem;
   border-bottom: 2px solid var(--global-thead-color );
@@ -57,7 +53,6 @@
   text-decoration: underline;
 }
 
-/* Section Styles */
 .cv-section {
   margin-bottom: 2rem;
 }
@@ -75,8 +70,6 @@
 .cv-section h2 i {
   color: var(--global-text-color);
 }
-
-/* Item Styles */
 
 .cv-item {
   margin-bottom: 1.5rem;
@@ -123,7 +116,6 @@
   margin-bottom: 0.25rem;
 }
 
-/* Skills Styles */
 .cv-skills {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -148,7 +140,6 @@
   font-size: 0.9rem;
 }
 
-/* Project Styles */
 .cv-project-keywords {
   display: flex;
   flex-wrap: wrap;
@@ -164,7 +155,6 @@
   font-size: 0.9rem;
 }
 
-/* Languages Styles */
 .cv-languages {
   display: flex;
   flex-wrap: wrap;
@@ -185,7 +175,6 @@
   font-size: 0.9rem;
 }
 
-/* Interests Styles */
 .cv-interests {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -210,26 +199,24 @@
   font-size: 0.9rem;
 }
 
-/* References Styles */
 .cv-references {
   font-style: italic;
   color: var(--global-text-color);
 }
 
-/* Print Styles */
 @media print {
   .cv-container {
     max-width: 100%;
   }
-  
+
   .cv-header {
     border-bottom-color: var(--global-border-color);
   }
-  
+
   .cv-section h2 {
     border-bottom-color: var(--global-border-color);
   }
-  
+
   .cv-skill-keyword,
   .cv-project-keyword,
   .cv-interest-keyword {

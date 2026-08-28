@@ -1,13 +1,6 @@
 ---
 ---
 
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
-
 @import
     "vendor/breakpoint/breakpoint",
 
@@ -38,7 +31,6 @@
     "layout/json_cv"
 ;
 
-/* Personal site refinements */
 :root {
   --xs-ink: #18312f;
   --xs-accent: #0b756b;
@@ -636,7 +628,6 @@ button:focus-visible {
   }
 }
 
-/* Final typographic details */
 .page--home .page__title {
   display: none;
 }
@@ -783,7 +774,6 @@ button:focus-visible {
   }
 }
 
-/* Editorial polish: quiet typography and structured publication lists */
 :root {
   --xs-ink: #18313b;
   --xs-accent: #2d6f73;
@@ -1395,7 +1385,6 @@ html[data-theme="dark"] .publication-meta .oral-badge {
   padding-bottom: 1.15rem;
 }
 
-/* Stable final layout — keep this last so the legacy grid cannot override it. */
 @include breakpoint($large) {
   #main {
     grid-template-columns: minmax(165px, 185px) minmax(0, 850px);

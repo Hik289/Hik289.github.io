@@ -1,6 +1,4 @@
-/* ==========================================================================
-   SINGLE PAGE/POST
-   ========================================================================== */
+
 
 #main {
   @include container;
@@ -59,11 +57,9 @@
     font-size: 1em;
   }
 
-  /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
 
-    /* sibling indentation*/
     @if $paragraph-indent == true {
       & + p {
         text-indent: $indent-var;
@@ -100,7 +96,6 @@
     font-size: $type-size-6;
   }
 
-  /* blockquote citations */
   blockquote + .small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
@@ -191,10 +186,6 @@
   }
 }
 
-/*
-   Social sharing
-   ========================================================================== */
-
 .page__share {
   margin-top: 2em;
   padding-top: 1em;
@@ -220,11 +211,6 @@
   text-transform: uppercase;
 }
 
-
-/*
-   Page meta
-   ========================================================================== */
-
 .page__meta {
   margin-top: 2em;
   color: var(--global-text-color-light);
@@ -245,11 +231,6 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
-
-
-/*
-   Page taxonomy
-   ========================================================================== */
 
 .page__taxonomy {
   .sep {
@@ -275,11 +256,6 @@
     color: var(--global-link-color-hover);
   }
 }
-
-
-/*
-   Comments
-   ========================================================================== */
 
 .page__comments {
   @include full();
@@ -371,11 +347,6 @@
     text-decoration: none;
   }
 }
-
-
-/*
-   Related
-   ========================================================================== */
 
 .page__related {
   margin-top: 2em;

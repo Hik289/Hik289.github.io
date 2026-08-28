@@ -1,6 +1,6 @@
-# Xinyuan Song - Academic Website
+# Xinyuan Song
 
-Source for [hik289.github.io](https://hik289.github.io), built with Jekyll and the AcademicPages theme.
+Source code for [hik289.github.io](https://hik289.github.io).
 
 ## Local Preview
 
@@ -18,6 +18,6 @@ The site will be available at `http://127.0.0.1:4000`.
 - `_pages/cv.md`: curriculum vitae
 - `files/Xinyuan_Song_CV.pdf`: downloadable CV
 
-## Deployment
+## Repository
 
-The repository is intended to be published as `Hik289/Hik289.github.io` using GitHub Pages from the `main` branch.
+The remote repository is private. Local development and builds do not publish the website.

@@ -1,19 +1,9 @@
-/* ==========================================================================
-   UTILITY CLASSES
-   ========================================================================== */
 
-/*
-   Visibility
-   ========================================================================== */
-
-/* http://www.456bereastreet.com/archive/200711/screen_readers_sometimes_ignore_displaynone/ */
 
 .hidden {
   display: none;
   visibility: hidden;
 }
-
-/* for preloading images */
 
 .load {
   display: none;
@@ -22,8 +12,6 @@
 .transparent {
   opacity: 0;
 }
-
-/* https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html */
 
 .visually-hidden,
 .screen-reader-text,
@@ -43,8 +31,6 @@ body:hover .visually-hidden button {
   display: none !important;
 }
 
-/* screen readers */
-
 .screen-reader-text:focus,
 .screen-reader-shortcut:focus  {
   clip: auto !important;
@@ -60,11 +46,6 @@ body:hover .visually-hidden button {
   box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
 }
 
-
-/*
-   Skip links
-   ========================================================================== */
-
 .skip-link {
   position: fixed;
   z-index: 20;
@@ -78,11 +59,6 @@ body:hover .visually-hidden button {
   width: 0;
   list-style: none;
 }
-
-
-/*
-   Type
-   ========================================================================== */
 
 .text-left {
   text-align: left;
@@ -104,33 +80,19 @@ body:hover .visually-hidden button {
   white-space: nowrap;
 }
 
-
-/*
-   Alignment
-   ========================================================================== */
-
-/* clearfix */
-
 .cf { clear: both; }
 
 .wrapper {
   @include container();
 }
 
-/* Source: http://snipplr.com/view/10979/css-cross-browser-word-wrap */
-.wordwrap { 
-  white-space: pre-wrap;      /* CSS3 */   
-  white-space: -moz-pre-wrap; /* Firefox */    
-  white-space: -pre-wrap;     /* Opera <7 */   
-  white-space: -o-pre-wrap;   /* Opera 7 */    
-  word-wrap: break-word;      /* IE */
+.wordwrap {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }
-
-/*
-   Images
-   ========================================================================== */
-
-/* image align left */
 
 .align-left {
   display: block;
@@ -143,8 +105,6 @@ body:hover .visually-hidden button {
   }
 }
 
-/* image align right */
-
 .align-right {
   display: block;
   margin-left: auto;
@@ -156,25 +116,17 @@ body:hover .visually-hidden button {
   }
 }
 
-/* image align center */
-
 .align-center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* file page content container */
-
 .full {
   @include breakpoint($large){
     margin-right: -1 * span(2.5 of 12) !important;
   }
 }
-
-/*
-   Icons
-   ========================================================================== */
 
 .icon {
   display: inline-block;
@@ -187,13 +139,10 @@ body:hover .visually-hidden button {
   vertical-align: middle;
 }
 
-/* Adjust this setting to control the space between an icon and text in the sidebar */
 .icon-pad-right {
   padding-right: 0.5em;
   margin-right: 0.5em;
 }
-
-/* social icons*/
 
 .social-icons {
   .fa {
@@ -312,11 +261,6 @@ body:hover .visually-hidden button {
   }
 }
 
-
-/*
-   Navicons
-   ========================================================================== */
-
 .navicon {
   position: relative;
   display: inline-block;
@@ -350,10 +294,9 @@ body:hover .visually-hidden button {
 }
 
 .close .navicon {
-  /* hide the middle line*/
+
   background: transparent;
 
-  /* overlay the lines by setting both their top values to 0*/
   &:before, &:after{
     -webkit-transform-origin: 50% 50%;
         -ms-transform-origin: 50% 50%;
@@ -362,7 +305,6 @@ body:hover .visually-hidden button {
     width: $navicon-width;
   }
 
-  /* rotate the lines to form the x shape*/
   &:before{
     -webkit-transform: rotate3d(0,0,1,45deg);
             transform: rotate3d(0,0,1,45deg);
@@ -372,11 +314,6 @@ body:hover .visually-hidden button {
             transform: rotate3d(0,0,1,-45deg);
   }
 }
-
-
-/*
-   Sticky, fixed to top content
-   ========================================================================== */
 
 .sticky {
   @include breakpoint($large) {
@@ -391,11 +328,6 @@ body:hover .visually-hidden button {
   }
 }
 
-
-/*
-   Wells
-   ========================================================================== */
-
 .well {
   min-height: 20px;
   padding: 19px;
@@ -405,11 +337,6 @@ body:hover .visually-hidden button {
   border-radius: $border-radius;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-
-
-/*
-   Modals
-   ========================================================================== */
 
 .show-modal {
   overflow: hidden;
@@ -461,11 +388,6 @@ body:hover .visually-hidden button {
   }
 }
 
-
-/*
-   Footnotes
-   ========================================================================== */
-
 .footnote {
   color: var(--global-text-color-light);
   text-decoration: none;
@@ -488,11 +410,6 @@ a.reversefootnote {
     text-decoration: underline;
   }
 }
-
-
-/*
-   Required
-   ========================================================================== */
 
 .required {
   color: $danger-color;

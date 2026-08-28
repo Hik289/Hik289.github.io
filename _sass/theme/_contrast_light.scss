@@ -1,7 +1,5 @@
-/* ==========================================================================
-   CONTRAST THEME - LIGHT VERSION
-   ========================================================================== */
-/* Color codes used for the theme */
+
+
 $primary-color              : #b60000;
 $dark-primary-color         : mix(#000, $primary-color, 40%);
 $darker-primary-color       : mix(#000, $primary-color, 60%);
@@ -21,14 +19,12 @@ $border-dark               : #808080;
 $selection-bg              : #b3d4fc;
 $selection-text            : #000000;
 
-/* Color codes used for the site */
 $danger-color               : #ff0000;
 $info-color                 : #0000ff;
 $notice-color               : #000000;
 $success-color              : #008000;
 $warning-color              : #ff8800;
 
-/* Other basic settings for the template */
 $border-radius              : 4px;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
 $global-transition          : all 0.2s ease-in-out;
@@ -38,7 +34,6 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Light theme for the site */
 :root {
   --global-base-color                 : #{$primary-color};
   --global-bg-color                   : #{$background};
@@ -61,7 +56,6 @@ $sidebar-screen-min-width   : 1024px;
   --global-selection-text-color       : #{$selection-text};
 }
 
-/* Text selection styling for light theme */
 ::selection {
   background-color: var(--global-selection-bg-color);
   color: var(--global-selection-text-color);
@@ -72,7 +66,6 @@ $sidebar-screen-min-width   : 1024px;
   color: var(--global-selection-text-color);
 }
 
-/* Override notice colors for high contrast */
 .page__content {
   .notice,
   .notice--primary,
@@ -89,7 +82,6 @@ html:not([data-theme="dark"]) footer {
   color: #000000;
 }
 
-// Do not change the color of the social icons in the feed icons
 .page__footer-follow .social-icons i:not(.fa-rss-square),
 .page__footer-follow .social-icons .svg-inline--fa:not(.fa-rss-square) {
   color: inherit;

@@ -1,13 +1,7 @@
-/* ==========================================================================
-   BUTTONS
-   ========================================================================== */
 
-/*
-   Default button
-   ========================================================================== */
 
 .btn {
-  /* default button */
+
   display: inline-block;
   margin-bottom: 0.25em;
   padding: 0.5em 1em;
@@ -31,10 +25,8 @@
   }
 
   .icon + .hidden {
-    margin-left: -0.5em; /* override for hidden text*/
+    margin-left: -0.5em;
   }
-
-  /* fills width of parent container */
 
   &--block {
     display: block;
@@ -45,11 +37,9 @@
     }
   }
 
-  /* for dark backgrounds */
-
   &--inverse {
     color: var(--global-text-color-light) !important;
-    border: 1px solid var(--global-border-color) !important; /* override*/
+    border: 1px solid var(--global-border-color) !important;
     background-color: var(--global-bg-color);
 
     &:hover {
@@ -58,14 +48,10 @@
     }
   }
 
-  /* light outline */
-
   &--light-outline {
-    border: 1px solid #fff !important; /* override*/
+    border: 1px solid #fff !important;
     background-color: transparent;
   }
-
-  /* information */
 
   &--info {
     background-color: $info-color;
@@ -75,8 +61,6 @@
     }
   }
 
-  /* warning */
-
   &--warning {
     background-color: $warning-color;
 
@@ -84,8 +68,6 @@
       background-color: mix(#000, $warning-color, 20%);
     }
   }
-
-  /* success */
 
   &--success {
     background-color: $success-color;
@@ -95,8 +77,6 @@
     }
   }
 
-  /* danger */
-
   &--danger {
     background-color: $danger-color;
 
@@ -104,8 +84,6 @@
       background-color: mix(#000, $danger-color, 20%);
     }
   }
-
-  /* disabled */
 
   &--disabled {
     pointer-events: none;
@@ -115,15 +93,13 @@
     opacity: 0.65;
   }
 
-  /* social buttons */
-
   $social:
   (bluesky, $bluesky-color),
   (facebook, $facebook-color),
   (google-plus, $google-plus-color),
   (linkedin, $linkedin-color),
   (mastodon, $mastodon-color),
-  (twitter, $twitter-color); 
+  (twitter, $twitter-color);
 
   @each $socialnetwork, $color in $social {
     &--#{$socialnetwork} {
@@ -135,19 +111,13 @@
     }
   }
 
-  /* extra large button */
-
   &--x-large {
     font-size: $type-size-4;
   }
 
-  /* large button */
-
   &--large {
     font-size: $type-size-5;
   }
-
-  /* small button */
 
   &--small {
     font-size: $type-size-7;
