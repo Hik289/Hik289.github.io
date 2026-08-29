@@ -21,3 +21,5 @@ The site will be available at `http://127.0.0.1:4000`.
 ## Repository
 
 The remote repository is private. Local development and builds do not publish the website.
+
+Third-party licenses and source notices are listed in `THIRD_PARTY_NOTICES.md`.
