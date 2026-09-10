@@ -82,9 +82,51 @@ redirect_from:
 <p class="contribution-note"><sup>*</sup> Equal contribution.</p>
 
 <section class="visitor-map-section" aria-labelledby="visitor-map-heading">
-  <h2 id="visitor-map-heading">Visitors</h2>
-  <div class="visitor-map-widget" role="img" aria-label="World map showing approximate recent visitor locations as red dots">
-    <script async src="https://feed-pulse.com/api/embed/visitor-globe.js?site_id=dfdca402-47a4-4b27-92eb-7df55f894c2f&map=flat&w=680&h=360&theme=ivory&speed=off&poll=30000"></script>
-    <noscript>The visitor map requires JavaScript.</noscript>
+  <div class="visitor-map-header">
+    <div>
+      <p class="visitor-map-kicker">Global reach</p>
+      <h2 id="visitor-map-heading">Visitors around the world</h2>
+      <p class="visitor-map-intro">A live view of approximate recent visitor locations.</p>
+    </div>
+    <a class="scholar-citation-card" href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer" aria-label="View citation profile on Google Scholar">
+      <span class="scholar-citation-number">{{ site.scholar_citations | default: "—" }}</span>
+      <span class="scholar-citation-label">Citations</span>
+      <span class="scholar-citation-source"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar · {{ site.scholar_citations_updated | default: "September 2026" }}</span>
+    </a>
   </div>
+  <svg class="visitor-map-filter" width="0" height="0" aria-hidden="true" focusable="false">
+    <filter id="visitor-map-palette" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="1.226806 -1.319407 -0.785749 0 1.925773 1.548859 -2.413217 0.101947 0 1.796704 1.567681 -2.477141 0.153825 0 1.789161 0 0 0 1 0"></feColorMatrix>
+    </filter>
+  </svg>
+  <div class="visitor-map-frame">
+    <div class="visitor-map-toolbar">
+      <span class="visitor-map-legend"><i aria-hidden="true"></i> Recent visits</span>
+      <span id="visitor-map-status" aria-live="polite">Loading recent activity…</span>
+    </div>
+    <div class="visitor-map-widget" role="img" aria-label="World map showing approximate recent visitor locations as red dots">
+      <script async src="https://feed-pulse.com/api/embed/visitor-globe.js?site_id=dfdca402-47a4-4b27-92eb-7df55f894c2f&map=flat&w=680&h=360&theme=ivory&speed=off&poll=30000"></script>
+      <noscript>The live visitor map requires JavaScript.</noscript>
+    </div>
+  </div>
+  <p class="visitor-map-note"><i class="fas fa-location-dot" aria-hidden="true"></i> Locations are approximate; IP addresses are not displayed.</p>
 </section>
+
+<script>
+(() => {
+  const status = document.getElementById("visitor-map-status");
+  if (!status) return;
+  fetch("https://feed-pulse.com/api/visitor-map/dfdca402-47a4-4b27-92eb-7df55f894c2f?hours=720&limit=1000")
+    .then((response) => {
+      if (!response.ok) throw new Error("Visitor data unavailable");
+      return response.json();
+    })
+    .then((data) => {
+      const count = Number(data.count) || 0;
+      status.textContent = count === 1 ? "1 visit · past 30 days" : `${count.toLocaleString()} visits · past 30 days`;
+    })
+    .catch(() => {
+      status.textContent = "Live visitor locations";
+    });
+})();
+</script>
