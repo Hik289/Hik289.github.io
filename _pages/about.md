@@ -50,6 +50,11 @@ redirect_from:
     <h3><a href="https://openreview.net/forum?id=trYJ2pwR0G">When Does Sparsity Mitigate the Curse of Depth in LLMs</a></h3>
     <p>Dilxat Muhtar<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Sebastian Pokutta, Max Zimmer, Nico Pelleriti, Thomas Hofmann, and Shiwei Liu.</p>
   </article>
+  <article class="preprint-item">
+    <div><span class="venue-tag">arXiv 2026</span></div>
+    <h3><a href="https://arxiv.org/abs/2609.17419">World Model Science: Self-Organized Criticality, Weak Chaos, and Metastable Belief Dynamics in Long-Horizon LLM Agents</a></h3>
+    <p><strong>Xinyuan Song</strong> and Zekun Cai.</p>
+  </article>
   <article>
     <div><span class="venue-tag">ICASSP 2026</span></div>
     <h3><a href="https://arxiv.org/abs/2510.02091">Demystifying the Roles of LLM Layers in Retrieval, Knowledge, and Reasoning</a></h3>
@@ -91,6 +96,7 @@ redirect_from:
     <a class="scholar-citation-card" href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer" aria-label="View citation profile on Google Scholar">
       <span class="scholar-citation-number">{{ site.scholar_citations | default: "—" }}</span>
       <span class="scholar-citation-label">Citations</span>
+      <span class="scholar-citation-metrics">h-index {{ site.scholar_h_index }} &middot; i10-index {{ site.scholar_i10_index }}</span>
       <span class="scholar-citation-source"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar · {{ site.scholar_citations_updated | default: "September 2026" }}</span>
     </a>
   </div>

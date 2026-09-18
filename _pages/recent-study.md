@@ -7,6 +7,30 @@ author_profile: true
 
 <div class="publication-list recent-study-list preprint-list">
   <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2609.17419</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2609.17419">World Model Science: Self-Organized Criticality, Weak Chaos, and Metastable Belief Dynamics in Long-Horizon LLM Agents</a></h3>
+    <p><strong>Xinyuan Song</strong> and Zekun Cai.</p>
+    <div class="publication-actions"><a class="publication-action" href="https://arxiv.org/pdf/2609.17419"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://github.com/Hik289/agent-self-organized-criticality"><i class="fab fa-github" aria-hidden="true"></i>Code</a><a class="publication-action" href="https://arxiv.org/bibtex/2609.17419"><i class="fas fa-quote-right" aria-hidden="true"></i>BibTeX</a></div>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2608.22141</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2608.22141">MEMONDEMAND: A Memory Management System for Large-Scale Enterprise Data</a></h3>
+    <p><strong>Xinyuan Song</strong>, Bowen Zhu, Hasibul Haque, and Liang Zhao.</p>
+    <div class="publication-actions"><a class="publication-action" href="https://arxiv.org/pdf/2608.22141"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://github.com/xfab-xinyuansong/MemOnDemand"><i class="fab fa-github" aria-hidden="true"></i>Code</a><a class="publication-action" href="https://arxiv.org/bibtex/2608.22141"><i class="fas fa-quote-right" aria-hidden="true"></i>BibTeX</a></div>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2608.22137</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2608.22137">MegaMem: A Retrieval Solution for Ultra-Large Context Windows</a></h3>
+    <p><strong>Xinyuan Song</strong>, Bowen Zhu, Hasibul Haque, and Liang Zhao.</p>
+    <div class="publication-actions"><a class="publication-action" href="https://arxiv.org/pdf/2608.22137"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://github.com/xfab-xinyuansong/MegaMem"><i class="fab fa-github" aria-hidden="true"></i>Code</a><a class="publication-action" href="https://arxiv.org/bibtex/2608.22137"><i class="fas fa-quote-right" aria-hidden="true"></i>BibTeX</a></div>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2607.19331</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2607.19331">ISO: An RLVR-Native Optimization Stack</a></h3>
+    <p>Hanqing Zhu, Wenyan Cong, Zhizhou Sha, Sagnik Mukherjee, <strong>Xinyuan Song</strong>, David Gonz&aacute;lez-Mart&iacute;nez, Xiaoxia Wu, Yuandong Tian, Shiwei Liu, David Z. Pan, and Zhangyang &ldquo;Atlas&rdquo; Wang.</p>
+    <div class="publication-actions"><a class="publication-action" href="https://arxiv.org/pdf/2607.19331"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://github.com/zhuhanqing/ISO"><i class="fab fa-github" aria-hidden="true"></i>Code</a><a class="publication-action" href="https://arxiv.org/bibtex/2607.19331"><i class="fas fa-quote-right" aria-hidden="true"></i>BibTeX</a></div>
+  </article>
+  <article class="publication-item">
     <div class="publication-meta"><span>arXiv</span><time>2026</time></div>
     <h3><a href="/files/recent-study/fedworld-scope-aware-federation.pdf">FedWorld: Scope-Aware Federation of Agent World Models</a></h3>
     <p>Under anonymous review.</p>
