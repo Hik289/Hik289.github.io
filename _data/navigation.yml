@@ -1,7 +1,17 @@
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "About me"
+    url: /#about-me
+  - title: "News"
+    url: /#news
+  - title: "Education"
+    url: /#education
+  - title: "Experiences"
+    url: /#experiences
   - title: "Recent Study"
-    url: /recent-study/
+    url: /#recent-study
+  - title: "Selected Publications"
+    url: /#selected-publications
+  - title: "Honors & Awards"
+    url: /#honors-awards
   - title: "CV"
     url: /cv/

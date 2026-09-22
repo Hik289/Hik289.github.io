@@ -1,12 +1,12 @@
 
 
-$doc-font-size              : 16;
+$doc-font-size              : 15;
 
 $paragraph-indent           : false;
 $indent-var                 : 1.3em;
 
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$sans-serif                 : "Trebuchet MS", Helvetica, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 $sans-serif-narrow          : $sans-serif;
@@ -20,10 +20,10 @@ $garamond                   : Garamond, serif;
 
 $type-size-1                : 2.441em;
 $type-size-2                : 1.953em;
-$type-size-3                : 1.563em;
-$type-size-4                : 1.25em;
+$type-size-3                : 1.4em;
+$type-size-4                : 1.2em;
 $type-size-5                : 1em;
-$type-size-6                : 0.75em;
+$type-size-6                : 0.86em;
 $type-size-7                : 0.6875em;
 $type-size-8                : 0.625em;
 
@@ -77,4 +77,3 @@ $vimeo-color                : #1ab7ea;
 $vine-color                 : #00bf8f;
 $youtube-color              : #bb0000;
 $xing-color                 : #006567;
-   

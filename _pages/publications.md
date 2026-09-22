@@ -8,7 +8,7 @@ author_profile: true
 <div class="publication-list">
   <article class="publication-item">
     <div class="publication-meta"><span>CPAL</span><b class="oral-badge">Oral</b><time>2026</time></div>
-    <h3><a href="https://arxiv.org/abs/2511.02122">Matrix Sensing with Kernel Optimal Loss: Robustness and Optimization Landscape</a></h3>
+    <h3><b class="masterpiece-badge">Masterpiece</b><a href="https://arxiv.org/abs/2511.02122">Matrix Sensing with Kernel Optimal Loss: Robustness and Optimization Landscape</a></h3>
     <p><strong>Xinyuan Song</strong> and Ziye Ma.</p>
   </article>
   <article class="publication-item">

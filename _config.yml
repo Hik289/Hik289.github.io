@@ -4,11 +4,11 @@ site_theme               : "default"
 title                    : "Xinyuan Song"
 title_separator          : "-"
 name                     : &name "Xinyuan Song"
-description              : &description "Research in machine learning, learning theory, and optimization"
+description              : &description "Machine learning, learning theory, optimization, and reliable AI systems"
 url                      : "https://hik289.github.io"
 baseurl                  : ""
 repository               : "Hik289/Hik289.github.io"
-scholar_citations        : 2488
+scholar_citations        : 2507
 scholar_h_index          : 24
 scholar_i10_index        : 51
 scholar_citations_updated: "September 2026"
@@ -17,7 +17,7 @@ author:
   avatar           : "image.jpg"
   name             : "Xinyuan Song"
   pronouns         :
-  bio              : "Ph.D. student in Computer Science."
+  bio              : "Ph.D. Student @ Emory University"
   location         : "Atlanta, Georgia"
   employer         : "Emory University"
   uri              :

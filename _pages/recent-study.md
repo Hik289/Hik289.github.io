@@ -33,13 +33,13 @@ author_profile: true
   <article class="publication-item">
     <div class="publication-meta"><span>arXiv</span><time>2026</time></div>
     <h3><a href="/files/recent-study/fedworld-scope-aware-federation.pdf">FedWorld: Scope-Aware Federation of Agent World Models</a></h3>
-    <p>Under anonymous review.</p>
+    <p>Yuchao Hou, Guangyuan Dong, <strong>Xinyuan Song</strong>, Hangtao Zhang, Gaoyuan Du, Jiachen Luo, and Zhengshan Wang.</p>
     <div class="publication-actions"><a class="publication-action" href="/files/recent-study/fedworld-scope-aware-federation.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://github.com/Hik289/federated-world-model"><i class="fab fa-github" aria-hidden="true"></i>Code</a></div>
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>arXiv</span><time>2026</time></div>
     <h3><a href="/files/recent-study/invariant-safety-state-abstraction.pdf">When Do Safe Agents Misgeneralize Across Surfaces? Invariant Safety State Abstraction</a></h3>
-    <p>Under anonymous review.</p>
+    <p>Yuchao Hou, Guangyuan Dong, Hangtao Zhang, <strong>Xinyuan Song</strong>, Jiachen Luo, Gaoyuan Du, and Xianlong Wang.</p>
     <div class="publication-actions"><a class="publication-action" href="/files/recent-study/invariant-safety-state-abstraction.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://github.com/Hik289/safe_multimodalagents"><i class="fab fa-github" aria-hidden="true"></i>Code</a></div>
   </article>
   <article class="publication-item">
