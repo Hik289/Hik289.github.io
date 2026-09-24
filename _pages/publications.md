@@ -75,6 +75,7 @@ author_profile: true
     "When Does Sparsity Mitigate the Curse of Depth in LLMs": "https://github.com/pUmpKin-Co/SparsityAndCoD",
     "The Curse of Depth in Large Language Models": "https://github.com/Hik289/layernorm-scaling",
     "Self-evolving Agents with Reflective and Memory-Augmented Abilities": "https://github.com/codepassionor/sage",
+    "Harder the Task, Sparser the Representation: Sparsity as a Learning Signature of Capability in LLMs": "https://github.com/MingyuJ666/sparsityLLM",
     "GPAS: Accelerating Convergence of LLM Pretraining via Gradient-Preserving Activation Scaling": "https://github.com/dandingsky/GPAS",
     "SOLAR: Serendipity Optimized Language Model Aligned for Recommendation": "https://github.com/SOLAR2025ARR/SOLAR",
     "ContrastiveGaussian: High-Fidelity 3D Generation with Contrastive Learning and Gaussian Splatting": "https://github.com/YaNLlan-ljb/ContrastiveGaussian",
@@ -86,6 +87,7 @@ author_profile: true
   };
 
   const pdfOverrides = {
+    "Harder the Task, Sparser the Representation: Sparsity as a Learning Signature of Capability in LLMs": "https://arxiv.org/pdf/2603.03415",
     "P-QuASAR: A Unified Probabilistic Framework for Holistic Patent Quality Assessment and Refinement": "https://aclanthology.org/2026.findings-acl.579.pdf",
     "Newton-Coupled Dual-Teacher Semi-Supervised Learning Framework": "https://openreview.net/attachment?id=oaYX7VEBcq&name=originally_submitted_PDF",
     "Token-Aware Representation Augmentation for Fine-Grained Semi-Supervised Learning": "https://raw.githubusercontent.com/mlresearch/v328/main/assets/he26b/he26b.pdf",
@@ -196,6 +198,16 @@ author_profile: true
 ## Collaborative Publications
 
 <div class="publication-list">
+  <article class="publication-item">
+    <div class="publication-meta"><span>NeurIPS</span><time>2026</time></div>
+    <h3><a href="https://openreview.net/forum?id=cXF3Nd4vQs">Harder the Task, Sparser the Representation: Sparsity as a Learning Signature of Capability in LLMs</a></h3>
+    <p>Mingyu Jin, Yutong Yin, Jingcheng Niu, Qingcheng Zeng, Wujiang Xu, <strong>Xinyuan Song</strong>, Wei Cheng, Mengnan Du, Zhaoran Wang, Tianlong Chen, and Dimitris N. Metaxas.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>NeurIPS</span><time>2026</time></div>
+    <h3>CONSTRAINER: Promptable Graph-Structured Optimization via Constraint Conditioning</h3>
+    <p>Zeeshan Memon, Mingke Tian, <strong>Xinyuan Song</strong>, Hongwei Jin, Kibaek Kim, and Liang Zhao.</p>
+  </article>
   <article class="publication-item">
     <div class="publication-meta"><span>ACL Findings</span><time>2026</time></div>
     <h3>EffectCodec: Emotion-Preserving Neural Speech Codec for Expressive Speech Modeling</h3>

@@ -33,6 +33,8 @@ My long-term goal is to develop principled and practical learning systems that r
 
 <div class="news-scroll compact-section">
 <ul>
+  <li><em>2026.09</em>: 🎉 <a href="https://openreview.net/forum?id=cXF3Nd4vQs"><strong>Harder the Task, Sparser the Representation</strong></a> was accepted to NeurIPS 2026.</li>
+  <li><em>2026.09</em>: 🎉 <strong>CONSTRAINER: Promptable Graph-Structured Optimization via Constraint Conditioning</strong> was accepted to NeurIPS 2026.</li>
   <li><em>2026.09</em>: 📚 Released <a href="https://arxiv.org/abs/2609.17419"><strong>World Model Science</strong></a>, a study of criticality, weak chaos, and belief dynamics in long-horizon LLM agents.</li>
   <li><em>2026.08</em>: 🚀 Released <a href="https://arxiv.org/abs/2608.22141"><strong>MEMONDEMAND</strong></a>, a query-adaptive memory system for large-scale enterprise data. <a href="https://github.com/xfab-xinyuansong/MemOnDemand">Code</a></li>
   <li><em>2026.08</em>: 🚀 Released <a href="https://arxiv.org/abs/2608.22137"><strong>MegaMem</strong></a>, a retrieval system for ultra-large context windows. <a href="https://github.com/xfab-xinyuansong/MegaMem">Code</a></li>
