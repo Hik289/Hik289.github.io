@@ -8,9 +8,14 @@ on:
       - .github/scripts/update_visitor_locations.rb
       - .github/workflows/update-visitor-locations.yml
       - _pages/about.md
+      - assets/css/main.scss
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "2-57/5 * * * *"
   workflow_dispatch:
+
+concurrency:
+  group: visitor-location-update
+  cancel-in-progress: false
 
 permissions:
   contents: write

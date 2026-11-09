@@ -4,7 +4,6 @@ require "time"
 require "uri"
 
 SITE_KEY = "a62ninj09x"
-MAX_LOCATIONS = 60
 
 def fetch_json(url, headers = {})
   uri = URI(url)
@@ -19,9 +18,14 @@ def coordinate_key(point)
   format("%.3f,%.3f", point.fetch("lat").to_f, point.fetch("lon").to_f)
 end
 
-def region_cache(path)
+def load_previous(path)
   return {} unless File.exist?(path)
-  data = JSON.parse(File.read(path))
+  JSON.parse(File.read(path))
+rescue JSON::ParserError
+  {}
+end
+
+def region_cache(data)
   Array(data["visitors"]).each_with_object({}) do |visitor, cache|
     next unless visitor["lat"] && visitor["lon"]
     cache[coordinate_key(visitor)] = {
@@ -30,8 +34,6 @@ def region_cache(path)
       "country" => visitor["country"]
     }
   end
-rescue JSON::ParserError
-  {}
 end
 
 def reverse_geocode(point)
@@ -57,36 +59,73 @@ rescue StandardError
   { "city" => point["city"], "region" => nil, "country" => nil }
 end
 
+def parse_time(value, fallback)
+  value ? Time.parse(value).utc : fallback
+rescue ArgumentError
+  fallback
+end
+
+now = Time.now.utc
+previous_path = ENV.fetch("PREVIOUS_VISITOR_DATA", "/tmp/visitor-locations-previous.json")
+previous_data = load_previous(previous_path)
+previous_updated_at = parse_time(previous_data["updated_at"], now)
+location_cache = region_cache(previous_data)
+previous_visitors = Array(previous_data["visitors"]).each_with_object({}) do |visitor, indexed|
+  next unless visitor["lat"] && visitor["lon"]
+  indexed[coordinate_key(visitor)] = visitor
+end
+
 headers = { "X-Requested-With" => "XMLHttpRequest", "User-Agent" => "Hik289.github.io visitor map updater" }
 base = "https://whos.amung.us/stats/data/?k=#{SITE_KEY}&v=free"
 live_data = fetch_json("#{base}&pins=new", headers)
 recent_data = fetch_json("#{base}&pins=old", headers)
 live_points = Array(live_data["pins"]).map { |point| point.merge("status" => "live") }
-recent_points = Array(recent_data["pins"]).map { |point| point.merge("status" => "recent") }
-points = (live_points + recent_points).uniq { |point| coordinate_key(point) }.first(MAX_LOCATIONS)
-cache = region_cache(ENV.fetch("PREVIOUS_VISITOR_DATA", "/tmp/visitor-locations-previous.json"))
+recent_points = Array(recent_data["pins"]).map { |point| point.merge("status" => "seen") }
 
-visitors = points.map do |point|
-  key = coordinate_key(point)
-  location = cache[key]
-  unless location
-    location = reverse_geocode(point)
+current_points = {}
+recent_points.each { |point| current_points[coordinate_key(point)] ||= point }
+live_points.each { |point| current_points[coordinate_key(point)] = point }
+
+current_points.each do |key, point|
+  previous = previous_visitors[key] || {}
+  location = location_cache[key] || {}
+  if location["region"].nil? || location["country"].nil?
+    geocoded = reverse_geocode(point)
+    location = location.merge(geocoded) { |_field, existing, replacement| existing || replacement }
     sleep 1.1
   end
-  {
-    "city" => point["city"] || location["city"],
-    "region" => location["region"],
-    "country" => location["country"],
-    "country_code" => point["country_code"],
+
+  observed_at = point["time"] ? now - point["time"].to_i : now
+  first_seen = parse_time(previous["first_seen"] || previous["last_seen"], previous_updated_at)
+  last_seen = parse_time(previous["last_seen"], previous_updated_at)
+  last_seen = observed_at if previous.empty? || (point["status"] == "live" && observed_at > last_seen)
+
+  previous_visitors[key] = {
+    "city" => point["city"] || previous["city"] || location["city"],
+    "region" => previous["region"] || location["region"],
+    "country" => previous["country"] || location["country"],
+    "country_code" => point["country_code"] || previous["country_code"],
     "lat" => point["lat"].to_f.round(3),
     "lon" => point["lon"].to_f.round(3),
     "status" => point["status"],
-    "age_s" => point["time"]
+    "first_seen" => first_seen.iso8601,
+    "last_seen" => last_seen.iso8601,
+    "age_s" => [(now - last_seen).to_i, 0].max
   }
 end
 
+visitors = previous_visitors.values.map do |visitor|
+  last_seen = parse_time(visitor["last_seen"], previous_updated_at)
+  visitor.merge(
+    "status" => current_points[coordinate_key(visitor)]&.fetch("status", "seen") || "seen",
+    "first_seen" => parse_time(visitor["first_seen"], last_seen).iso8601,
+    "last_seen" => last_seen.iso8601,
+    "age_s" => [(now - last_seen).to_i, 0].max
+  )
+end.sort_by { |visitor| visitor["last_seen"] }.reverse
+
 output = {
-  "updated_at" => Time.now.utc.iso8601,
+  "updated_at" => now.iso8601,
   "online_now" => live_data["total_count"].to_i,
   "locations" => visitors.length,
   "visitors" => visitors

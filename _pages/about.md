@@ -110,23 +110,27 @@ My long-term goal is to develop principled and practical learning systems that r
   <div class="visitor-map-frame">
     <div class="visitor-map-toolbar"><span class="visitor-map-legend"><i aria-hidden="true"></i> Visitors</span></div>
     <div class="visitor-map-widget" role="img" aria-label="World map showing approximate city-level visitor locations as red dots">
-      <script id="_wauxsn">var _wau = window._wau || []; _wau.push(["map", "a62ninj09x", "xsn", "680", "340", "night", "target-red"]);</script>
-      <script async src="https://waust.at/m.js"></script>
+      <img class="visitor-map-background" src="https://widgets.amung.us/mapbacks/night.jpg" width="680" height="340" alt="" loading="lazy">
+      <span id="visitor-map-pins" class="visitor-map-pins" aria-hidden="true"></span>
       <noscript>The city-level visitor map requires JavaScript.</noscript>
     </div>
-    <div class="visitor-map-click-shield" aria-hidden="true"></div>
   </div>
-  <details class="visitor-log">
+  <details class="visitor-log" open>
     <summary><span>Visitors</span></summary>
     <ol id="visitor-log-list" aria-live="polite"></ol>
     <p class="visitor-log-note">Anonymous IP-based geolocation. City and region are approximate; names and IP addresses are not stored or displayed.</p>
   </details>
+  <span class="visitor-tracker" aria-hidden="true">
+    <script id="_wauxsn">var _wau = window._wau || []; _wau.push(["map", "a62ninj09x", "xsn", "680", "340", "night", "target-red"]);</script>
+    <script async src="https://waust.at/m.js"></script>
+  </span>
 </section>
 
 <script>
 (() => {
   const list = document.getElementById("visitor-log-list");
-  if (!list) return;
+  const pins = document.getElementById("visitor-map-pins");
+  if (!list || !pins) return;
   const relativeTime = (seconds) => {
     const value = Math.max(0, Number(seconds) || 0);
     if (value < 60) return "just now";
@@ -138,43 +142,73 @@ My long-term goal is to develop principled and practical learning systems that r
     if (!code || code.length !== 2) return "🌐";
     return String.fromCodePoint(...code.toUpperCase().split("").map((letter) => 127397 + letter.charCodeAt(0)));
   };
-  const dataUrl = `https://raw.githubusercontent.com/Hik289/Hik289.github.io/visitor-data/visitor-locations.json?v=${Date.now()}`;
-  fetch(dataUrl, { cache: "no-store" })
-    .then((response) => {
-      if (!response.ok) throw new Error("Visitor data unavailable");
-      return response.json();
-    })
-    .then((data) => {
-      const visitors = Array.isArray(data.visitors) ? data.visitors.slice(0, 30) : [];
-      list.replaceChildren();
-      if (!visitors.length) {
-        const empty = document.createElement("li");
-        empty.className = "visitor-log-empty";
-        empty.textContent = "No recent visits yet.";
-        list.appendChild(empty);
-        return;
+  const placeLabel = (visitor) => [visitor.city, visitor.region, visitor.country]
+    .filter((value, position, values) => value && values.indexOf(value) === position)
+    .join(", ") || "Unknown region";
+  const secondsSince = (visitor, updatedAt) => {
+    const timestamp = Date.parse(visitor.last_seen || updatedAt || "");
+    return Number.isFinite(timestamp) ? Math.max(0, (Date.now() - timestamp) / 1000) : visitor.age_s;
+  };
+  const render = (data) => {
+    const visitors = Array.isArray(data.visitors) ? data.visitors : [];
+    list.replaceChildren();
+    pins.replaceChildren();
+    if (!visitors.length) {
+      const empty = document.createElement("li");
+      empty.className = "visitor-log-empty";
+      empty.textContent = "No visits yet.";
+      list.appendChild(empty);
+      return;
+    }
+    visitors.forEach((visitor, index) => {
+      const latitude = Number(visitor.lat);
+      const longitude = Number(visitor.lon);
+      if (Number.isFinite(latitude) && Number.isFinite(longitude)) {
+        const pin = document.createElement("i");
+        pin.className = visitor.status === "live" ? "visitor-map-pin is-live" : "visitor-map-pin";
+        pin.style.left = `${Math.min(100, Math.max(0, ((longitude + 180) / 360) * 100))}%`;
+        pin.style.top = `${Math.min(100, Math.max(0, ((90 - latitude) / 180) * 100))}%`;
+        pin.title = placeLabel(visitor);
+        pins.appendChild(pin);
       }
-      visitors.forEach((visitor, index) => {
-        const item = document.createElement("li");
-        const identity = document.createElement("span");
-        const location = document.createElement("span");
-        const time = document.createElement("time");
-        identity.className = "visitor-log-identity";
-        location.className = "visitor-log-location";
-        time.className = "visitor-log-time";
-        identity.textContent = `Visitor ${String(index + 1).padStart(2, "0")}`;
-        const place = [visitor.city, visitor.region, visitor.country].filter((value, position, values) => value && values.indexOf(value) === position);
-        location.textContent = `${countryFlag(visitor.country_code)} ${place.join(", ") || "Unknown region"}`;
-        time.textContent = visitor.status === "live" ? relativeTime(visitor.age_s) : "Recent";
-        item.append(identity, location, time);
-        list.appendChild(item);
-      });
-    })
-    .catch(() => {
+
+      const item = document.createElement("li");
+      const identity = document.createElement("span");
+      const location = document.createElement("span");
+      const time = document.createElement("time");
+      identity.className = "visitor-log-identity";
+      location.className = "visitor-log-location";
+      time.className = "visitor-log-time";
+      identity.textContent = `Visitor ${String(index + 1).padStart(2, "0")}`;
+      location.textContent = `${countryFlag(visitor.country_code)} ${placeLabel(visitor)}`;
+      time.dateTime = visitor.last_seen || "";
+      time.textContent = visitor.status === "live" ? "Live" : relativeTime(secondsSince(visitor, data.updated_at));
+      item.append(identity, location, time);
+      list.appendChild(item);
+    });
+  };
+  let refreshing = false;
+  const refresh = async () => {
+    if (refreshing) return;
+    refreshing = true;
+    try {
+      const dataUrl = `https://raw.githubusercontent.com/Hik289/Hik289.github.io/visitor-data/visitor-locations.json?v=${Date.now()}`;
+      const response = await fetch(dataUrl, { cache: "no-store" });
+      if (!response.ok) throw new Error("Visitor data unavailable");
+      render(await response.json());
+    } catch (_error) {
       const empty = document.createElement("li");
       empty.className = "visitor-log-empty";
       empty.textContent = "Visitor list is temporarily unavailable.";
       list.replaceChildren(empty);
-    });
+    } finally {
+      refreshing = false;
+    }
+  };
+  refresh();
+  window.setInterval(refresh, 60000);
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) refresh();
+  });
 })();
 </script>

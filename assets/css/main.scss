@@ -631,26 +631,59 @@ a {
 }
 
 .visitor-map-widget {
+  position: relative;
   max-width: 680px;
   margin: 0 auto;
+  aspect-ratio: 2 / 1;
   cursor: default;
   pointer-events: none;
   user-select: none;
 }
 
-.visitor-map-widget iframe,
-.visitor-map-widget canvas,
-.visitor-map-widget svg {
+.visitor-map-background {
   display: block;
-  max-width: 100%;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.visitor-map-click-shield {
+.visitor-map-pins {
   position: absolute;
-  z-index: 2;
   inset: 0;
-  cursor: default;
+}
+
+.visitor-map-pin {
+  position: absolute;
+  width: 0.55rem;
+  height: 0.55rem;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background: #c00000;
+  box-shadow: 0 0 0 1px rgba(192, 0, 0, 0.35);
+}
+
+.visitor-map-pin.is-live {
+  animation: visitor-pin-pulse 1.5s ease-out infinite;
+}
+
+@keyframes visitor-pin-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 1px rgba(192, 0, 0, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 5px rgba(192, 0, 0, 0.12);
+  }
+}
+
+.visitor-tracker {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .visitor-log {
@@ -695,8 +728,10 @@ a {
 }
 
 #visitor-log-list {
+  max-height: 26rem;
   margin: 0;
   padding: 0;
+  overflow-y: auto;
   border-top: 1px solid #e8e8e8;
   list-style: none;
 }
