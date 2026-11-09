@@ -3,10 +3,6 @@ main:
     url: /#about-me
   - title: "News"
     url: /#news
-  - title: "Education"
-    url: /#education
-  - title: "Experiences"
-    url: /#experiences
   - title: "Recent Study"
     url: /#recent-study
   - title: "Selected Publications"

@@ -87,6 +87,7 @@ author_profile: true
   };
 
   const pdfOverrides = {
+    "Generalizable Blind Image Quality Assessment with Retrieval Augmentation and Contrastive Vision-Text Local Meta-Training": "https://dl.acm.org/doi/pdf/10.1145/3767308.3836240",
     "Harder the Task, Sparser the Representation: Sparsity as a Learning Signature of Capability in LLMs": "https://arxiv.org/pdf/2603.03415",
     "P-QuASAR: A Unified Probabilistic Framework for Holistic Patent Quality Assessment and Refinement": "https://aclanthology.org/2026.findings-acl.579.pdf",
     "Newton-Coupled Dual-Teacher Semi-Supervised Learning Framework": "https://openreview.net/attachment?id=oaYX7VEBcq&name=originally_submitted_PDF",
@@ -199,6 +200,11 @@ author_profile: true
 
 <div class="publication-list">
   <article class="publication-item">
+    <div class="publication-meta"><span>IEEE TMI</span><time>2026</time></div>
+    <h3><a href="https://openreview.net/forum?id=bHTM4SMDDq">Med-MARS: Modifier-Aware Referring Segmentation for Medical Images</a></h3>
+    <p>Yajun Mu, Huahui Yi, Jun Gao, Ziyuan Qin, <strong>Xinyuan Song</strong>, Qicheng Lao, Qingbo Kang, and Kang Li.</p>
+  </article>
+  <article class="publication-item">
     <div class="publication-meta"><span>NeurIPS</span><time>2026</time></div>
     <h3><a href="https://openreview.net/forum?id=cXF3Nd4vQs">Harder the Task, Sparser the Representation: Sparsity as a Learning Signature of Capability in LLMs</a></h3>
     <p>Mingyu Jin, Yutong Yin, Jingcheng Niu, Qingcheng Zeng, Wujiang Xu, <strong>Xinyuan Song</strong>, Wei Cheng, Mengnan Du, Zhaoran Wang, Tianlong Chen, and Dimitris N. Metaxas.</p>
@@ -220,7 +226,7 @@ author_profile: true
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>ACM Multimedia</span><time>2026</time></div>
-    <h3>Generalizable Blind Image Quality Assessment with Retrieval Augmentation and Contrastive Vision-Text Local Meta-Training</h3>
+    <h3><a href="https://doi.org/10.1145/3767308.3836240">Generalizable Blind Image Quality Assessment with Retrieval Augmentation and Contrastive Vision-Text Local Meta-Training</a></h3>
     <p>Yan Zhong, Zhiyuan You, Xinping Zhao, Li Zhang, <strong>Xinyuan Song</strong>, Ruoyu Zhao, Lei Shi, and Tingting Jiang.</p>
   </article>
   <article class="publication-item">

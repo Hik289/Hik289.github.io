@@ -33,6 +33,8 @@ My long-term goal is to develop principled and practical learning systems that r
 
 <div class="news-scroll compact-section">
 <ul>
+  <li><em>2026.11.06</em>: 🎉 <a href="https://doi.org/10.1145/3767308.3836240"><strong>Generalizable Blind Image Quality Assessment with Retrieval Augmentation and Contrastive Vision-Text Local Meta-Training</strong></a> was published at ACM Multimedia 2026.</li>
+  <li><em>2026.10</em>: 🎉 <a href="https://openreview.net/forum?id=bHTM4SMDDq"><strong>Med-MARS: Modifier-Aware Referring Segmentation for Medical Images</strong></a> was accepted to IEEE Transactions on Medical Imaging (TMI).</li>
   <li><em>2026.09</em>: 🎉 <a href="https://openreview.net/forum?id=cXF3Nd4vQs"><strong>Harder the Task, Sparser the Representation</strong></a> was accepted to NeurIPS 2026.</li>
   <li><em>2026.09</em>: 🎉 <strong>CONSTRAINER: Promptable Graph-Structured Optimization via Constraint Conditioning</strong> was accepted to NeurIPS 2026.</li>
   <li><em>2026.09</em>: 📚 Released <a href="https://arxiv.org/abs/2609.17419"><strong>World Model Science</strong></a>, a study of criticality, weak chaos, and belief dynamics in long-horizon LLM agents.</li>
@@ -57,41 +59,18 @@ My long-term goal is to develop principled and practical learning systems that r
 </ul>
 </div>
 
-<span class="anchor" id="education"></span>
-# 📖 Education {#education}
-
-<div class="compact-section">
-<ul class="timeline-list">
-  <li><span class="timeline-heading"><strong>2024 &ndash; Present</strong> | <strong>Ph.D. in Computer Science</strong></span><span class="timeline-detail">Emory University &middot; Advisor: <a href="https://cs.emory.edu/~lzhao41/">Liang Zhao</a></span></li>
-  <li><span class="timeline-heading"><strong>2023 &ndash; 2024</strong> | <strong>Ph.D. Studies in Computer Science</strong></span><span class="timeline-detail">University of Texas at Arlington &middot; Advisor: <a href="https://zyy123jy.github.io/My-Web-Sites/">Yingying Zhu</a></span></li>
-  <li><span class="timeline-heading"><strong>2019 &ndash; 2023</strong> | <strong>M.S. in Statistics</strong></span><span class="timeline-detail">National University of Singapore &middot; Advisor: <a href="https://www.stat.nus.edu.sg/faculty_member/li-cheng/">Cheng Li</a></span></li>
-  <li><span class="timeline-heading"><strong>2014 &ndash; 2019</strong> | <strong>B.S. in Physics; B.S. in Mathematics</strong></span><span class="timeline-detail">Peking University</span></li>
-</ul>
-</div>
-
-<span class="anchor" id="experiences"></span>
-# 💻 Research Experience {#experiences}
-
-<div class="compact-section">
-<ul class="timeline-list">
-  <li><span class="timeline-heading"><strong>Summer 2026</strong> | <strong><a href="https://cielara.ai/">Cielara AI</a></strong></span><span class="timeline-detail">Research on memory for language-model agents, including MEMONDEMAND and MegaMem.</span></li>
-  <li><span class="timeline-heading"><strong>Summer 2025</strong> | <strong><a href="https://gradient.network">Gradient Network</a></strong></span><span class="timeline-detail">Research on multi-agent systems and LLM scheduling.</span></li>
-  <li><span class="timeline-heading"><strong>2020 &ndash; 2021</strong> | <strong><a href="https://www.alibabagroup.com/en-US/">Alibaba Group</a></strong></span><span class="timeline-detail">Full-time Machine Learning Engineer.</span></li>
-</ul>
-</div>
-
 <span class="anchor" id="recent-study"></span>
 # 📝 Recent Study {#recent-study}
 
 <p>Recent working papers and open-source research projects.</p>
 
 <ul class="paper-list">
-  <li><span class="paper-title"><a href="https://arxiv.org/abs/2609.17419"><strong>World Model Science: Self-Organized Criticality, Weak Chaos, and Metastable Belief Dynamics in Long-Horizon LLM Agents</strong></a></span><span class="paper-authors"><strong>Xinyuan Song</strong> and Zekun Cai.</span><span class="paper-venue">arXiv 2609.17419</span><span class="paper-actions"><a class="paper-action" href="https://arxiv.org/pdf/2609.17419"><i class="fas fa-file-pdf"></i> PDF</a><a class="paper-action" href="https://github.com/Hik289/agent-self-organized-criticality"><i class="fab fa-github"></i> GitHub</a></span></li>
-  <li><span class="paper-title"><a href="https://arxiv.org/abs/2608.22141"><strong>MEMONDEMAND: A Memory Management System for Large-Scale Enterprise Data</strong></a></span><span class="paper-authors"><strong>Xinyuan Song</strong>, Bowen Zhu, Hasibul Haque, and Liang Zhao.</span><span class="paper-venue">arXiv 2608.22141</span><span class="paper-actions"><a class="paper-action" href="https://arxiv.org/pdf/2608.22141"><i class="fas fa-file-pdf"></i> PDF</a><a class="paper-action" href="https://github.com/xfab-xinyuansong/MemOnDemand"><i class="fab fa-github"></i> GitHub</a></span></li>
+  <li><span class="paper-title"><a href="https://arxiv.org/abs/2610.36010"><strong>CIVER: Causal Intervention Verification for Reliable Code Review</strong></a></span><span class="paper-authors"><strong>Xinyuan Song</strong>, Hasibul Haque, Jay Somasundaram, Ryan Turner, Bowen Zhu, and Liang Zhao.</span><span class="paper-venue">arXiv 2610.36010</span><span class="paper-actions"><a class="paper-action" href="https://arxiv.org/pdf/2610.36010"><i class="fas fa-file-pdf"></i> PDF</a><a class="paper-action" href="https://github.com/Hik289/causal-intervention"><i class="fab fa-github"></i> GitHub</a></span></li>
+  <li><span class="paper-title"><a href="https://arxiv.org/abs/2610.36188"><strong>Skill Dreaming: Evolving Repository Skills through Pull Request Streams</strong></a></span><span class="paper-authors"><strong>Xinyuan Song</strong>, Hasibul Haque, Jay Somasundaram, Ryan Turner, Bowen Zhu, and Liang Zhao.</span><span class="paper-venue">arXiv 2610.36188</span><span class="paper-actions"><a class="paper-action" href="https://arxiv.org/pdf/2610.36188"><i class="fas fa-file-pdf"></i> PDF</a><a class="paper-action" href="https://github.com/Hik289/skill-dreaming"><i class="fab fa-github"></i> GitHub</a></span></li>
+  <li><span class="paper-title"><a href="https://arxiv.org/abs/2610.12958"><strong>Emo-BPO: Emotion Bidirectional Preference Optimization for Diffusion-based Emotional TTS</strong></a></span><span class="paper-authors">Jiacheng Shi, Hongfei Du, <strong>Xinyuan Song</strong>, Y. Alicia Hong, Yanfu Zhang, and Ye Gao.</span><span class="paper-venue">arXiv 2610.12958</span><span class="paper-actions"><a class="paper-action" href="https://arxiv.org/pdf/2610.12958"><i class="fas fa-file-pdf"></i> PDF</a></span></li>
+  <li><span class="paper-title"><a href="https://arxiv.org/abs/2610.01048"><strong>Network World Models as Environments for Algorithm Design on Complex Systems</strong></a></span><span class="paper-authors">Rishab Alagharu, Hongji Pu, Zeeshan Memon, <strong>Xinyuan Song</strong>, Yuntong Hu, and Liang Zhao.</span><span class="paper-venue">arXiv 2610.01048</span><span class="paper-actions"><a class="paper-action" href="https://arxiv.org/pdf/2610.01048"><i class="fas fa-file-pdf"></i> PDF</a><a class="paper-action" href="https://github.com/RishabSA/NetworkWorldModel"><i class="fab fa-github"></i> GitHub</a></span></li>
   <li><span class="paper-title"><a href="https://arxiv.org/abs/2608.22137"><strong>MegaMem: A Retrieval Solution for Ultra-Large Context Windows</strong></a></span><span class="paper-authors"><strong>Xinyuan Song</strong>, Bowen Zhu, Hasibul Haque, and Liang Zhao.</span><span class="paper-venue">arXiv 2608.22137</span><span class="paper-actions"><a class="paper-action" href="https://arxiv.org/pdf/2608.22137"><i class="fas fa-file-pdf"></i> PDF</a><a class="paper-action" href="https://github.com/xfab-xinyuansong/MegaMem"><i class="fab fa-github"></i> GitHub</a></span></li>
-  <li><span class="paper-title"><a href="https://arxiv.org/abs/2607.19331"><strong>ISO: An RLVR-Native Optimization Stack</strong></a></span><span class="paper-authors">Hanqing Zhu, Wenyan Cong, Zhizhou Sha, Sagnik Mukherjee, <strong>Xinyuan Song</strong>, David Gonz&aacute;lez-Mart&iacute;nez, Xiaoxia Wu, Yuandong Tian, Shiwei Liu, David Z. Pan, and Zhangyang &ldquo;Atlas&rdquo; Wang.</span><span class="paper-venue">arXiv 2607.19331</span><span class="paper-actions"><a class="paper-action" href="https://arxiv.org/pdf/2607.19331"><i class="fas fa-file-pdf"></i> PDF</a><a class="paper-action" href="https://github.com/zhuhanqing/ISO"><i class="fab fa-github"></i> GitHub</a></span></li>
-  <li><span class="paper-title"><a href="/files/recent-study/fedworld-scope-aware-federation.pdf"><strong>FedWorld: Scope-Aware Federation of Agent World Models</strong></a></span><span class="paper-authors">Yuchao Hou, Guangyuan Dong, <strong>Xinyuan Song</strong>, Hangtao Zhang, Gaoyuan Du, Jiachen Luo, and Zhengshan Wang.</span><span class="paper-venue">arXiv 2026</span><span class="paper-actions"><a class="paper-action" href="/files/recent-study/fedworld-scope-aware-federation.pdf"><i class="fas fa-file-pdf"></i> PDF</a><a class="paper-action" href="https://github.com/Hik289/federated-world-model"><i class="fab fa-github"></i> GitHub</a></span></li>
-  <li><span class="paper-title"><a href="/files/recent-study/invariant-safety-state-abstraction.pdf"><strong>When Do Safe Agents Misgeneralize Across Surfaces? Invariant Safety State Abstraction</strong></a></span><span class="paper-authors">Yuchao Hou, Guangyuan Dong, Hangtao Zhang, <strong>Xinyuan Song</strong>, Jiachen Luo, Gaoyuan Du, and Xianlong Wang.</span><span class="paper-venue">arXiv 2026</span><span class="paper-actions"><a class="paper-action" href="/files/recent-study/invariant-safety-state-abstraction.pdf"><i class="fas fa-file-pdf"></i> PDF</a><a class="paper-action" href="https://github.com/Hik289/safe_multimodalagents"><i class="fab fa-github"></i> GitHub</a></span></li>
+  <li><span class="paper-title"><a href="https://arxiv.org/abs/2608.22141"><strong>MEMONDEMAND: A Memory Management System for Large-Scale Enterprise Data</strong></a></span><span class="paper-authors"><strong>Xinyuan Song</strong>, Bowen Zhu, Hasibul Haque, and Liang Zhao.</span><span class="paper-venue">arXiv 2608.22141</span><span class="paper-actions"><a class="paper-action" href="https://arxiv.org/pdf/2608.22141"><i class="fas fa-file-pdf"></i> PDF</a><a class="paper-action" href="https://github.com/xfab-xinyuansong/MemOnDemand"><i class="fab fa-github"></i> GitHub</a></span></li>
 </ul>
 
 <p class="section-more"><a href="/recent-study/">View all recent studies &rarr;</a></p>
