@@ -192,10 +192,13 @@ My long-term goal is to develop principled and practical learning systems that r
     if (refreshing) return;
     refreshing = true;
     try {
-      const dataUrl = `https://raw.githubusercontent.com/Hik289/Hik289.github.io/visitor-data/visitor-locations.json?v=${Date.now()}`;
+      const dataUrl = `https://api.github.com/repos/Hik289/Hik289.github.io/contents/visitor-locations.json?ref=visitor-data&v=${Date.now()}`;
       const response = await fetch(dataUrl, { cache: "no-store" });
       if (!response.ok) throw new Error("Visitor data unavailable");
-      render(await response.json());
+      const payload = await response.json();
+      const encoded = String(payload.content || "").replace(/\s/g, "");
+      const bytes = Uint8Array.from(atob(encoded), (character) => character.charCodeAt(0));
+      render(JSON.parse(new TextDecoder().decode(bytes)));
     } catch (_error) {
       const empty = document.createElement("li");
       empty.className = "visitor-log-empty";
@@ -206,7 +209,7 @@ My long-term goal is to develop principled and practical learning systems that r
     }
   };
   refresh();
-  window.setInterval(refresh, 60000);
+  window.setInterval(refresh, 65000);
   document.addEventListener("visibilitychange", () => {
     if (!document.hidden) refresh();
   });
