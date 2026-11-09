@@ -43,7 +43,7 @@ author_profile: true
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>ACL Findings</span><time>2026</time></div>
-    <h3>P-QuASAR: A Unified Probabilistic Framework for Holistic Patent Quality Assessment and Refinement</h3>
+    <h3><a href="https://aclanthology.org/2026.findings-acl.579/">P-QuASAR: A Unified Probabilistic Framework for Holistic Patent Quality Assessment and Refinement</a></h3>
     <p><strong>Xinyuan Song</strong>, Ziyi Ni, Fred Yang, Bo Zhang, Yiming Yan, Yijin Wang, and Jane Zhang.</p>
   </article>
   <article class="publication-item">
@@ -84,6 +84,17 @@ author_profile: true
     "GPAS: Accelerating Convergence of LLM Pretraining via Gradient-Preserving Activation Scaling": "https://github.com/dandingsky/GPAS",
     "SOLAR: Serendipity Optimized Language Model Aligned for Recommendation": "https://github.com/SOLAR2025ARR/SOLAR",
     "ContrastiveGaussian: High-Fidelity 3D Generation with Contrastive Learning and Gaussian Splatting": "https://github.com/YaNLlan-ljb/ContrastiveGaussian",
+    "MEMONDEMAND: A Memory Management System for Large-Scale Enterprise Data": "https://github.com/xfab-xinyuansong/MemOnDemand",
+    "MegaMem: A Retrieval Solution for Ultra-Large Context Windows": "https://github.com/xfab-xinyuansong/MegaMem",
+    "Repair the Amplifier, Not the Symptom: Stable World-Model Correction for Agent Rollouts": "https://github.com/Hik289/world-model-corrector",
+    "AlgoBench: Benchmarking Algorithmic Adaptation in Code Generation": "https://github.com/Hik289/algobench",
+    "Ask the World Before Acting: Environment Probing for Calibrated Agent World Models": "https://github.com/Hik289/Environment-reduce-error",
+    "World-Model Collapse as a Phase Transition": "https://github.com/Hik289/world-model-collapse",
+    "AlgoSkill: Learning to Design Algorithms by Scheduling Human-Like Skills": "https://github.com/Hik289/algorithm_skill",
+    "When AI Reviews Its Own Code: Recursive Self-Training Collapse in Code LLMs": "https://github.com/Hik289/code-retraining",
+    "Agent vs. Parametric World Models: Hybrid Planning for Reliable Language Agents": "https://github.com/Hik289/Agent-vs-param",
+    "Understanding Rollout Error in Graph World Models": "https://github.com/Hik289/graph_world_model_accumulative_error",
+    "SkillOps: Managing LLM Agent Skill Libraries as Self-Maintaining Software Ecosystems": "https://github.com/Hik289/SkillOps",
     "Learning to Recommend Multi-Agent Subgraphs from Calling Trees": "https://github.com/Hik289/Agent_REC",
     "StructPrune: Structured Global Pruning Asymptotics with Square-Root GPU Memory": "https://github.com/Hik289/structured_sparseGPT",
     "Structured Risk Model": "https://github.com/Hik289/structural-risk-adjustments",
@@ -219,7 +230,7 @@ author_profile: true
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>ACL Findings</span><time>2026</time></div>
-    <h3>EffectCodec: Emotion-Preserving Neural Speech Codec for Expressive Speech Modeling</h3>
+    <h3><a href="https://arxiv.org/abs/2605.11098">EffectCodec: Emotion-Preserving Neural Speech Codec for Expressive Speech Modeling</a></h3>
     <p>Jiacheng Shi, Hongfei Du, <strong>Xinyuan Song</strong>, Y. Alicia Hong, Yanfu Zhang, and Ashley Gao.</p>
   </article>
   <article class="publication-item">
@@ -274,7 +285,7 @@ author_profile: true
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>CVPR DataCV Workshop</span><time>2026</time></div>
-    <h3>Beyond Data Augmentation: Energy-Based Kuramoto Neurons for Semi-Supervised Learning</h3>
+    <h3><a href="https://openaccess.thecvf.com/content/CVPR2026W/DataCV/html/Hong_Beyond_Data_Augmentation_Energy-Based_Kuramoto_Neurons_for_Semi-Supervised_Learning_CVPRW_2026_paper.html">Beyond Data Augmentation: Energy-Based Kuramoto Neurons for Semi-Supervised Learning</a></h3>
     <p>Yundi Hong, Ao Li, <strong>Xinyuan Song</strong>, Yan Zhong, Hongyang He, and Victor Sanchez.</p>
   </article>
   <article class="publication-item">
@@ -347,6 +358,66 @@ author_profile: true
 ## Preprints
 
 <div class="publication-list preprint-list">
+  <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2609.17419</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2609.17419">World Model Science: Self-Organized Criticality, Weak Chaos, and Metastable Belief Dynamics in Long-Horizon LLM Agents</a></h3>
+    <p><strong>Xinyuan Song</strong> and Zekun Cai.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2608.22141</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2608.22141">MEMONDEMAND: A Memory Management System for Large-Scale Enterprise Data</a></h3>
+    <p><strong>Xinyuan Song</strong>, Bowen Zhu, Hasibul Haque, and Liang Zhao.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2608.22137</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2608.22137">MegaMem: A Retrieval Solution for Ultra-Large Context Windows</a></h3>
+    <p><strong>Xinyuan Song</strong>, Bowen Zhu, Hasibul Haque, and Liang Zhao.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2607.01767</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2607.01767">Repair the Amplifier, Not the Symptom: Stable World-Model Correction for Agent Rollouts</a></h3>
+    <p><strong>Xinyuan Song</strong> and Zekun Cai.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2607.00062</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2607.00062">AlgoBench: Benchmarking Algorithmic Adaptation in Code Generation</a></h3>
+    <p><strong>Xinyuan Song</strong>, Zekun Cai, and Liang Zhao.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2606.31422</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2606.31422">Ask the World Before Acting: Environment Probing for Calibrated Agent World Models</a></h3>
+    <p><strong>Xinyuan Song</strong> and Zekun Cai.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2606.31399</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2606.31399">World-Model Collapse as a Phase Transition</a></h3>
+    <p><strong>Xinyuan Song</strong> and Zekun Cai.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2606.29999</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2606.29999">AlgoSkill: Learning to Design Algorithms by Scheduling Human-Like Skills</a></h3>
+    <p><strong>Xinyuan Song</strong>, Zekun Cai, and Liang Zhao.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2606.28438</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2606.28438">When AI Reviews Its Own Code: Recursive Self-Training Collapse in Code LLMs</a></h3>
+    <p><strong>Xinyuan Song</strong>, Zekun Cai, and Liang Zhao.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2606.27806</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2606.27806">Agent vs. Parametric World Models: Hybrid Planning for Reliable Language Agents</a></h3>
+    <p><strong>Xinyuan Song</strong> and Zekun Cai.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2606.27780</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2606.27780">Understanding Rollout Error in Graph World Models</a></h3>
+    <p><strong>Xinyuan Song</strong> and Zekun Cai.</p>
+  </article>
+  <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2605.13716</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2605.13716">SkillOps: Managing LLM Agent Skill Libraries as Self-Maintaining Software Ecosystems</a></h3>
+    <p><strong>Xinyuan Song</strong>, Hongji Pu, and Liang Zhao.</p>
+  </article>
   <article class="publication-item">
     <div class="publication-meta"><span>TechRxiv</span><time>2026</time></div>
     <h3><a href="https://www.techrxiv.org/users/1023031/articles/1386150-complex-networks-of-ai-agentic-systems-topology-memory-and-update-dynamics">Complex Networks of AI Agentic Systems: Topology, Memory, and Update Dynamics</a></h3>
