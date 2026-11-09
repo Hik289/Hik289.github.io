@@ -642,6 +642,89 @@ a {
   margin: 0 auto;
 }
 
+.visitor-log {
+  margin-top: 0.65rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.visitor-log summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 0.75rem;
+  color: #222222;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.visitor-log summary::-webkit-details-marker {
+  display: none;
+}
+
+.visitor-log summary::before {
+  display: inline-block;
+  margin-right: 0.45rem;
+  color: #c00000;
+  content: "+";
+}
+
+.visitor-log[open] summary::before {
+  content: "−";
+}
+
+#visitor-log-count {
+  margin-left: auto;
+  color: var(--global-text-color-light);
+  font-size: 0.72rem;
+  font-weight: 400;
+}
+
+#visitor-log-list {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #e8e8e8;
+  list-style: none;
+}
+
+#visitor-log-list li {
+  display: grid;
+  grid-template-columns: 6.2rem minmax(0, 1fr) auto;
+  gap: 0.7rem;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0.78rem;
+}
+
+.visitor-log-identity {
+  color: #222222;
+  font-weight: 600;
+}
+
+.visitor-log-location,
+.visitor-log-time,
+.visitor-log-note {
+  color: var(--global-text-color-light);
+}
+
+.visitor-log-time {
+  white-space: nowrap;
+}
+
+.visitor-log-note {
+  margin: 0 !important;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.7rem !important;
+}
+
+.visitor-log-empty {
+  display: block !important;
+  color: var(--global-text-color-light);
+}
+
 .scholar-citation-card {
   color: var(--global-text-color) !important;
   text-align: right;
@@ -807,5 +890,13 @@ a {
   .visitor-map-toolbar {
     align-items: flex-start;
     gap: 0.5rem;
+  }
+
+  #visitor-log-list li {
+    grid-template-columns: 5.6rem minmax(0, 1fr);
+  }
+
+  .visitor-log-time {
+    grid-column: 2;
   }
 }

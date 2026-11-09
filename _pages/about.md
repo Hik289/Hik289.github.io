@@ -119,13 +119,27 @@ My long-term goal is to develop principled and practical learning systems that r
       <noscript>The live visitor map requires JavaScript.</noscript>
     </div>
   </div>
+  <details class="visitor-log">
+    <summary><span>Recent visitors</span><span id="visitor-log-count">Loading…</span></summary>
+    <ol id="visitor-log-list" aria-live="polite"></ol>
+    <p class="visitor-log-note">Anonymous, approximate locations only. Names and IP addresses are not collected or displayed.</p>
+  </details>
   <p class="visitor-map-note"><i class="fas fa-location-dot" aria-hidden="true"></i> Locations are approximate; IP addresses are not displayed.</p>
 </section>
 
 <script>
 (() => {
   const status = document.getElementById("visitor-map-status");
-  if (!status) return;
+  const list = document.getElementById("visitor-log-list");
+  const listCount = document.getElementById("visitor-log-count");
+  if (!status || !list || !listCount) return;
+  const relativeTime = (seconds) => {
+    const value = Math.max(0, Number(seconds) || 0);
+    if (value < 60) return "just now";
+    if (value < 3600) return `${Math.floor(value / 60)} min ago`;
+    if (value < 86400) return `${Math.floor(value / 3600)} hr ago`;
+    return `${Math.floor(value / 86400)} day${value < 172800 ? "" : "s"} ago`;
+  };
   fetch("https://feed-pulse.com/api/visitor-map/dfdca402-47a4-4b27-92eb-7df55f894c2f?hours=720&limit=1000")
     .then((response) => {
       if (!response.ok) throw new Error("Visitor data unavailable");
@@ -134,9 +148,38 @@ My long-term goal is to develop principled and practical learning systems that r
     .then((data) => {
       const count = Number(data.count) || 0;
       status.textContent = count === 1 ? "1 visit · past 30 days" : `${count.toLocaleString()} visits · past 30 days`;
+      const points = Array.isArray(data.points) ? data.points.slice(0, 30) : [];
+      listCount.textContent = `${points.length} shown`;
+      list.replaceChildren();
+      if (!points.length) {
+        const empty = document.createElement("li");
+        empty.className = "visitor-log-empty";
+        empty.textContent = "No recent visits yet.";
+        list.appendChild(empty);
+        return;
+      }
+      points.forEach((point, index) => {
+        const item = document.createElement("li");
+        const identity = document.createElement("span");
+        const location = document.createElement("span");
+        const time = document.createElement("time");
+        identity.className = "visitor-log-identity";
+        location.className = "visitor-log-location";
+        time.className = "visitor-log-time";
+        identity.textContent = `Visitor ${String(index + 1).padStart(2, "0")}`;
+        location.textContent = `${point.country_flag || "🌐"} ${point.country_name || point.country || "Unknown region"}`;
+        time.textContent = relativeTime(point.age_s);
+        item.append(identity, location, time);
+        list.appendChild(item);
+      });
     })
     .catch(() => {
       status.textContent = "Live visitor locations";
+      listCount.textContent = "Unavailable";
+      const empty = document.createElement("li");
+      empty.className = "visitor-log-empty";
+      empty.textContent = "Visitor list is temporarily unavailable.";
+      list.replaceChildren(empty);
     });
 })();
 </script>

@@ -15,7 +15,6 @@ The site will be available at `http://127.0.0.1:4000`.
 
 - `_pages/about.md`: homepage and research overview
 - `_pages/publications.md`: publications grouped by author role
-- `_pages/cv.md`: curriculum vitae
 - `files/Xinyuan_Song_CV.pdf`: downloadable CV
 
 ## Repository
