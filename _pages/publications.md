@@ -47,6 +47,11 @@ author_profile: true
     <p><strong>Xinyuan Song</strong>, Ziyi Ni, Fred Yang, Bo Zhang, Yiming Yan, Yijin Wang, and Jane Zhang.</p>
   </article>
   <article class="publication-item">
+    <div class="publication-meta"><span>Scientific Reports</span><time>2026</time></div>
+    <h3><a href="https://www.nature.com/articles/s41598-026-49315-3">A 19-layer convolutional neural network for accurate COVID-19 detection in chest X-ray images: comparative analysis with pretrained networks</a></h3>
+    <p><strong>Xinyuan Song</strong>.</p>
+  </article>
+  <article class="publication-item">
     <div class="publication-meta"><span>CPAL</span><time>2026</time></div>
     <h3><a href="https://wrap.warwick.ac.uk/id/eprint/196246/">Token-Aware Representation Augmentation for Fine-Grained Semi-Supervised Learning</a></h3>
     <p>Hongyang He<sup>*</sup>, Yan Zhong<sup>*</sup>, <strong>Xinyuan Song</strong><sup>*</sup>, Daizong Liu, and Victor Sanchez.</p>
@@ -81,12 +86,12 @@ author_profile: true
     "ContrastiveGaussian: High-Fidelity 3D Generation with Contrastive Learning and Gaussian Splatting": "https://github.com/YaNLlan-ljb/ContrastiveGaussian",
     "Learning to Recommend Multi-Agent Subgraphs from Calling Trees": "https://github.com/Hik289/Agent_REC",
     "StructPrune: Structured Global Pruning Asymptotics with Square-Root GPU Memory": "https://github.com/Hik289/structured_sparseGPT",
-    "AutoSurvey2: Empowering Researchers with Next Level Automated Literature Surveys": "https://github.com/annihi1ation/auto_research",
     "Structured Risk Model": "https://github.com/Hik289/structural-risk-adjustments",
     "Matrix Sensing with Kernel Optimal Loss: Robustness and Optimization Landscape": "https://github.com/Hik289/Hik289.github.io/blob/main/files/code/matrix-sensing/matrix_sensing.py"
   };
 
   const pdfOverrides = {
+    "A 19-layer convolutional neural network for accurate COVID-19 detection in chest X-ray images: comparative analysis with pretrained networks": "https://www.nature.com/articles/s41598-026-49315-3.pdf",
     "Generalizable Blind Image Quality Assessment with Retrieval Augmentation and Contrastive Vision-Text Local Meta-Training": "https://dl.acm.org/doi/pdf/10.1145/3767308.3836240",
     "Harder the Task, Sparser the Representation: Sparsity as a Learning Signature of Capability in LLMs": "https://arxiv.org/pdf/2603.03415",
     "P-QuASAR: A Unified Probabilistic Framework for Holistic Patent Quality Assessment and Refinement": "https://aclanthology.org/2026.findings-acl.579.pdf",
@@ -113,9 +118,7 @@ author_profile: true
   };
 
   const makeLink = (label, iconClass, href, extraClass = "") => {
-    if (!href) {
-      return `<span class="publication-action is-disabled ${extraClass}" aria-disabled="true" title="Not publicly available yet">${icon(iconClass)}${label}</span>`;
-    }
+    if (!href) return "";
     return `<a class="publication-action ${extraClass}" href="${href}" target="_blank" rel="noopener noreferrer">${icon(iconClass)}${label}</a>`;
   };
 
@@ -139,8 +142,8 @@ author_profile: true
     const heading = item.querySelector("h3");
     if (!heading || item.querySelector(".publication-actions")) return;
 
-    const title = heading.textContent.trim();
     const titleLink = heading.querySelector("a");
+    const title = titleLink ? titleLink.textContent.trim() : heading.textContent.trim();
     const paperUrl = titleLink ? titleLink.href : "";
     const venue = item.querySelector(".publication-meta span")?.textContent.trim() || "Preprint";
     const year = item.querySelector(".publication-meta time")?.textContent.trim() || "";
@@ -151,9 +154,9 @@ author_profile: true
     actions.className = "publication-actions";
     actions.innerHTML = [
       makeLink("PDF", "fas fa-file-pdf", pdfUrl),
-      makeLink("Code", "fab fa-github", codeUrl),
+      makeLink("GitHub", "fab fa-github", codeUrl),
       `<button class="publication-action bibtex-action" type="button">${icon("fas fa-quote-right")}BibTeX</button>`
-    ].join("");
+    ].filter(Boolean).join("");
 
     actions.querySelector(".bibtex-action").addEventListener("click", (event) => {
       const firstAuthor = cleanAuthors(item).split(/,|\sand\s/)[0].trim().split(/\s+/).pop() || "paper";
@@ -360,68 +363,13 @@ author_profile: true
     <p><strong>Xinyuan Song</strong>, Guangji Bai, and Liang Zhao.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2026</time></div>
-    <h3><a href="https://arxiv.org/abs/2510.26012">AutoSurvey2: Empowering Researchers with Next Level Automated Literature Surveys</a></h3>
-    <p>Siyi Wu, Chiaxin Liang, Ziqian Bi, Leyi Zhao, Tianyang Wang, Junhao Song, Yichao Zhang, Keyu Chen, Benji Peng, and <strong>Xinyuan Song</strong>.</p>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
-    <h3><a href="https://arxiv.org/abs/2510.00183">Lattica: A Decentralized Cross-NAT Communication Framework for Scalable AI Inference and Training</a></h3>
-    <p>Ween Yang, Jason Liu, Suli Wang, <strong>Xinyuan Song</strong>, Lynn Ai, Eric Yang, and Tianyu Shi.</p>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
-    <h3><a href="https://gavenma.github.io/files/papers/Matrix_Lasso_NeurIPS_2025.pdf">Recovery Guarantees of the Matrix Lasso Problem: On Equivalence of Convex and Non-Convex Formulations</a></h3>
-    <p>Jinji Yang, <strong>Xinyuan Song</strong>, and Ziye Ma.</p>
-  </article>
-  <article class="publication-item">
     <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
     <h3><a href="https://arxiv.org/abs/2507.06520">GradientSys: A Multi-Agent LLM Scheduler with ReAct Orchestration</a></h3>
     <p><strong>Xinyuan Song</strong>, Zeyu Wang, Siyi Wu, Tianyu Shi, and Lynn Ai.</p>
   </article>
   <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
-    <h3><a href="https://arxiv.org/abs/2507.09497">GoalfyMax: A Protocol-Driven Multi-Agent System for Intelligent Experience Entities</a></h3>
-    <p>Siyi Wu, Zeyu Wang, <strong>Xinyuan Song</strong>, Zhengpeng Zhou, Lifan Sun, and Tianyu Shi.</p>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
-    <h3><a href="https://arxiv.org/abs/2503.14523">SDF-TopoNet: A Two-Stage Framework for Tubular Structure Segmentation via SDF Pre-training and Topology-Aware Fine-Tuning</a></h3>
-    <p>Siyi Wu, Leyi Zhao, Haotian Ma, and <strong>Xinyuan Song</strong>.</p>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
-    <h3><a href="https://arxiv.org/abs/2509.11079">Difficulty-Aware Agent Orchestration in LLM-Powered Workflows</a></h3>
-    <p>Jinwei Su, Qizhen Lan, Yinghui Xia, Lifan Sun, Weiyou Tian, Tianyu Shi, <strong>Xinyuan Song</strong>, Lewei He, and Yang Jingsong.</p>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
-    <h3><a href="https://arxiv.org/abs/2509.09751">Meta-Learning Reinforcement Learning for Crypto-Return Prediction</a></h3>
-    <p>Junqiao Wang, Zhaoyang Guan, Guanyu Liu, Tianze Xia, Xianzhi Li, Shuo Yin, <strong>Xinyuan Song</strong>, Chuhan Cheng, Tianyu Shi, and Alex Lee.</p>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
-    <h3><a href="https://arxiv.org/abs/2508.20019">Symphony: A Decentralized Multi-Agent Framework for Scalable Collective Intelligence</a></h3>
-    <p>Ji Wang, Kashing Chen, <strong>Xinyuan Song</strong>, Ke Zhang, Lynn Ai, Eric Yang, and Bill Shi.</p>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
-    <h3><a href="https://arxiv.org/abs/2509.09498">SEDM: Scalable Self-Evolving Distributed Memory for Agents</a></h3>
-    <p>Haoran Xu, Jiacong Hu, Ke Zhang, Lei Yu, Yuxin Tang, <strong>Xinyuan Song</strong>, Yiqun Duan, Lynn Ai, and Bill Shi.</p>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2025</time></div>
-    <h3><a href="https://arxiv.org/abs/2507.20474">MountainLion: A Multi-Modal LLM-Based Agent System for Interpretable and Adaptive Financial Trading</a></h3>
-    <p>Siyi Wu, Junqiao Wang, Zhaoyang Guan, Leyi Zhao, <strong>Xinyuan Song</strong>, Xinyu Ying, Dexu Yu, Jinhao Wang, Hanlin Zhang, Michele Pak, Yangfan He, Yi Xin, Jianhui Wang, and Tianyu Shi.</p>
-  </article>
-  <article class="publication-item">
     <div class="publication-meta"><span>arXiv</span><time>2023</time></div>
     <h3><a href="https://arxiv.org/abs/2311.06667">Structured Risk Model</a></h3>
-    <p><strong>Xinyuan Song</strong>.</p>
-  </article>
-  <article class="publication-item">
-    <div class="publication-meta"><span>arXiv</span><time>2023</time></div>
-    <h3><a href="https://arxiv.org/abs/2311.06394">A Design of Convolutional Neural Network Model for the Diagnosis of COVID-19</a></h3>
     <p><strong>Xinyuan Song</strong>.</p>
   </article>
 </div>
