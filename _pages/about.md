@@ -209,7 +209,7 @@ My long-term goal is to develop principled and practical learning systems that r
     }
   };
   refresh();
-  window.setInterval(refresh, 65000);
+  window.setInterval(refresh, 30 * 60 * 1000);
   document.addEventListener("visibilitychange", () => {
     if (!document.hidden) refresh();
   });

@@ -10,7 +10,7 @@ on:
       - _pages/about.md
       - assets/css/main.scss
   schedule:
-    - cron: "2-57/5 * * * *"
+    - cron: "2,32 * * * *"
   workflow_dispatch:
 
 concurrency:
