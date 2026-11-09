@@ -1,0 +1,17 @@
+{
+  "updated_at": "2026-11-09T06:38:53Z",
+  "online_now": 1,
+  "locations": 1,
+  "visitors": [
+    {
+      "city": "Scottdale",
+      "region": "Georgia",
+      "country": "United States",
+      "country_code": "US",
+      "lat": 33.8,
+      "lon": -84.3,
+      "status": "live",
+      "age_s": 25
+    }
+  ]
+}
