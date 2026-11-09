@@ -174,6 +174,7 @@ My long-term goal is to develop principled and practical learning systems that r
       }
 
       const visitCount = Math.max(1, Math.floor(Number(visitor.visits) || 1));
+      const liveVisitCount = Math.max(0, Math.min(visitCount, Math.floor(Number(visitor.live_visits) || 0)));
       for (let occurrence = 0; occurrence < visitCount; occurrence += 1) {
         visitorIndex += 1;
         const item = document.createElement("li");
@@ -186,7 +187,7 @@ My long-term goal is to develop principled and practical learning systems that r
         identity.textContent = `Visitor ${String(visitorIndex).padStart(2, "0")}`;
         location.textContent = `${countryFlag(visitor.country_code)} ${placeLabel(visitor)}`;
         time.dateTime = visitor.last_seen || "";
-        time.textContent = visitor.status === "live" ? "Live" : relativeTime(secondsSince(visitor, data.updated_at));
+        time.textContent = occurrence < liveVisitCount ? "Live" : relativeTime(secondsSince(visitor, data.updated_at));
         item.append(identity, location, time);
         list.appendChild(item);
       }
