@@ -104,16 +104,9 @@ My long-term goal is to develop principled and practical learning systems that r
 <section class="visitor-map-section" aria-labelledby="visitor-map-heading">
   <span class="anchor" id="visitor-map"></span>
   <h1 id="visitor-map-heading">🌎 Visitor Map</h1>
-  <div class="visitor-map-header">
-<p class="visitor-map-intro">Approximate city-level visitor locations.</p>
-    <a class="scholar-citation-card" href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer">
-      <span class="scholar-citation-number">{{ site.scholar_citations }}</span>
-      <span class="scholar-citation-label">Google Scholar citations</span>
-      <span class="scholar-citation-metrics">h-index {{ site.scholar_h_index }} &middot; i10-index {{ site.scholar_i10_index }}</span>
-    </a>
-  </div>
+  <p class="visitor-map-intro">Approximate city-level visitor locations.</p>
   <div class="visitor-map-frame">
-    <div class="visitor-map-toolbar"><span class="visitor-map-legend"><i aria-hidden="true"></i> City-level visits</span><span id="visitor-map-status" aria-live="polite">Loading precise locations…</span></div>
+    <div class="visitor-map-toolbar"><span class="visitor-map-legend"><i aria-hidden="true"></i> Visitors</span></div>
     <div class="visitor-map-widget" role="img" aria-label="World map showing approximate city-level visitor locations as red dots">
       <script id="_wauxsn">var _wau = window._wau || []; _wau.push(["map", "a62ninj09x", "xsn", "680", "340", "night", "target-red"]);</script>
       <script async src="https://waust.at/m.js"></script>
@@ -121,7 +114,7 @@ My long-term goal is to develop principled and practical learning systems that r
     </div>
   </div>
   <details class="visitor-log">
-    <summary><span>Recent visitors</span><span id="visitor-log-count">Loading…</span></summary>
+    <summary><span>Visitors</span></summary>
     <ol id="visitor-log-list" aria-live="polite"></ol>
     <p class="visitor-log-note">Anonymous IP-based geolocation. City and region are approximate; names and IP addresses are not stored or displayed.</p>
   </details>
@@ -130,10 +123,8 @@ My long-term goal is to develop principled and practical learning systems that r
 
 <script>
 (() => {
-  const status = document.getElementById("visitor-map-status");
   const list = document.getElementById("visitor-log-list");
-  const listCount = document.getElementById("visitor-log-count");
-  if (!status || !list || !listCount) return;
+  if (!list) return;
   const relativeTime = (seconds) => {
     const value = Math.max(0, Number(seconds) || 0);
     if (value < 60) return "just now";
@@ -153,9 +144,6 @@ My long-term goal is to develop principled and practical learning systems that r
     })
     .then((data) => {
       const visitors = Array.isArray(data.visitors) ? data.visitors.slice(0, 30) : [];
-      const online = Number(data.online_now) || 0;
-      status.textContent = `${visitors.length} detailed location${visitors.length === 1 ? "" : "s"} · ${online} online`;
-      listCount.textContent = `${visitors.length} shown`;
       list.replaceChildren();
       if (!visitors.length) {
         const empty = document.createElement("li");
@@ -181,8 +169,6 @@ My long-term goal is to develop principled and practical learning systems that r
       });
     })
     .catch(() => {
-      status.textContent = "Live visitor locations";
-      listCount.textContent = "Unavailable";
       const empty = document.createElement("li");
       empty.className = "visitor-log-empty";
       empty.textContent = "Visitor list is temporarily unavailable.";
