@@ -105,7 +105,7 @@ My long-term goal is to develop principled and practical learning systems that r
   <span class="anchor" id="visitor-map"></span>
   <h1 id="visitor-map-heading">🌎 Visitor Map</h1>
   <div class="visitor-map-header">
-    <p class="visitor-map-intro">Approximate recent visitor locations.</p>
+<p class="visitor-map-intro">Approximate city-level visitor locations.</p>
     <a class="scholar-citation-card" href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer">
       <span class="scholar-citation-number">{{ site.scholar_citations }}</span>
       <span class="scholar-citation-label">Google Scholar citations</span>
@@ -113,18 +113,19 @@ My long-term goal is to develop principled and practical learning systems that r
     </a>
   </div>
   <div class="visitor-map-frame">
-    <div class="visitor-map-toolbar"><span class="visitor-map-legend"><i aria-hidden="true"></i> Recent visits</span><span id="visitor-map-status" aria-live="polite">Loading recent activity…</span></div>
-    <div class="visitor-map-widget" role="img" aria-label="World map showing approximate recent visitor locations as red dots">
-      <script async src="https://feed-pulse.com/api/embed/visitor-globe.js?site_id=dfdca402-47a4-4b27-92eb-7df55f894c2f&map=flat&w=680&h=360&theme=ivory&speed=off&poll=30000"></script>
-      <noscript>The live visitor map requires JavaScript.</noscript>
+    <div class="visitor-map-toolbar"><span class="visitor-map-legend"><i aria-hidden="true"></i> City-level visits</span><span id="visitor-map-status" aria-live="polite">Loading precise locations…</span></div>
+    <div class="visitor-map-widget" role="img" aria-label="World map showing approximate city-level visitor locations as red dots">
+      <script id="_wauxsn">var _wau = window._wau || []; _wau.push(["map", "a62ninj09x", "xsn", "680", "340", "night", "target-red"]);</script>
+      <script async src="https://waust.at/m.js"></script>
+      <noscript>The city-level visitor map requires JavaScript.</noscript>
     </div>
   </div>
   <details class="visitor-log">
     <summary><span>Recent visitors</span><span id="visitor-log-count">Loading…</span></summary>
     <ol id="visitor-log-list" aria-live="polite"></ol>
-    <p class="visitor-log-note">Anonymous, approximate locations only. Names and IP addresses are not collected or displayed.</p>
+    <p class="visitor-log-note">Anonymous IP-based geolocation. City and region are approximate; names and IP addresses are not stored or displayed.</p>
   </details>
-  <p class="visitor-map-note"><i class="fas fa-location-dot" aria-hidden="true"></i> Locations are approximate; IP addresses are not displayed.</p>
+  <p class="visitor-map-note"><i class="fas fa-location-dot" aria-hidden="true"></i> Red dots distinguish cities and regions, including U.S. coasts and Chinese provinces. Locations remain approximate.</p>
 </section>
 
 <script>
@@ -140,25 +141,30 @@ My long-term goal is to develop principled and practical learning systems that r
     if (value < 86400) return `${Math.floor(value / 3600)} hr ago`;
     return `${Math.floor(value / 86400)} day${value < 172800 ? "" : "s"} ago`;
   };
-  fetch("https://feed-pulse.com/api/visitor-map/dfdca402-47a4-4b27-92eb-7df55f894c2f?hours=720&limit=1000")
+  const countryFlag = (code) => {
+    if (!code || code.length !== 2) return "🌐";
+    return String.fromCodePoint(...code.toUpperCase().split("").map((letter) => 127397 + letter.charCodeAt(0)));
+  };
+  const dataUrl = `https://raw.githubusercontent.com/Hik289/Hik289.github.io/visitor-data/visitor-locations.json?v=${Date.now()}`;
+  fetch(dataUrl, { cache: "no-store" })
     .then((response) => {
       if (!response.ok) throw new Error("Visitor data unavailable");
       return response.json();
     })
     .then((data) => {
-      const count = Number(data.count) || 0;
-      status.textContent = count === 1 ? "1 visit · past 30 days" : `${count.toLocaleString()} visits · past 30 days`;
-      const points = Array.isArray(data.points) ? data.points.slice(0, 30) : [];
-      listCount.textContent = `${points.length} shown`;
+      const visitors = Array.isArray(data.visitors) ? data.visitors.slice(0, 30) : [];
+      const online = Number(data.online_now) || 0;
+      status.textContent = `${visitors.length} detailed location${visitors.length === 1 ? "" : "s"} · ${online} online`;
+      listCount.textContent = `${visitors.length} shown`;
       list.replaceChildren();
-      if (!points.length) {
+      if (!visitors.length) {
         const empty = document.createElement("li");
         empty.className = "visitor-log-empty";
         empty.textContent = "No recent visits yet.";
         list.appendChild(empty);
         return;
       }
-      points.forEach((point, index) => {
+      visitors.forEach((visitor, index) => {
         const item = document.createElement("li");
         const identity = document.createElement("span");
         const location = document.createElement("span");
@@ -167,8 +173,9 @@ My long-term goal is to develop principled and practical learning systems that r
         location.className = "visitor-log-location";
         time.className = "visitor-log-time";
         identity.textContent = `Visitor ${String(index + 1).padStart(2, "0")}`;
-        location.textContent = `${point.country_flag || "🌐"} ${point.country_name || point.country || "Unknown region"}`;
-        time.textContent = relativeTime(point.age_s);
+        const place = [visitor.city, visitor.region, visitor.country].filter((value, position, values) => value && values.indexOf(value) === position);
+        location.textContent = `${countryFlag(visitor.country_code)} ${place.join(", ") || "Unknown region"}`;
+        time.textContent = visitor.status === "live" ? relativeTime(visitor.age_s) : "Recent";
         item.append(identity, location, time);
         list.appendChild(item);
       });

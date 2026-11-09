@@ -1,0 +1,44 @@
+name: Update visitor locations
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/scripts/update_visitor_locations.rb
+      - .github/workflows/update-visitor-locations.yml
+      - _pages/about.md
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Load previous location cache
+        run: curl --fail --silent --show-error --location https://raw.githubusercontent.com/Hik289/Hik289.github.io/visitor-data/visitor-locations.json --output /tmp/visitor-locations-previous.json || true
+      - name: Build anonymous location data
+        run: ruby .github/scripts/update_visitor_locations.rb
+      - name: Publish location data
+        run: |
+          if git ls-remote --exit-code --heads origin visitor-data >/dev/null 2>&1; then
+            git fetch origin visitor-data
+            git checkout -B visitor-data origin/visitor-data
+          else
+            git checkout --orphan visitor-data
+            git rm -rf .
+          fi
+          cp /tmp/visitor-locations.json visitor-locations.json
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add visitor-locations.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Update anonymous visitor locations"
+          git push origin visitor-data
