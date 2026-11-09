@@ -1,17 +1,115 @@
 {
-  "updated_at": "2026-11-09T17:13:25Z",
-  "online_now": 3,
+  "updated_at": "2026-11-09T17:14:42Z",
+  "online_now": 2,
   "locations": 11,
   "visitors": [
     {
-      "city": "Scottdale",
-      "region": "Georgia",
+      "city": "Osaka (Chuo Ward)",
+      "region": "Osaka Prefecture",
+      "country": "Japan",
+      "country_code": "JP",
+      "lat": 34.7,
+      "lon": 135.5,
+      "status": "seen",
+      "first_seen": "2026-11-09T17:13:25Z",
+      "last_seen": "2026-11-09T17:13:25Z",
+      "age_s": 77
+    },
+    {
+      "city": "Boardman",
+      "region": "Oregon",
       "country": "United States",
       "country_code": "US",
-      "lat": 33.8,
-      "lon": -84.3,
-      "status": "live",
-      "age_s": 287
+      "lat": 45.8,
+      "lon": -119.7,
+      "status": "seen",
+      "first_seen": "2026-11-09T17:13:25Z",
+      "last_seen": "2026-11-09T17:13:25Z",
+      "age_s": 77
+    },
+    {
+      "city": "Prague",
+      "region": null,
+      "country": "Czechia",
+      "country_code": "CZ",
+      "lat": 50.1,
+      "lon": 14.4,
+      "status": "seen",
+      "first_seen": "2026-11-09T17:13:25Z",
+      "last_seen": "2026-11-09T17:13:25Z",
+      "age_s": 77
+    },
+    {
+      "city": "Warsaw",
+      "region": "Masovian Voivodeship",
+      "country": "Poland",
+      "country_code": "PL",
+      "lat": 52.2,
+      "lon": 21.0,
+      "status": "seen",
+      "first_seen": "2026-11-09T17:13:25Z",
+      "last_seen": "2026-11-09T17:13:25Z",
+      "age_s": 77
+    },
+    {
+      "city": "Ashburn",
+      "region": "Virginia",
+      "country": "United States",
+      "country_code": "US",
+      "lat": 39.0,
+      "lon": -77.5,
+      "status": "seen",
+      "first_seen": "2026-11-09T17:13:25Z",
+      "last_seen": "2026-11-09T17:13:25Z",
+      "age_s": 77
+    },
+    {
+      "city": "Amsterdam",
+      "region": "North Holland",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "lat": 52.4,
+      "lon": 4.9,
+      "status": "seen",
+      "first_seen": "2026-11-09T17:13:25Z",
+      "last_seen": "2026-11-09T17:13:25Z",
+      "age_s": 77
+    },
+    {
+      "city": "Valletta",
+      "region": null,
+      "country": "Malta",
+      "country_code": "MT",
+      "lat": 35.9,
+      "lon": 14.5,
+      "status": "seen",
+      "first_seen": "2026-11-09T17:13:25Z",
+      "last_seen": "2026-11-09T17:13:25Z",
+      "age_s": 77
+    },
+    {
+      "city": "New York",
+      "region": "New York",
+      "country": "United States",
+      "country_code": "US",
+      "lat": 40.7,
+      "lon": -74.0,
+      "status": "seen",
+      "first_seen": "2026-11-09T17:13:25Z",
+      "last_seen": "2026-11-09T17:13:25Z",
+      "age_s": 77
+    },
+    {
+      "city": "Frankfurt am Main",
+      "region": "Hesse",
+      "country": "Germany",
+      "country_code": "DE",
+      "lat": 50.1,
+      "lon": 8.7,
+      "status": "seen",
+      "first_seen": "2026-11-09T17:13:25Z",
+      "last_seen": "2026-11-09T17:13:25Z",
+      "age_s": 77
     },
     {
       "city": "São Paulo",
@@ -21,97 +119,21 @@
       "lat": -23.6,
       "lon": -46.6,
       "status": "live",
-      "age_s": 359
+      "first_seen": "2026-11-09T17:13:25Z",
+      "last_seen": "2026-11-09T17:13:25Z",
+      "age_s": 77
     },
     {
-      "city": "Frankfurt am Main",
-      "region": "Hesse",
-      "country": "Germany",
-      "country_code": "DE",
-      "lat": 50.1,
-      "lon": 8.7,
-      "status": "recent",
-      "age_s": null
-    },
-    {
-      "city": "New York",
-      "region": "New York",
+      "city": "Scottdale",
+      "region": "Georgia",
       "country": "United States",
       "country_code": "US",
-      "lat": 40.7,
-      "lon": -74.0,
-      "status": "recent",
-      "age_s": null
-    },
-    {
-      "city": "Valletta",
-      "region": null,
-      "country": "Malta",
-      "country_code": "MT",
-      "lat": 35.9,
-      "lon": 14.5,
-      "status": "recent",
-      "age_s": null
-    },
-    {
-      "city": "Amsterdam",
-      "region": "North Holland",
-      "country": "Netherlands",
-      "country_code": "NL",
-      "lat": 52.4,
-      "lon": 4.9,
-      "status": "recent",
-      "age_s": null
-    },
-    {
-      "city": "Ashburn",
-      "region": "Virginia",
-      "country": "United States",
-      "country_code": "US",
-      "lat": 39.0,
-      "lon": -77.5,
-      "status": "recent",
-      "age_s": null
-    },
-    {
-      "city": "Warsaw",
-      "region": "Masovian Voivodeship",
-      "country": "Poland",
-      "country_code": "PL",
-      "lat": 52.2,
-      "lon": 21.0,
-      "status": "recent",
-      "age_s": null
-    },
-    {
-      "city": "Prague",
-      "region": null,
-      "country": "Czechia",
-      "country_code": "CZ",
-      "lat": 50.1,
-      "lon": 14.4,
-      "status": "recent",
-      "age_s": null
-    },
-    {
-      "city": "Boardman",
-      "region": "Oregon",
-      "country": "United States",
-      "country_code": "US",
-      "lat": 45.8,
-      "lon": -119.7,
-      "status": "recent",
-      "age_s": null
-    },
-    {
-      "city": "Osaka (Chuo Ward)",
-      "region": "Osaka Prefecture",
-      "country": "Japan",
-      "country_code": "JP",
-      "lat": 34.7,
-      "lon": 135.5,
-      "status": "recent",
-      "age_s": null
+      "lat": 33.8,
+      "lon": -84.3,
+      "status": "live",
+      "first_seen": "2026-11-09T17:13:25Z",
+      "last_seen": "2026-11-09T17:13:25Z",
+      "age_s": 77
     }
   ]
 }
