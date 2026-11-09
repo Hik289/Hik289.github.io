@@ -28,6 +28,7 @@ My long-term goal is to develop principled and practical learning systems that r
 
 </div>
 
+{% if site.show_news %}
 <span class="anchor" id="news"></span>
 # 🔥 News {#news}
 
@@ -58,6 +59,7 @@ My long-term goal is to develop principled and practical learning systems that r
   <li><em>2026.05</em>: 🛠️ Released <a href="https://arxiv.org/abs/2605.13716"><strong>SkillOps</strong></a>, a framework for self-maintaining LLM agent skill libraries. <a href="https://github.com/Hik289/SkillOps">Code</a></li>
 </ul>
 </div>
+{% endif %}
 
 <span class="anchor" id="recent-study"></span>
 # 📝 Recent Study {#recent-study}

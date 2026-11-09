@@ -8,6 +8,7 @@ description              : &description "Machine learning, learning theory, opti
 url                      : "https://hik289.github.io"
 baseurl                  : ""
 repository               : "Hik289/Hik289.github.io"
+show_news                : false
 scholar_citations        : 2729
 scholar_h_index          : 27
 scholar_i10_index        : 55
