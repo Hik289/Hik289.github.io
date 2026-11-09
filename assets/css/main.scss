@@ -605,6 +605,7 @@ a {
 }
 
 .visitor-map-frame {
+  position: relative;
   overflow: hidden;
   border: 1px solid #e8e8e8;
   border-radius: 8px;
@@ -632,6 +633,9 @@ a {
 .visitor-map-widget {
   max-width: 680px;
   margin: 0 auto;
+  cursor: default;
+  pointer-events: none;
+  user-select: none;
 }
 
 .visitor-map-widget iframe,
@@ -640,6 +644,13 @@ a {
   display: block;
   max-width: 100%;
   margin: 0 auto;
+}
+
+.visitor-map-click-shield {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  cursor: default;
 }
 
 .visitor-log {

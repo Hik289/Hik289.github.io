@@ -112,13 +112,13 @@ My long-term goal is to develop principled and practical learning systems that r
       <script async src="https://waust.at/m.js"></script>
       <noscript>The city-level visitor map requires JavaScript.</noscript>
     </div>
+    <div class="visitor-map-click-shield" aria-hidden="true"></div>
   </div>
   <details class="visitor-log">
     <summary><span>Visitors</span></summary>
     <ol id="visitor-log-list" aria-live="polite"></ol>
     <p class="visitor-log-note">Anonymous IP-based geolocation. City and region are approximate; names and IP addresses are not stored or displayed.</p>
   </details>
-  <p class="visitor-map-note"><i class="fas fa-location-dot" aria-hidden="true"></i> Red dots distinguish cities and regions, including U.S. coasts and Chinese provinces. Locations remain approximate.</p>
 </section>
 
 <script>
