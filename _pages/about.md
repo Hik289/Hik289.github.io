@@ -151,17 +151,35 @@ My long-term goal is to develop principled and practical learning systems that r
   };
   const render = (data) => {
     const visitors = Array.isArray(data.visitors) ? data.visitors : [];
+    const dedupeWindowMs = 10 * 60 * 1000;
+    const visibleVisitors = [];
+    visitors.forEach((visitor) => {
+      const locationKey = `${Number(visitor.lat).toFixed(3)},${Number(visitor.lon).toFixed(3)}`;
+      const timestamp = Date.parse(visitor.last_seen || data.updated_at || "");
+      let previousIndex = -1;
+      for (let index = visibleVisitors.length - 1; index >= 0; index -= 1) {
+        if (visibleVisitors[index].locationKey === locationKey) {
+          previousIndex = index;
+          break;
+        }
+      }
+      const previous = visibleVisitors[previousIndex];
+      if (previous && Number.isFinite(timestamp) && Math.abs(timestamp - previous.timestamp) <= dedupeWindowMs) {
+        if (timestamp >= previous.timestamp) visibleVisitors[previousIndex] = { visitor, locationKey, timestamp };
+        return;
+      }
+      visibleVisitors.push({ visitor, locationKey, timestamp });
+    });
     list.replaceChildren();
     pins.replaceChildren();
-    if (!visitors.length) {
+    if (!visibleVisitors.length) {
       const empty = document.createElement("li");
       empty.className = "visitor-log-empty";
       empty.textContent = "No visits yet.";
       list.appendChild(empty);
       return;
     }
-    let visitorIndex = 0;
-    visitors.forEach((visitor) => {
+    visibleVisitors.forEach(({ visitor }, index) => {
       const latitude = Number(visitor.lat);
       const longitude = Number(visitor.lon);
       if (Number.isFinite(latitude) && Number.isFinite(longitude)) {
@@ -173,24 +191,19 @@ My long-term goal is to develop principled and practical learning systems that r
         pins.appendChild(pin);
       }
 
-      const visitCount = Math.max(1, Math.floor(Number(visitor.visits) || 1));
-      const liveVisitCount = Math.max(0, Math.min(visitCount, Math.floor(Number(visitor.live_visits) || 0)));
-      for (let occurrence = 0; occurrence < visitCount; occurrence += 1) {
-        visitorIndex += 1;
-        const item = document.createElement("li");
-        const identity = document.createElement("span");
-        const location = document.createElement("span");
-        const time = document.createElement("time");
-        identity.className = "visitor-log-identity";
-        location.className = "visitor-log-location";
-        time.className = "visitor-log-time";
-        identity.textContent = `Visitor ${String(visitorIndex).padStart(2, "0")}`;
-        location.textContent = `${countryFlag(visitor.country_code)} ${placeLabel(visitor)}`;
-        time.dateTime = visitor.last_seen || "";
-        time.textContent = occurrence < liveVisitCount ? "Live" : relativeTime(secondsSince(visitor, data.updated_at));
-        item.append(identity, location, time);
-        list.appendChild(item);
-      }
+      const item = document.createElement("li");
+      const identity = document.createElement("span");
+      const location = document.createElement("span");
+      const time = document.createElement("time");
+      identity.className = "visitor-log-identity";
+      location.className = "visitor-log-location";
+      time.className = "visitor-log-time";
+      identity.textContent = `Visitor ${String(index + 1).padStart(2, "0")}`;
+      location.textContent = `${countryFlag(visitor.country_code)} ${placeLabel(visitor)}`;
+      time.dateTime = visitor.last_seen || "";
+      time.textContent = Number(visitor.live_visits) > 0 ? "Live" : relativeTime(secondsSince(visitor, data.updated_at));
+      item.append(identity, location, time);
+      list.appendChild(item);
     });
   };
   let refreshing = false;
