@@ -696,7 +696,7 @@ a {
 .visitor-log summary {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0.65rem 0.75rem;
   color: #222222;
   font-size: 0.82rem;
@@ -728,10 +728,8 @@ a {
 }
 
 #visitor-log-list {
-  max-height: 26rem;
   margin: 0;
   padding: 0;
-  overflow-y: auto;
   border-top: 1px solid #e8e8e8;
   list-style: none;
 }
