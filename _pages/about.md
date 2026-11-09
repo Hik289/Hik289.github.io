@@ -160,7 +160,8 @@ My long-term goal is to develop principled and practical learning systems that r
       list.appendChild(empty);
       return;
     }
-    visitors.forEach((visitor, index) => {
+    let visitorIndex = 0;
+    visitors.forEach((visitor) => {
       const latitude = Number(visitor.lat);
       const longitude = Number(visitor.lon);
       if (Number.isFinite(latitude) && Number.isFinite(longitude)) {
@@ -172,19 +173,23 @@ My long-term goal is to develop principled and practical learning systems that r
         pins.appendChild(pin);
       }
 
-      const item = document.createElement("li");
-      const identity = document.createElement("span");
-      const location = document.createElement("span");
-      const time = document.createElement("time");
-      identity.className = "visitor-log-identity";
-      location.className = "visitor-log-location";
-      time.className = "visitor-log-time";
-      identity.textContent = `Visitor ${String(index + 1).padStart(2, "0")}`;
-      location.textContent = `${countryFlag(visitor.country_code)} ${placeLabel(visitor)}`;
-      time.dateTime = visitor.last_seen || "";
-      time.textContent = visitor.status === "live" ? "Live" : relativeTime(secondsSince(visitor, data.updated_at));
-      item.append(identity, location, time);
-      list.appendChild(item);
+      const visitCount = Math.max(1, Math.floor(Number(visitor.visits) || 1));
+      for (let occurrence = 0; occurrence < visitCount; occurrence += 1) {
+        visitorIndex += 1;
+        const item = document.createElement("li");
+        const identity = document.createElement("span");
+        const location = document.createElement("span");
+        const time = document.createElement("time");
+        identity.className = "visitor-log-identity";
+        location.className = "visitor-log-location";
+        time.className = "visitor-log-time";
+        identity.textContent = `Visitor ${String(visitorIndex).padStart(2, "0")}`;
+        location.textContent = `${countryFlag(visitor.country_code)} ${placeLabel(visitor)}`;
+        time.dateTime = visitor.last_seen || "";
+        time.textContent = visitor.status === "live" ? "Live" : relativeTime(secondsSince(visitor, data.updated_at));
+        item.append(identity, location, time);
+        list.appendChild(item);
+      }
     });
   };
   let refreshing = false;

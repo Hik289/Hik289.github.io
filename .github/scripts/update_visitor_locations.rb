@@ -81,6 +81,8 @@ live_data = fetch_json("#{base}&pins=new", headers)
 recent_data = fetch_json("#{base}&pins=old", headers)
 live_points = Array(live_data["pins"]).map { |point| point.merge("status" => "live") }
 recent_points = Array(recent_data["pins"]).map { |point| point.merge("status" => "seen") }
+recent_counts = Hash.new(0)
+recent_points.each { |point| recent_counts[coordinate_key(point)] += 1 }
 
 current_points = {}
 recent_points.each { |point| current_points[coordinate_key(point)] ||= point }
@@ -108,6 +110,7 @@ current_points.each do |key, point|
     "lat" => point["lat"].to_f.round(3),
     "lon" => point["lon"].to_f.round(3),
     "status" => point["status"],
+    "visits" => [previous["visits"].to_i, recent_counts[key], 1].max,
     "first_seen" => first_seen.iso8601,
     "last_seen" => last_seen.iso8601,
     "age_s" => [(now - last_seen).to_i, 0].max
@@ -118,6 +121,7 @@ visitors = previous_visitors.values.map do |visitor|
   last_seen = parse_time(visitor["last_seen"], previous_updated_at)
   visitor.merge(
     "status" => current_points[coordinate_key(visitor)]&.fetch("status", "seen") || "seen",
+    "visits" => [visitor["visits"].to_i, 1].max,
     "first_seen" => parse_time(visitor["first_seen"], last_seen).iso8601,
     "last_seen" => last_seen.iso8601,
     "age_s" => [(now - last_seen).to_i, 0].max
@@ -128,6 +132,7 @@ output = {
   "updated_at" => now.iso8601,
   "online_now" => live_data["total_count"].to_i,
   "locations" => visitors.length,
+  "visits_total" => visitors.sum { |visitor| visitor["visits"] },
   "visitors" => visitors
 }
 
