@@ -118,7 +118,6 @@ My long-term goal is to develop principled and practical learning systems that r
   <details class="visitor-log" open>
     <summary><span>Visitors</span></summary>
     <ol id="visitor-log-list" aria-live="polite"></ol>
-    <p class="visitor-log-note">Anonymous IP-based geolocation. City and region are approximate; names and IP addresses are not stored or displayed.</p>
   </details>
   <span class="visitor-tracker" aria-hidden="true">
     <script id="_wauxsn">var _wau = window._wau || []; _wau.push(["map", "a62ninj09x", "xsn", "680", "340", "night", "target-red"]);</script>
