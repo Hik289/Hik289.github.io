@@ -149,7 +149,12 @@ My long-term goal is to develop principled and practical learning systems that r
     return Number.isFinite(timestamp) ? Math.max(0, (Date.now() - timestamp) / 1000) : visitor.age_s;
   };
   const render = (data) => {
-    const visitors = Array.isArray(data.visitors) ? data.visitors : [];
+    const visitors = Array.isArray(data.visitors) ? [...data.visitors] : [];
+    visitors.sort((left, right) => {
+      const liveDifference = Number(right.status === "live") - Number(left.status === "live");
+      if (liveDifference) return liveDifference;
+      return Date.parse(right.last_seen || data.updated_at || "") - Date.parse(left.last_seen || data.updated_at || "");
+    });
     list.replaceChildren();
     pins.replaceChildren();
     if (!visitors.length) {

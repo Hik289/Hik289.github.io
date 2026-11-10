@@ -227,7 +227,7 @@ events = events.map do |event|
     "last_seen" => last_seen.iso8601,
     "age_s" => [(now - last_seen).to_i, 0].max
   )
-end.sort_by { |event| event["last_seen"] }.reverse
+end.sort_by { |event| [event["status"] == "live" ? 1 : 0, event["last_seen"]] }.reverse
 
 output = {
   "schema_version" => 2,
