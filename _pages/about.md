@@ -150,42 +150,31 @@ My long-term goal is to develop principled and practical learning systems that r
   };
   const render = (data) => {
     const visitors = Array.isArray(data.visitors) ? data.visitors : [];
-    const dedupeWindowMs = 10 * 60 * 1000;
-    const visibleVisitors = [];
-    visitors.forEach((visitor) => {
-      const locationKey = `${Number(visitor.lat).toFixed(3)},${Number(visitor.lon).toFixed(3)}`;
-      const timestamp = Date.parse(visitor.last_seen || data.updated_at || "");
-      let previousIndex = -1;
-      for (let index = visibleVisitors.length - 1; index >= 0; index -= 1) {
-        if (visibleVisitors[index].locationKey === locationKey) {
-          previousIndex = index;
-          break;
-        }
-      }
-      const previous = visibleVisitors[previousIndex];
-      if (previous && Number.isFinite(timestamp) && Math.abs(timestamp - previous.timestamp) <= dedupeWindowMs) {
-        if (timestamp >= previous.timestamp) visibleVisitors[previousIndex] = { visitor, locationKey, timestamp };
-        return;
-      }
-      visibleVisitors.push({ visitor, locationKey, timestamp });
-    });
     list.replaceChildren();
     pins.replaceChildren();
-    if (!visibleVisitors.length) {
+    if (!visitors.length) {
       const empty = document.createElement("li");
       empty.className = "visitor-log-empty";
       empty.textContent = "No visits yet.";
       list.appendChild(empty);
       return;
     }
-    visibleVisitors.forEach(({ visitor }, index) => {
+    const locationOccurrences = new Map();
+    visitors.forEach((visitor, index) => {
       const latitude = Number(visitor.lat);
       const longitude = Number(visitor.lon);
       if (Number.isFinite(latitude) && Number.isFinite(longitude)) {
+        const locationKey = `${latitude.toFixed(3)},${longitude.toFixed(3)}`;
+        const occurrence = locationOccurrences.get(locationKey) || 0;
+        locationOccurrences.set(locationKey, occurrence + 1);
+        const angle = occurrence * 2.3999632297;
+        const radius = Math.min(1.25, 0.22 * Math.sqrt(occurrence));
+        const horizontalOffset = Math.cos(angle) * radius;
+        const verticalOffset = Math.sin(angle) * radius;
         const pin = document.createElement("i");
         pin.className = visitor.status === "live" ? "visitor-map-pin is-live" : "visitor-map-pin";
-        pin.style.left = `${Math.min(100, Math.max(0, ((longitude + 180) / 360) * 100))}%`;
-        pin.style.top = `${Math.min(100, Math.max(0, ((90 - latitude) / 180) * 100))}%`;
+        pin.style.left = `${Math.min(100, Math.max(0, ((longitude + 180) / 360) * 100 + horizontalOffset))}%`;
+        pin.style.top = `${Math.min(100, Math.max(0, ((90 - latitude) / 180) * 100 + verticalOffset))}%`;
         pin.title = placeLabel(visitor);
         pins.appendChild(pin);
       }
