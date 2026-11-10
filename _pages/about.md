@@ -14,7 +14,7 @@ redirect_from:
 
 I am a Ph.D. student in Computer Science at [Emory University](https://catalog.college.emory.edu/academics/departments/computer-science.html), advised by [Prof. Liang Zhao](https://cs.emory.edu/~lzhao41/). My research spans machine learning, learning theory, optimization, and reliable AI systems.
 
-Before Emory, I pursued Ph.D. studies in Computer Science at the [University of Texas at Arlington](https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse), advised by [Prof. Yingying Zhu](https://zyy123jy.github.io/My-Web-Sites/). I received my M.S. in Statistics from the [National University of Singapore](https://www.stat.nus.edu.sg/), advised by [Prof. Cheng Li](https://www.stat.nus.edu.sg/faculty_member/li-cheng/), and earned B.S. degrees in Physics and Mathematics from [Peking University](https://english.pku.edu.cn/).
+Before Emory, I pursued Ph.D. studies in Computer Science at the [University of Texas at Arlington](https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse), advised by [Prof. Yingying Zhu](https://zyy123jy.github.io/My-Web-Sites/). At the [National University of Singapore](https://www.stat.nus.edu.sg/), I pursued Ph.D. studies and received an M.S. in Statistics under the supervision of [Prof. Cheng Li](https://www.stat.nus.edu.sg/faculty_member/li-cheng/). I earned B.S. degrees in Physics and Mathematics from [Peking University](https://english.pku.edu.cn/).
 
 ### Research Interests
 
