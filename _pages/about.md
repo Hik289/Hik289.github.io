@@ -164,24 +164,21 @@ My long-term goal is to develop principled and practical learning systems that r
       list.appendChild(empty);
       return;
     }
-    const locationOccurrences = new Map();
+    const plottedLocations = new Set();
     visitors.forEach((visitor, index) => {
       const latitude = Number(visitor.lat);
       const longitude = Number(visitor.lon);
       if (Number.isFinite(latitude) && Number.isFinite(longitude)) {
         const locationKey = `${latitude.toFixed(3)},${longitude.toFixed(3)}`;
-        const occurrence = locationOccurrences.get(locationKey) || 0;
-        locationOccurrences.set(locationKey, occurrence + 1);
-        const angle = occurrence * 2.3999632297;
-        const radius = Math.min(1.25, 0.22 * Math.sqrt(occurrence));
-        const horizontalOffset = Math.cos(angle) * radius;
-        const verticalOffset = Math.sin(angle) * radius;
-        const pin = document.createElement("i");
-        pin.className = visitor.status === "live" ? "visitor-map-pin is-live" : "visitor-map-pin";
-        pin.style.left = `${Math.min(100, Math.max(0, ((longitude + 180) / 360) * 100 + horizontalOffset))}%`;
-        pin.style.top = `${Math.min(100, Math.max(0, ((90 - latitude) / 180) * 100 + verticalOffset))}%`;
-        pin.title = placeLabel(visitor);
-        pins.appendChild(pin);
+        if (!plottedLocations.has(locationKey)) {
+          plottedLocations.add(locationKey);
+          const pin = document.createElement("i");
+          pin.className = visitor.status === "live" ? "visitor-map-pin is-live" : "visitor-map-pin";
+          pin.style.left = `${Math.min(100, Math.max(0, ((longitude + 180) / 360) * 100))}%`;
+          pin.style.top = `${Math.min(100, Math.max(0, ((90 - latitude) / 180) * 100))}%`;
+          pin.title = placeLabel(visitor);
+          pins.appendChild(pin);
+        }
       }
 
       const item = document.createElement("li");
