@@ -93,7 +93,7 @@ My long-term goal is to develop principled and practical learning systems that r
   <li><span class="paper-title"><a href="https://aclanthology.org/2026.findings-acl.579/"><strong>P-QuASAR: A Unified Probabilistic Framework for Holistic Patent Quality Assessment and Refinement</strong></a></span><span class="paper-authors"><strong>Xinyuan Song</strong>, Ziyi Ni, Fred Yang, Bo Zhang, Yiming Yan, Yijin Wang, and Jane Zhang.</span><span class="paper-venue">ACL Findings 2026</span><span class="paper-actions"><a class="paper-action" href="https://aclanthology.org/2026.findings-acl.579.pdf"><i class="fas fa-file-pdf"></i> PDF</a></span></li>
 </ul>
 
-<p class="section-more"><a href="/publications/">View all publications &rarr;</a></p>
+<p class="section-more"><a href="/publications/">View recent publications &rarr;</a></p>
 
 <span class="anchor" id="honors-awards"></span>
 # 🏆 Honors & Awards {#honors-awards}
