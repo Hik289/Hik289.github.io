@@ -670,16 +670,6 @@ a {
   }
 }
 
-.visitor-tracker {
-  position: absolute !important;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-  opacity: 0;
-  pointer-events: none;
-}
-
 .visitor-log {
   margin-top: 0.65rem;
   border: 1px solid #e8e8e8;

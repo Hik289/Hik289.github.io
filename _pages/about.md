@@ -119,10 +119,6 @@ My long-term goal is to develop principled and practical learning systems that r
     <summary><span>Visitors</span></summary>
     <ol id="visitor-log-list" aria-live="polite"></ol>
   </details>
-  <span class="visitor-tracker" aria-hidden="true">
-    <script id="_wauxsn">var _wau = window._wau || []; _wau.push(["map", "a62ninj09x", "xsn", "680", "340", "night", "target-red"]);</script>
-    <script async src="https://waust.at/m.js"></script>
-  </span>
 </section>
 
 <script>
@@ -196,18 +192,37 @@ My long-term goal is to develop principled and practical learning systems that r
       list.appendChild(item);
     });
   };
+  const visitorApi = "https://xinyuan-visitor-api.opendelta4.chatgpt.site/api/visitors";
+  const locateVisitor = async () => {
+    const response = await fetch("https://ipwho.is/", { cache: "no-store" });
+    if (!response.ok) throw new Error("Location unavailable");
+    const location = await response.json();
+    if (location.success === false) throw new Error("Location unavailable");
+    return {
+      city: location.city,
+      region: location.region,
+      country: location.country,
+      country_code: location.country_code,
+      latitude: location.latitude,
+      longitude: location.longitude
+    };
+  };
   let refreshing = false;
-  const refresh = async () => {
+  let lastRecordedAt = 0;
+  const refresh = async (recordVisit = false) => {
     if (refreshing) return;
     refreshing = true;
     try {
-      const dataUrl = `https://api.github.com/repos/Hik289/Hik289.github.io/contents/visitor-locations.json?ref=visitor-data&v=${Date.now()}`;
-      const response = await fetch(dataUrl, { cache: "no-store" });
+      const request = { cache: "no-store" };
+      if (recordVisit) {
+        request.method = "POST";
+        request.headers = { "content-type": "application/json" };
+        request.body = JSON.stringify(await locateVisitor().catch(() => ({})));
+      }
+      const response = await fetch(`${visitorApi}?v=${Date.now()}`, request);
       if (!response.ok) throw new Error("Visitor data unavailable");
-      const payload = await response.json();
-      const encoded = String(payload.content || "").replace(/\s/g, "");
-      const bytes = Uint8Array.from(atob(encoded), (character) => character.charCodeAt(0));
-      render(JSON.parse(new TextDecoder().decode(bytes)));
+      render(await response.json());
+      if (recordVisit) lastRecordedAt = Date.now();
     } catch (_error) {
       const empty = document.createElement("li");
       empty.className = "visitor-log-empty";
@@ -217,10 +232,10 @@ My long-term goal is to develop principled and practical learning systems that r
       refreshing = false;
     }
   };
-  refresh();
-  window.setInterval(refresh, 30 * 60 * 1000);
+  refresh(true);
+  window.setInterval(() => refresh(false), 60 * 1000);
   document.addEventListener("visibilitychange", () => {
-    if (!document.hidden) refresh();
+    if (!document.hidden) refresh(Date.now() - lastRecordedAt >= 10 * 60 * 1000);
   });
 })();
 </script>
