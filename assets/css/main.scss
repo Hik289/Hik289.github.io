@@ -648,8 +648,8 @@ a {
 
 .visitor-map-pin {
   position: absolute;
-  width: 0.55rem;
-  height: 0.55rem;
+  width: 0.38rem;
+  height: 0.38rem;
   transform: translate(-50%, -50%);
   border: 1px solid #ffffff;
   border-radius: 50%;
@@ -666,7 +666,7 @@ a {
     box-shadow: 0 0 0 1px rgba(192, 0, 0, 0.35);
   }
   50% {
-    box-shadow: 0 0 0 5px rgba(192, 0, 0, 0.12);
+    box-shadow: 0 0 0 3px rgba(192, 0, 0, 0.12);
   }
 }
 

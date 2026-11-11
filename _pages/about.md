@@ -12,16 +12,16 @@ redirect_from:
 
 <div class="compact-section" markdown="1">
 
-I am a Ph.D. student in Computer Science at [Emory University](https://catalog.college.emory.edu/academics/departments/computer-science.html), advised by [Prof. Liang Zhao](https://cs.emory.edu/~lzhao41/). My research spans machine learning, learning theory, optimization, and reliable AI systems.
+I am a Ph.D. student in Computer Science at [Emory University](https://catalog.college.emory.edu/academics/departments/computer-science.html), advised by [Prof. Liang Zhao](https://cs.emory.edu/~lzhao41/). My research focuses on learning theory, statistical machine learning, optimization, efficient model design and training, semi-supervised learning, and AI agents.
 
 Before Emory, I pursued Ph.D. studies in Computer Science at the [University of Texas at Arlington](https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse), advised by [Prof. Yingying Zhu](https://zyy123jy.github.io/My-Web-Sites/). At the [National University of Singapore](https://www.stat.nus.edu.sg/), I pursued Ph.D. studies and received an M.S. in Statistics under the supervision of [Prof. Cheng Li](https://www.stat.nus.edu.sg/faculty_member/li-cheng/). I earned B.S. degrees in Physics and Mathematics from [Peking University](https://english.pku.edu.cn/).
 
 ### Research Interests
 
 <ul class="research-interests">
-  <li><strong>Learning Theory and Optimization</strong> &mdash; depth, sparsity, nonconvex landscapes, and recovery guarantees</li>
-  <li><strong>Robust and Data-Efficient Learning</strong> &mdash; semi-supervised, long-tailed, fine-grained, and limited-label learning</li>
-  <li><strong>Reliable Language Agents</strong> &mdash; world models, memory systems, agent harnesses, and reinforcement learning</li>
+  <li><strong>Theory, Statistical Machine Learning, and Optimization</strong> &mdash; generalization, nonconvex landscapes, and principled learning algorithms</li>
+  <li><strong>Model Optimization</strong> &mdash; neural networks, LLM architecture design, pre-training, and post-training</li>
+  <li><strong>Semi-Supervised Learning and AI Agents</strong> &mdash; learning with limited labels and building reliable agents with world models and memory</li>
 </ul>
 
 My long-term goal is to develop principled and practical learning systems that remain efficient, reliable, and understandable under real-world constraints.
@@ -96,7 +96,7 @@ My long-term goal is to develop principled and practical learning systems that r
 <p class="section-more"><a href="/publications/">View recent publications &rarr;</a></p>
 
 <span class="anchor" id="honors-awards"></span>
-# 🏆 Honors & Awards {#honors-awards}
+# 🏆 Honors and Awards {#honors-awards}
 
 <ul class="timeline-list">
   <li><strong>Silver Medal</strong>, Chinese Physics Olympiad (national level)</li>
