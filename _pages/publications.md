@@ -225,7 +225,7 @@ author_profile: true
   </article>
   <article class="publication-item">
     <div class="publication-meta"><span>NeurIPS</span><time>2026</time></div>
-    <h3>CONSTRAINER: Promptable Graph-Structured Optimization via Constraint Conditioning</h3>
+    <h3><a href="https://arxiv.org/abs/2611.10627">CONSTRAINER: Promptable Graph-Structured Optimization via Constraint Conditioning</a></h3>
     <p>Zeeshan Memon, Mingke Tian, <strong>Xinyuan Song</strong>, Hongwei Jin, Kibaek Kim, and Liang Zhao.</p>
   </article>
   <article class="publication-item">
