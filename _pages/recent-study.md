@@ -7,6 +7,12 @@ author_profile: true
 
 <div class="publication-list recent-study-list preprint-list">
   <article class="publication-item">
+    <div class="publication-meta"><span>arXiv 2611.08991</span><time>2026</time></div>
+    <h3><a href="https://arxiv.org/abs/2611.08991">Rethinking Optimization Methods for Hierarchical Feature Selection</a></h3>
+    <p><strong>Xinyuan Song</strong>, Zekun Cai, and Liang Zhao.</p>
+    <div class="publication-actions"><a class="publication-action" href="https://arxiv.org/pdf/2611.08991"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a><a class="publication-action" href="https://arxiv.org/bibtex/2611.08991"><i class="fas fa-quote-right" aria-hidden="true"></i>BibTeX</a></div>
+  </article>
+  <article class="publication-item">
     <div class="publication-meta"><span>arXiv 2610.36010</span><time>2026</time></div>
     <h3><a href="https://arxiv.org/abs/2610.36010">CIVER: Causal Intervention Verification for Reliable Code Review</a></h3>
     <p><strong>Xinyuan Song</strong>, Hasibul Haque, Jay Somasundaram, Ryan Turner, Bowen Zhu, and Liang Zhao.</p>
