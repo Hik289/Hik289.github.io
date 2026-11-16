@@ -102,6 +102,7 @@ author_profile: true
   };
 
   const pdfOverrides = {
+    "Beyond Efficiency: A Systematic Survey of Resource-Efficient Large Language Models": "https://dl.acm.org/doi/pdf/10.1145/3845797",
     "A 19-layer convolutional neural network for accurate COVID-19 detection in chest X-ray images: comparative analysis with pretrained networks": "https://www.nature.com/articles/s41598-026-49315-3.pdf",
     "Generalizable Blind Image Quality Assessment with Retrieval Augmentation and Contrastive Vision-Text Local Meta-Training": "https://dl.acm.org/doi/pdf/10.1145/3767308.3836240",
     "Harder the Task, Sparser the Representation: Sparsity as a Learning Signature of Capability in LLMs": "https://arxiv.org/pdf/2603.03415",
@@ -213,6 +214,11 @@ author_profile: true
 ## Collaborative Publications
 
 <div class="publication-list">
+  <article class="publication-item">
+    <div class="publication-meta"><span>ACM Computing Surveys</span><time>2026</time></div>
+    <h3><a href="https://dl.acm.org/doi/full/10.1145/3845797">Beyond Efficiency: A Systematic Survey of Resource-Efficient Large Language Models</a></h3>
+    <p>Guangji Bai, Zheng Chai, Chen Ling, Shiyu Wang, Jiaying Lu, Nan Zhang, Tingwei Shi, Ziyang Yu, Mengdan Zhu, Yifei Zhang, <strong>Xinyuan Song</strong>, Carl Yang, Yue Cheng, and Liang Zhao.</p>
+  </article>
   <article class="publication-item">
     <div class="publication-meta"><span>IEEE TMI</span><time>2026</time></div>
     <h3><a href="https://openreview.net/forum?id=bHTM4SMDDq">Med-MARS: Modifier-Aware Referring Segmentation for Medical Images</a></h3>
